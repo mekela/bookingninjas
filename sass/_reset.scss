@@ -96,6 +96,10 @@ h5{font-size:16px;}
 h6{font-size:14px;}
 
 //buttons and inputs
+video::-webkit-media-controls {
+  display: none;
+}
+
 .button{
   @include button('');
   &:hover{
@@ -113,7 +117,9 @@ input[type=text], input[type=email], input[type=tel], input[type=search], input[
    }
 }
 input::-webkit-input-placeholder {color: inherit;}
+textarea::-webkit-input-placeholder {color: inherit;}
 input:-moz-placeholder {color: inherit;}
+textarea:-moz-placeholder {color: inherit;}
 textarea{
   height: 90px;
   padding-top: 5px;
@@ -139,7 +145,16 @@ textarea{
 .inline-block{display:inline-block;}
 .block{display:block;}
 .hidden{display:none;}
+.ovh{overflow: hidden;}
 
+.button_main{
+  background-color: #12a7c7;
+  color: #fff;
+  border-color: #12a7c7;
+  &:hover{
+    opacity: 0.9;
+  }
+}
 
 //main containers
 .wrapper{

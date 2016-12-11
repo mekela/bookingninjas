@@ -29,15 +29,18 @@ overflow: hidden;
 
 @mixin input($input){
   width: 300px;
-  height: 25px;
+  height: 39px;
   box-sizing: border-box;
-  padding: 0 5px;
-  color: #000;
-  font-size: 14px;
+  padding: 0 10px;
+  color: #858585;
+  font-size: 13px;
   font-family: $ffamily;
-  border: 1px solid #000;
-  border-radius: 3px;
+  border: none;
+  border-top: 1px solid #e0e7e9;
+  border-bottom: 1px solid #e0e7e9;
+  border-radius: 1px;
   resize:none;
+  background:#ffffff;
 }
 @mixin input_focus($input_focus){
   box-shadow: 0 0 2px #99e6f9;

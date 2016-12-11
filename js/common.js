@@ -15,4 +15,13 @@ $(document).ready(function() {
 	  nextText: 'Onward →',
 	  prevText: '← Go back'
 	});
+
+	//wow
+	new WOW().init();
+
+	//menu
+	$( ".menu_trigger" ).click(function() {
+	  $( ".menu" ).slideToggle( "slow");
+	});
+
 });
