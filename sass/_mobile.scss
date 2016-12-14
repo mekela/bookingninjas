@@ -3,6 +3,16 @@
 
 
 //styles for custom device width
+@include mq($max-width: 1400px) {
+	.about_wrap .float_left{
+		margin-left: 0;
+		width: 60%;
+		img{
+			max-width: 100%;
+		}
+	}
+}
+
 @include mq($max-width: 1100px) {
   .container{
   	width: auto;
@@ -63,6 +73,7 @@
 			float: none !important;
 			text-align: center;
 			margin-left: 0;
+			width: 100%;
 		}
 	}
 	.bnr2{
@@ -86,6 +97,7 @@
 @include mq($max-width: 790px) {
 	.header{
 		height: auto;
+		min-height: 100px;
 	}
 	.menu_trigger{
 		display: block;
@@ -117,6 +129,17 @@
 		padding: 0 0 10px 0;
 		display: block;
 		margin: 0 auto;
+	}
+	.c25{
+		width: 50%;
+	}
+	.posts_select_item.txt{
+		background-size: cover;
+	}
+	.posts_select_item{
+		img{
+			width: 100%;
+		}
 	}
 }
 
@@ -175,6 +198,13 @@
 			padding: 5px 0;
 		}
 	}
+	.posts_select_item.txt h6{
+		font-size: 18px;
+	}
+	.features figure{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 @include mq($max-width: 450px) {
@@ -190,5 +220,8 @@
 	.preferences_block figure{
 		width: 100%;
 		height: auto;
+	}
+	.c25{
+		width: 100%;
 	}
 }
