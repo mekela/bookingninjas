@@ -4012,6 +4012,36 @@ textarea {
   z-index: 10;
 }
 
+.gallery_image {
+  display: inline-block;
+  margin: 0 2px;
+  margin-bottom: 10px;
+  vertical-align: top;
+  position: relative;
+}
+
+.gallery_image img {
+  display: block;
+  max-width: 100%;
+}
+
+.gallery_image:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background: #00b5dc;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.gallery_image:hover:before {
+  opacity: 0.27;
+}
+
 /*----------end video----------*/
 @media only screen and (max-width: 1400px) {
   .about_wrap .float_left {

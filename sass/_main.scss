@@ -584,4 +584,32 @@
 			color: #ffffff;
 			z-index: 10;
 		}
+	.gallery_image{
+		display: inline-block;
+		margin: 0 2px;
+		margin-bottom: 10px;
+		vertical-align: top;
+		position: relative;
+		img{
+			display: block;
+			max-width: 100%
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 2;
+			background:#00b5dc;
+			opacity: 0;
+			@include transition(all 0.5s);
+		}
+		&:hover{
+			&:before{
+				opacity: 0.27;
+			}
+		}
+	}
 /*----------end video----------*/
