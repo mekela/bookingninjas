@@ -4022,7 +4022,9 @@ textarea {
 
 .gallery_image img {
   display: block;
-  max-width: 100%;
+  /*max-width: 100%;*/
+    width: 267px;
+    height: 267px;
 }
 
 .gallery_image:before {
