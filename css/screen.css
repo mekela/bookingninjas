@@ -4044,6 +4044,11 @@ textarea {
   opacity: 0.27;
 }
 
+.fancybox-title a {
+  font-size: 0.7em;
+  display: block;
+}
+
 /*----------end video----------*/
 @media only screen and (max-width: 1400px) {
   .about_wrap .float_left {

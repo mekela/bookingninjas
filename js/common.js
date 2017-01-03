@@ -7,6 +7,24 @@ $(document).ready(function() {
 			}
 		}
 	});
+	$(".thumb").fancybox({
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		afterLoad: function() {
+        this.title = this.title + '<a href="' + this.href + '" target="_blank">Download</a> ' ;
+   		 },
+		helpers	: {
+			
+
+			thumbs	: {
+				width	: 100,
+				height	: 100
+			}, 
+			buttons	: {}
+		}
+		
+	});
+
 	
 	//bxslider
 	$('.bxslider').bxSlider({
