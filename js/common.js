@@ -42,4 +42,11 @@ $(document).ready(function() {
 	  $( ".menu" ).slideToggle( "slow");
 	});
 
+	//accordeon
+	$( ".faq_head" ).click(function() {
+	  $(this).next('.faq_answer').slideToggle( "slow");
+	  $(this).toggleClass( "active");
+	});
+
+
 });

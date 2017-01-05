@@ -205,6 +205,9 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.faq_answer{
+		padding-right: 10px;
+	}
 }
 
 @include mq($max-width: 450px) {
