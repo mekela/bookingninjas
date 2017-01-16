@@ -92,6 +92,9 @@
 			margin-top: 20px;
 		}
 	}
+	.floating_form{
+		display: none;
+	}
 }
 
 @include mq($max-width: 790px) {

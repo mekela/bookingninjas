@@ -48,5 +48,10 @@ $(document).ready(function() {
 	  $(this).toggleClass( "active");
 	});
 
+	//floating form
+	$( ".floating_form_title" ).click(function() {
+	  $('.floating_form').toggleClass( "active");
+	});
+
 
 });
