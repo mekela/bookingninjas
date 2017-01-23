@@ -4518,6 +4518,137 @@ textarea {
 }
 
 /*----------end solutions----------*/
+/*----------contacts----------*/
+.contacts_page {
+  background: #fafafa;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.contacts_page .container {
+  overflow: visible;
+}
+
+.contact_img {
+  float: left;
+  margin-left: -20px;
+  position: relative;
+}
+
+.contact_img img {
+  display: block;
+}
+
+.contact_side {
+  overflow: hidden;
+  padding: 25px 0 0 0;
+  width: 520px;
+  float: left;
+}
+
+.contact_top {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.contact_top .title {
+  font-weight: 500;
+  text-transform: uppercase;
+  float: left;
+  padding-bottom: 0;
+}
+
+.contact_top .title:after {
+  margin: 15px 0 0  0;
+}
+
+.contact_top .contact_txt {
+  float: right;
+  width: 220px;
+  text-align: right;
+}
+
+.contact_top .contact_txt .tel {
+  font-size: 25px;
+  color: #53545e;
+  display: block;
+  text-decoration: none;
+}
+
+.contact_top .contact_txt .email {
+  font-size: 16px;
+  color: #009ddc;
+  display: block;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.contact_form div {
+  margin-bottom: 10px;
+  padding-left: 1%;
+}
+
+.contact_form input, .contact_form textarea, .contact_form select {
+  width: 98%;
+  height: 50px;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.27);
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 300;
+  color: #999999;
+  padding: 0 15px;
+}
+
+.contact_form input.small, .contact_form textarea.small, .contact_form select.small {
+  width: 48%;
+}
+
+.contact_form input.small:first-child, .contact_form textarea.small:first-child, .contact_form select.small:first-child {
+  margin-right: 1.3%;
+}
+
+.contact_form small {
+  display: block;
+  color: #636363;
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 17px;
+}
+
+.contact_form textarea {
+  padding: 13px 15px;
+  height: 120px;
+}
+
+.contact_form label {
+  color: #464646;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0 17px 0 0;
+}
+
+.contact_form label input, .contact_form label select {
+  width: 76px;
+  margin-left: 17px;
+}
+
+.contact_form input.button {
+  margin-top: 15px;
+  color: #fff;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+  background: #20a9df;
+  width: 215px;
+  border-radius: 25px;
+}
+
+.contact_form input.button:hover {
+  background: #0f91c4;
+}
+
+/*----------end contacts----------*/
 @media only screen and (max-width: 1400px) {
   .about_wrap .float_left {
     margin-left: 0;
