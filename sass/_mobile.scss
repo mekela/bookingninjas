@@ -36,8 +36,41 @@
   .menu li{
   	padding: 0 3px;
   }
+  .solution_steps figure:before{
+  	display: none;
+  }
 }
-
+@include mq($max-width: 1000px) {
+	.solution_logo{
+		position: static;
+	}
+	.solutions_wrap{
+		background: none;
+		height: auto;
+		figure{
+			position: static;
+			font-size: 14px;
+			width: 49%;
+			padding-bottom: 20px;
+			border-left: 3px solid #dedede;
+			box-sizing: border-box;
+			&.solution6 {
+				width: 49%;
+			}
+			&:nth-child(odd){
+				border: none;
+			}
+		}
+	}
+	.solutions_block{
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+	  align-items: center;
+	  position: relative;
+	  padding-top: 14px;
+	}
+}
 @include mq($max-width: 910px) {
 	.benefits_block {
 		& > div{
@@ -95,6 +128,28 @@
 	.floating_form{
 		display: none;
 	}
+	.product_slider_inner{
+		img{
+			width: 40%;
+		}
+	}
+	.product_slider_txt{
+		padding-left: 20px;
+		box-sizing: border-box;
+	}
+	.bridge_block{
+		text-align: center;
+		& > div{
+			float: none !important;
+			width: 100%;
+			padding-bottom: 20px;
+			overflow: hidden;
+		}
+		figure, section{
+			margin: 10px auto;
+			float: none;
+		}
+	}	
 }
 
 @include mq($max-width: 790px) {
@@ -181,6 +236,23 @@
 			display: none;
 		}
 	}
+	.product_slider_nav{
+		flex-wrap: wrap;
+		a{
+			width: 20%;
+		}
+	}
+	.product_slider_txt{
+		font-size: 20px;
+	}
+	.solution_steps .solution_steps_block{
+		display: block;
+	}
+	.solution_steps figure{
+		margin: 10px auto;
+		padding-bottom: 20px;
+		width: 100%;
+	}
 }
 
 @include mq($max-width: 550px) {
@@ -210,6 +282,9 @@
 	}
 	.faq_answer{
 		padding-right: 10px;
+	}
+	.product_slider_nav a{
+		width: 33%;
 	}
 }
 

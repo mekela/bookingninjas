@@ -27,11 +27,8 @@ $(document).ready(function() {
 
 	
 	//bxslider
-	$('.bxslider').bxSlider({
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
+	$('.product_slider_item').bxSlider({
+	  pagerCustom: '.product_slider_nav'
 	});
 
 	//wow
