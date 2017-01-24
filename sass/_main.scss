@@ -749,19 +749,19 @@
 		}
 		label{
 			color: #4a4a49;
-			font-size: 16px;
+			font-size: 13px;
 			display: block;
 			padding-bottom: 2px;
 			font-weight: 300;
 		}
 		input{
 			width: 308px;
-			height: 52px;
+			height: 40px;
 			box-shadow: 2px 2px 2px #e0e7e9;
 			border: none;
 		}
 		textarea{
-			height: 110px;
+			height: 115px;
 		}
 		input.button, .button{
 			box-shadow: none;
@@ -770,7 +770,7 @@
 			text-transform: uppercase;
 			border-radius: 25px;
 			height: 50px;
-			font-size: 16px;
+			font-size: 15px;
 			@include transition(all 0.5s);
 			&:hover{
 				background:#0c92af;
