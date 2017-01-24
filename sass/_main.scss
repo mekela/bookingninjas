@@ -1090,7 +1090,9 @@
 				color: #464646;
 				font-size: 16px;
 				font-weight: 300;
-				padding: 0 17px 0 0;
+				&:first-of-type{
+				padding: 0 47px 0 0;
+				}
 				input, select{
 					width: 76px;
 					margin-left: 17px;
@@ -1111,4 +1113,30 @@
 				}
 			}
 		}
+
+.advantage_wrap{
+	padding: 44px 0;
+}
+	.advantage_block{
+		padding: 0 0 10px 0;
+		display: flex;
+		justify-content: space-between;
+		figure{
+			padding-bottom: 30px;
+			display: inline-block;
+			vertical-align: top;
+			width: 250px;
+			overflow: hidden;
+			color: #53545e;
+			font-size: 14px;
+			figcaption{
+				overflow: hidden;
+				font-weight: 300;
+			}
+			img{
+				float: left;
+				padding: 0 20px 0 0;
+			}
+		}
+	}
 /*----------end contacts----------*/

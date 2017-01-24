@@ -3405,7 +3405,10 @@ textarea {
   color: #464646;
   font-size: 16px;
   font-weight: 300;
-  padding: 0 17px 0 0; }
+}
+
+.contact_form label:first-of-type {
+  padding: 0 47px 0 0;
   .contact_form label input, .contact_form label select {
     width: 76px;
     margin-left: 17px; }
@@ -3421,6 +3424,40 @@ textarea {
   border-radius: 25px; }
   .contact_form input.button:hover {
     background: #0f91c4; }
+
+.advantage_wrap {
+  padding: 44px 0;
+}
+
+.advantage_block {
+  padding: 0 0 10px 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantage_block figure {
+  padding-bottom: 30px;
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  overflow: hidden;
+  color: #53545e;
+  font-size: 14px;
+}
+
+.advantage_block figure figcaption {
+  overflow: hidden;
+  font-weight: 300;
+}
+
+.advantage_block figure img {
+  float: left;
+  padding: 0 20px 0 0;
+}
 
 /*----------end contacts----------*/
 @media only screen and (max-width: 1400px) {
@@ -3451,6 +3488,14 @@ textarea {
 
   .menu li {
     padding: 0 3px; }
+  .contact_img {
+    display: none;
+  }
+  .contact_side {
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
 
   .solution_steps figure:before {
     display: none; } }
@@ -3653,6 +3698,25 @@ textarea {
 
   .faq_answer {
     padding-right: 10px; }
+  .advantage_block {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .advantage_block figure {
+    width: 47%;
+  }
+  .contact_side {
+    width: 100%;
+  }
+  .contact_form label {
+    display: block;
+    padding: 0 0 15px 0 !important;
+    text-align: center;
+  }
+  .contact_form small {
+    text-align: center;
+  }
 
   .product_slider_nav a {
     width: 33%; } }
@@ -3671,6 +3735,6 @@ textarea {
     height: auto; }
 
   .c25 {
-    width: 100%; } }
-
-/*# sourceMappingURL=screen.css.map */
+    width: 100%;
+  }
+  .advantage_block figure {
