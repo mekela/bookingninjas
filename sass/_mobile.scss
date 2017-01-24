@@ -39,6 +39,14 @@
   .solution_steps figure:before{
   	display: none;
   }
+  .contact_img{
+  	display: none;
+  }
+  .contact_side{
+  	float: none;
+  	margin: 0 auto;
+  	padding-bottom: 20px;
+  }
 }
 @include mq($max-width: 1000px) {
 	.solution_logo{
@@ -286,6 +294,23 @@
 	.product_slider_nav a{
 		width: 33%;
 	}
+	.advantage_block {
+		flex-wrap: wrap;
+		figure{
+		width: 47%;
+		}
+	}	
+	.contact_side{
+		width: 100%;
+	}
+		.contact_form label{
+			display: block;
+			padding: 0 0 15px 0 !important;
+			text-align: center;
+		}
+		.contact_form small{
+			text-align: center;
+		}
 }
 
 @include mq($max-width: 450px) {
@@ -304,5 +329,10 @@
 	}
 	.c25{
 		width: 100%;
+	}
+	.advantage_block{
+		figure{
+			width: 100%;
+		}
 	}
 }

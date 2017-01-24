@@ -4624,7 +4624,10 @@ textarea {
   color: #464646;
   font-size: 16px;
   font-weight: 300;
-  padding: 0 17px 0 0;
+}
+
+.contact_form label:first-of-type {
+  padding: 0 47px 0 0;
 }
 
 .contact_form label input, .contact_form label select {
@@ -4646,6 +4649,40 @@ textarea {
 
 .contact_form input.button:hover {
   background: #0f91c4;
+}
+
+.advantage_wrap {
+  padding: 44px 0;
+}
+
+.advantage_block {
+  padding: 0 0 10px 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantage_block figure {
+  padding-bottom: 30px;
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  overflow: hidden;
+  color: #53545e;
+  font-size: 14px;
+}
+
+.advantage_block figure figcaption {
+  overflow: hidden;
+  font-weight: 300;
+}
+
+.advantage_block figure img {
+  float: left;
+  padding: 0 20px 0 0;
 }
 
 /*----------end contacts----------*/
@@ -4684,6 +4721,14 @@ textarea {
   }
   .solution_steps figure:before {
     display: none;
+  }
+  .contact_img {
+    display: none;
+  }
+  .contact_side {
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 20px;
   }
 }
 
@@ -4926,6 +4971,25 @@ textarea {
   .product_slider_nav a {
     width: 33%;
   }
+  .advantage_block {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .advantage_block figure {
+    width: 47%;
+  }
+  .contact_side {
+    width: 100%;
+  }
+  .contact_form label {
+    display: block;
+    padding: 0 0 15px 0 !important;
+    text-align: center;
+  }
+  .contact_form small {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -4943,6 +5007,9 @@ textarea {
     height: auto;
   }
   .c25 {
+    width: 100%;
+  }
+  .advantage_block figure {
     width: 100%;
   }
 }
