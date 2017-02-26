@@ -47,6 +47,9 @@
   	margin: 0 auto;
   	padding-bottom: 20px;
   }
+  .model_wrap{
+  	justify-content: space-around;
+  }
 }
 @include mq($max-width: 1000px) {
 	.solution_logo{
@@ -77,6 +80,27 @@
 	  align-items: center;
 	  position: relative;
 	  padding-top: 14px;
+	}
+	.smarter_block{
+		figure{
+			padding: 0 0 20px 0;
+			&:first-child, &:nth-child(2){
+				&:before{
+					display: none;
+				}
+			}
+			&:nth-child(2){
+				&:after{
+					display: none;
+				}
+			}
+			&:nth-child(4){
+				margin-left: 0px;
+			}
+			&:nth-child(5){
+				margin-right: 0px;
+			}
+		}
 	}
 }
 @include mq($max-width: 910px) {
