@@ -50,5 +50,14 @@ $(document).ready(function() {
 	  $('.floating_form').toggleClass( "active");
 	});
 
+	//tabs
+	$('.integration_tabs li a').click(function(event){
+        event.preventDefault();
+        $('.integration_tabs li a').removeClass('active');
+        $(this).addClass('active');
+        $('.integration_tab').hide();
+        $($(this).attr('href')).show();
+    });
+
 
 });
