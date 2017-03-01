@@ -102,6 +102,11 @@
 			}
 		}
 	}
+	.integration_content figure{
+		width: 200px;
+		height: auto;
+		padding: 0 10px 10px 0;
+	}
 }
 @include mq($max-width: 910px) {
 	.benefits_block {
@@ -285,6 +290,18 @@
 		padding-bottom: 20px;
 		width: 100%;
 	}
+	.integration_tabs{
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+		.integration_tabs li a{
+			padding: 1px 3px;
+		}
+	.integration_content{
+		height: auto;
+		overflow: hidden;
+	}
 }
 
 @include mq($max-width: 550px) {
@@ -358,5 +375,9 @@
 		figure{
 			width: 100%;
 		}
+	}
+	.integration_content figure{
+		float: none;
+		width: 100%;
 	}
 }

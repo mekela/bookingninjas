@@ -5120,6 +5120,11 @@ textarea {
   .smarter_block figure:nth-child(5) {
     margin-right: 0px;
   }
+  .integration_content figure {
+    width: 200px;
+    height: auto;
+    padding: 0 10px 10px 0;
+  }
 }
 
 @media only screen and (max-width: 910px) {
@@ -5292,6 +5297,18 @@ textarea {
     padding-bottom: 20px;
     width: 100%;
   }
+  .integration_tabs {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .integration_tabs li a {
+    padding: 1px 3px;
+  }
+  .integration_content {
+    height: auto;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -5360,6 +5377,10 @@ textarea {
     width: 100%;
   }
   .advantage_block figure {
+    width: 100%;
+  }
+  .integration_content figure {
+    float: none;
     width: 100%;
   }
 }
