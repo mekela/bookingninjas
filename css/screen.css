@@ -5016,6 +5016,254 @@ textarea {
 }
 
 /*---------end-integration----------*/
+/*---------feedback----------*/
+.feedback_wrap {
+  background: url("../img/feedback_bg.png") center top no-repeat;
+  background-size: cover;
+  padding: 111px 0 220px 0;
+  text-align: center;
+}
+
+.feedback_wrap .container {
+  background: rgba(255, 255, 255, 0.82);
+  width: 692px;
+  border-radius: 6px;
+  padding: 25px;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.feedback_user_img {
+  margin-top: -115px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.feedback_user_img img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.feedback_user_text {
+  font-size: 18px;
+  color: #222222;
+  padding-bottom: 20px;
+}
+
+.feedback_user_text h6 {
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 18px;
+}
+
+.feedback_user_contacts {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #222222;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+}
+
+.feedback_user_contacts div {
+  padding-bottom: 10px;
+}
+
+.feedback_user_contacts div img {
+  padding: 0 15px 0 0;
+}
+
+.feedback_step {
+  padding-bottom: 20px;
+}
+
+.feedback_step span {
+  border-radius: 18px;
+  display: inline-block;
+  background: #089be5;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 15px;
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.feedback_steps {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.feedback_steps:before {
+  content: '';
+  width: 100%;
+  height: 4px;
+  background: #a1a1a1;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  left: 0;
+}
+
+.feedback_steps li {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  border-radius: 50%;
+  background: #a1a1a1;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.feedback_steps li.active {
+  background: #089be5;
+}
+
+.feedback_steps li.active:before {
+  content: '';
+  width: 300%;
+  height: 4px;
+  background: #089be5;
+  background: linear-gradient(to right, #089be5 42%, #8ca0aa 100%);
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  margin-top: -2px;
+}
+
+.feedback_steps li.active:last-child:before {
+  display: none;
+}
+
+.feedback_steps li.previous:before {
+  background: #089be5;
+}
+
+.feedback_title {
+  font-size: 20px;
+  color: #464646;
+  text-transform: uppercase;
+  line-height: 1.6;
+  text-align: left;
+  text-shadow: 0px 2px 0px rgba(255, 255, 255, 0.004);
+  margin-bottom: 20px;
+}
+
+.feedback_range {
+  padding-bottom: 35px;
+}
+
+.feedback_button {
+  padding-top: 25px;
+  border-top: 1px solid rgba(0, 0, 0, 0.23);
+}
+
+.feedback_button .button {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 300px;
+  height: 50px;
+  background: #009ddc;
+  color: #fff;
+}
+
+.feedback_checklist, .feedback_radio {
+  color: #646464;
+  font-size: 18px;
+}
+
+.check, .radio {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  line-height: 23px;
+  vertical-align: middle;
+}
+
+.check input, .radio input {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+.check i, .radio i {
+  width: 21px;
+  height: 21px;
+  border: 1px solid #c4c8cb;
+  border-radius: 2px;
+  display: inline-block;
+  background: #f6f6f6;
+  margin: 0 15px 0 0;
+  vertical-align: middle;
+}
+
+.check input:checked + i, .radio input:checked + i {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/icons/check.png);
+}
+
+.feedback_textarea {
+  padding-bottom: 25px;
+}
+
+.feedback_textarea textarea {
+  width: 100%;
+  height: 140px;
+  box-sizing: border-box;
+}
+
+.feedback_radio ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.feedback_radio li {
+  width: 50%;
+}
+
+.radio i {
+  border-radius: 50%;
+  position: relative;
+}
+
+.radio input:checked + i {
+  background: #f6f6f6;
+}
+
+.radio input:checked + i:before {
+  content: '';
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background: #12a7c7;
+  top: 3px;
+  left: 3px;
+}
+
+/*---------end-feedback----------*/
 @media only screen and (max-width: 1400px) {
   .about_wrap .float_left {
     margin-left: 0;
