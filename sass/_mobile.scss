@@ -302,6 +302,16 @@
 		height: auto;
 		overflow: hidden;
 	}
+	.feedback_wrap .container{
+		width: auto;
+		margin: 0 10px
+	}
+	.feedback_steps li.active:before{
+		width: 140%;
+	}
+	.feedback_button .button{
+		width: 100%;
+	}
 }
 
 @include mq($max-width: 550px) {
