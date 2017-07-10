@@ -50,6 +50,85 @@
   .model_wrap{
   	justify-content: space-around;
   }
+	
+//process
+.process{
+	
+}
+.process__row{
+	background:#bbe1f8;
+	flex-direction: column;
+	text-align: center;
+	display: block;
+}
+.process__block{
+	background:#bbe1f8;
+	margin: 30px auto;
+	padding-left: 0;
+	min-height: 100px;
+	img{
+		display: none;
+	}
+}
+.process__item-img{
+	height: auto;
+	.yes, .no{
+		display: none;
+	}
+}
+.process__main-title img{
+	display: none !important;
+}
+.process__main-title section, .process__item section{
+	height: auto;
+	margin: 0 !important;
+	padding: 0;
+	border: none !important;
+}
+.process__item{
+	width: 100%;
+	display: block;
+	padding: 20px 15px;
+}
+.process__main-title{
+	&.text_right, &.text_left{
+		text-align: center !important;
+	}
+}	
+.process__journey{
+	width: 100%;
+	margin: 20px auto;
+	padding: 0;
+	
+}
+.process__cloud{
+	width: auto;
+	text-align: center;
+	margin: 20px 0;
+}
+.process__cloud p{
+	position: static;
+	padding: 20px ;
+	box-sizing: border-box;
+	width: 100%;
+}
+.process__row.phase5{
+	padding-bottom: 50px;
+}
+.process__speed{
+	width: auto;
+	height: auto;
+	padding: 50px 0 0 0;
+}
+.process__row.phase7 .process__main-title{
+	padding-top: 30px;
+}
+.process h1{
+	text-align: center;
+}
+//end - process
+
+
 }
 @include mq($max-width: 1000px) {
 	.solution_logo{
