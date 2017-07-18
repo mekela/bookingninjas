@@ -6284,6 +6284,9 @@ textarea {
   .contact_form small {
     text-align: center;
   }
+  .logo {
+    width: 75%;
+  }
 }
 
 @media only screen and (max-width: 450px) {
