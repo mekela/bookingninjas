@@ -40,6 +40,7 @@
 	}
 		.menu_trigger{
 			display: none;
+			cursor: pointer;
 		}
 	.menu{
 		padding-top: 40px;
@@ -784,7 +785,7 @@
 	height: 667px;
 	text-align: center;
 	margin-bottom: 70px;
-	background:url(../img/solution_bg.png) no-repeat center;
+	background:url(../img/solution_bg-new.png) no-repeat center;
 	overflow: visible;
 	figure{
 		position: absolute;
@@ -812,29 +813,37 @@
 		}	
 		&.solution3{
 			top: 9px;
-			left: 588px;
+			left: 465px;
 		}	
 		&.solution4{
-			top: 75px;
-			left: 873px;
+			top: 28px;
+    		left: 685px;
+		}	
+		&.solution9{
+		    top: 89px;
+		    left: 873px;
 		}	
 		&.solution5{
-			top: 422px;
-			left: 31px;
+			top: 481px;
+    		left: 266px;
 		}	
 		&.solution6{
-			top: 486px;
-			left: 245px;
+			top: 499px;
+    		left: 435px;
 			width: 250px;
 		}	
 		&.solution7{
-			top: 493px;
-    		left: 606px;
+			top: 478px;
+    		left: 684px;
 		}	
 		&.solution8{
 			top: 422px;
     		left: 882px;
 		}	
+		&.solution10{
+			top: 434px;
+    		left: 68px;
+		}
 		&:hover{
 			.solution_popup{
 				visibility: visible;
@@ -850,7 +859,7 @@
 				}
 			}
 		}
-		&.solution5, &.solution6, &.solution7, &.solution8{
+		&.solution5, &.solution6, &.solution7, &.solution8, &.solution10{
 			&:hover{
 				.solution_popup{
 					top: -135px;
@@ -1878,3 +1887,73 @@
 	}
 }
 /*---------end-process----------*/
+
+/*---------menu----------*/
+.mobile-menu{
+	position: fixed;
+	top: 0;
+	left: -100%;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0, 0.72);
+	
+	&.active{
+		left: 0;
+		opacity: 1;
+	}
+	&__block{
+		width: 368px;
+		height: 100vh;
+		background:#f3f4f5;
+		position: fixed;
+		left: -368px;
+		top: 0;
+		z-index: 111;
+		@include transition(all 0.5s);
+		&.active{
+			left: 0;
+			opacity: 1;
+		}
+	
+	.logo{
+		display: block;
+		height: 89px;
+		background:#fff;
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	nav{
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			li{
+				border-top: 1px solid #cfd0d0;
+			}
+			a{
+				padding: 23px 17px;
+				display: block;
+				vertical-align: middle;
+				img{
+					vertical-align: middle;
+					padding: 0 18px 0 0;
+					@include gray();
+				}
+				color: #4a4a4a;
+				font-size: 30px;
+				text-transform: uppercase;
+				text-decoration: none;
+				&:hover, &.active{
+					color: #2face2;
+					img{
+					@include gray-zero();
+					}
+				}
+			}
+		}
+	}
+	}
+}
+/*---------end-menu----------*/

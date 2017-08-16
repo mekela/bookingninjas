@@ -3677,6 +3677,7 @@ textarea {
 
 .menu_trigger {
   display: none;
+  cursor: pointer;
 }
 
 .menu {
@@ -4545,7 +4546,7 @@ textarea {
   height: 667px;
   text-align: center;
   margin-bottom: 70px;
-  background: url(../img/solution_bg.png) no-repeat center;
+  background: url(../img/solution_bg-new.png) no-repeat center;
   overflow: visible;
 }
 
@@ -4581,33 +4582,43 @@ textarea {
 
 .solutions_wrap figure.solution3 {
   top: 9px;
-  left: 588px;
+  left: 465px;
 }
 
 .solutions_wrap figure.solution4 {
-  top: 75px;
+  top: 28px;
+  left: 685px;
+}
+
+.solutions_wrap figure.solution9 {
+  top: 89px;
   left: 873px;
 }
 
 .solutions_wrap figure.solution5 {
-  top: 422px;
-  left: 31px;
+  top: 481px;
+  left: 266px;
 }
 
 .solutions_wrap figure.solution6 {
-  top: 486px;
-  left: 245px;
+  top: 499px;
+  left: 435px;
   width: 250px;
 }
 
 .solutions_wrap figure.solution7 {
-  top: 493px;
-  left: 606px;
+  top: 478px;
+  left: 684px;
 }
 
 .solutions_wrap figure.solution8 {
   top: 422px;
   left: 882px;
+}
+
+.solutions_wrap figure.solution10 {
+  top: 434px;
+  left: 68px;
 }
 
 .solutions_wrap figure:hover .solution_popup {
@@ -4621,7 +4632,7 @@ textarea {
   top: -90px;
 }
 
-.solutions_wrap figure.solution5:hover .solution_popup, .solutions_wrap figure.solution6:hover .solution_popup, .solutions_wrap figure.solution7:hover .solution_popup, .solutions_wrap figure.solution8:hover .solution_popup {
+.solutions_wrap figure.solution5:hover .solution_popup, .solutions_wrap figure.solution6:hover .solution_popup, .solutions_wrap figure.solution7:hover .solution_popup, .solutions_wrap figure.solution8:hover .solution_popup, .solutions_wrap figure.solution10:hover .solution_popup {
   top: -135px;
 }
 
@@ -5863,6 +5874,87 @@ textarea {
 }
 
 /*---------end-process----------*/
+/*---------menu----------*/
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.72);
+}
+
+.mobile-menu.active {
+  left: 0;
+  opacity: 1;
+}
+
+.mobile-menu__block {
+  width: 368px;
+  height: 100vh;
+  background: #f3f4f5;
+  position: fixed;
+  left: -368px;
+  top: 0;
+  z-index: 111;
+  transition: all 0.5s;
+}
+
+.mobile-menu__block.active {
+  left: 0;
+  opacity: 1;
+}
+
+.mobile-menu__block .logo {
+  display: block;
+  height: 89px;
+  background: #fff;
+  width: 100%;
+  float: none;
+  text-align: center;
+}
+
+.mobile-menu__block nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu__block nav ul li {
+  border-top: 1px solid #cfd0d0;
+}
+
+.mobile-menu__block nav ul a {
+  padding: 23px 17px;
+  display: block;
+  vertical-align: middle;
+  color: #4a4a4a;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.mobile-menu__block nav ul a img {
+  vertical-align: middle;
+  padding: 0 18px 0 0;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)";
+}
+
+.mobile-menu__block nav ul a:hover, .mobile-menu__block nav ul a.active {
+  color: #2face2;
+}
+
+.mobile-menu__block nav ul a:hover img, .mobile-menu__block nav ul a.active img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(0%);
+}
+
+/*---------end-menu----------*/
 @media only screen and (max-width: 1400px) {
   .about_wrap .float_left {
     margin-left: 0;
@@ -6312,5 +6404,13 @@ textarea {
   .integration_content figure {
     float: none;
     width: 100%;
+  }
+  .mobile-menu__block {
+    width: 280px;
+    height: 100vh;
+    background: #f3f4f5;
+  }
+  .mobile-menu__block nav ul a {
+    font-size: 20px;
   }
 }

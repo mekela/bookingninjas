@@ -36,7 +36,12 @@ $(document).ready(function() {
 
 	//menu
 	$( ".menu_trigger" ).click(function() {
-	  $( ".menu" ).slideToggle( "slow");
+	  $( ".mobile-menu" ).toggleClass( "active");
+	  $( ".mobile-menu__block" ).toggleClass( "active");
+	});
+	$( ".mobile-menu" ).click(function() {
+	  $( ".mobile-menu" ).toggleClass( "active");
+	  $( ".mobile-menu__block" ).toggleClass( "active");
 	});
 
 	//accordeon
