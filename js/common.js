@@ -84,3 +84,45 @@ noUiSlider.create(slider, {
 		decimals: 0
 	})
 });
+
+
+var softSlider = document.getElementById('soft');
+
+	noUiSlider.create(softSlider, {
+	start: [0, 10],
+	connect: true,
+	range: {
+		'min': 0,
+		'max': 14,
+	}
+	});
+	var softSlider = document.getElementById('soft2');
+
+	noUiSlider.create(softSlider, {
+	start: [0, 10],
+	connect: true,
+	range: {
+		'min': 0,
+		'max': 14,
+	}
+	});
+	var softSlider = document.getElementById('soft3');
+
+	noUiSlider.create(softSlider, {
+	start: [0, 10],
+	connect: true,
+	range: {
+		'min': 0,
+		'max': 14,
+	}
+	});
+	var softSlider = document.getElementById('soft4');
+
+	noUiSlider.create(softSlider, {
+	start: [0, 10],
+	connect: true,
+	range: {
+		'min': 0,
+		'max': 14,
+	}
+	});

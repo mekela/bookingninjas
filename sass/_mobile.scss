@@ -128,7 +128,10 @@
 }
 //end - process
 
-
+.timeline-range{
+	padding-left: 20px;
+	padding-right: 20px;
+}
 }
 @include mq($max-width: 1000px) {
 	.solution_logo{
@@ -185,6 +188,23 @@
 		width: 200px;
 		height: auto;
 		padding: 0 10px 10px 0;
+	}
+	//timeline
+	.timeline-icons:after, .timeline-icons figure:before, .timeline-icons figure:after{
+		display: none;
+	}
+	.timeline-icons figure{
+		width: 50%;
+		padding-bottom: 20px;
+	}
+	.timeline-icons .container, .timeline-phase{
+		flex-wrap: wrap;
+	}
+	.timeline-month{
+		padding-top: 30px;
+	}
+	.timeline-phase__block{
+		width: 49%;
 	}
 }
 @include mq($max-width: 910px) {
@@ -444,6 +464,17 @@
 	.logo{
 		width: 75%;
 	}
+
+	.timeline-phase__block{
+		width: 100%;
+	}
+	.timeline-month ul{
+		flex-wrap: wrap;
+		li{
+			width: 16.6%;
+			border-bottom: 1px solid #fff;
+		}
+	}
 }
 
 @include mq($max-width: 450px) {
@@ -481,5 +512,12 @@
 	}
 	.mobile-menu__block nav ul a{
 		font-size: 20px;
+	}
+	.timeline-icons figure{
+		width: 100%;
+	}
+	.timeline-button .button{
+		width: 100%;
+		font-size: 14px;
 	}
 }
