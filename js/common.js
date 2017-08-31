@@ -55,6 +55,11 @@ $(document).ready(function() {
 	  $('.floating_form').toggleClass( "active");
 	});
 
+	//myth
+	$( ".truth__btn" ).click(function() {
+	  $(this).closest('.myth-truth__block').addClass( "active");
+	});
+
 	//tabs
 	$('.integration_tabs li a').click(function(event){
         event.preventDefault();

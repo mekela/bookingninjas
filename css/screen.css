@@ -1,4 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800");
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.1
@@ -6287,6 +6312,132 @@ textarea {
 }
 
 /*---------end-timeline---------*/
+/*-----------myth-truth------------*/
+.myth-truth {
+  padding-top: 50px;
+}
+
+.myth-truth h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #464646;
+  padding-bottom: 40px;
+  font-weight: 300;
+}
+
+.myth-truth h2 strong {
+  font-weight: bold;
+  color: #009ee2;
+}
+
+.myth-truth__block {
+  height: 635px;
+  overflow: hidden;
+  position: relative;
+}
+
+.myth-truth__block.active .myth {
+  -webkit-animation-name: zoomOut;
+          animation-name: zoomOut;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.myth-truth__block.active .truth {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.myth-truth__item {
+  padding: 100px 0 0 0;
+  color: #ffffff;
+  width: 440px;
+}
+
+.myth-truth__item.center {
+  text-align: center;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.myth-truth__item.right {
+  float: right;
+}
+
+.myth-truth__item.blue {
+  color: #0f3754;
+}
+
+.myth-truth__item h6 {
+  font-size: 32px;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+  font-weight: 600;
+}
+
+.myth-truth__item h5 {
+  font-size: 48px;
+}
+
+.myth-truth__item p {
+  font-size: 24px;
+  padding: 0;
+}
+
+.myth-truth__item .button {
+  margin-top: 20px;
+  height: 58px;
+  background: #faca47;
+  padding: 0 35px;
+  line-height: 58px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #124955;
+  font-weight: 600;
+  border: none;
+  border-bottom: 2px solid #0b5223;
+  border-radius: 29px;
+}
+
+.myth-truth__item .button span:after {
+  padding: 0 0 0 10px;
+  content: url(../img/icons/arrow.png);
+}
+
+.myth-truth__item .button:hover {
+  opacity: 0.9;
+}
+
+.truth, .myth {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 635px;
+  z-index: 1;
+  background-color: #3ca5bb;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+
+.myth {
+  z-index: 2;
+}
+
+.truth .myth-truth__item p {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+/*----------end-myth-truth------------*/
 @media only screen and (max-width: 1400px) {
   .about_wrap .float_left {
     margin-left: 0;
@@ -6563,6 +6714,26 @@ textarea {
     margin: 10px auto;
     float: none;
   }
+  .myth-truth__item {
+    text-align: center !important;
+    width: 100%;
+    padding-top: 0 !important;
+  }
+  .truth, .myth {
+    background-image: none !important;
+  }
+  .myth-truth__block .container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 635px;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media only screen and (max-width: 790px) {
@@ -6744,6 +6915,19 @@ textarea {
   .timeline-month ul li {
     width: 16.6%;
     border-bottom: 1px solid #fff;
+  }
+  .myth-truth__item h5 {
+    font-size: 25px;
+  }
+  .myth-truth__item p {
+    font-size: 18px;
+  }
+  .myth-truth__item h6, .myth-truth h2 {
+    font-size: 28px;
+  }
+  .myth-truth__item .button {
+    max-width: 100%;
+    font-size: 14px;
   }
 }
 

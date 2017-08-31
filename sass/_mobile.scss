@@ -286,6 +286,25 @@
 			float: none;
 		}
 	}	
+
+	//myth
+	.myth-truth__item{
+		text-align: center !important;
+		width: 100%;
+		padding-top: 0 !important;
+	}
+	.truth, .myth{
+		background-image: none !important;
+	}
+	.myth-truth__block{
+		.container{
+			display: flex;
+			height: 635px;
+			justify-content: center;
+  			align-items: center;
+		}
+	}
+	//end-myth
 }
 
 @include mq($max-width: 790px) {
@@ -475,6 +494,22 @@
 			border-bottom: 1px solid #fff;
 		}
 	}
+
+	//myth
+	.myth-truth__item h5{
+		font-size: 25px;
+	}
+	.myth-truth__item p{
+		font-size: 18px;
+	}
+	.myth-truth__item h6, .myth-truth h2{
+		font-size: 28px;
+	}
+	.myth-truth__item .button{
+		max-width: 100%;
+		font-size: 14px;
+	}
+	//end-myth
 }
 
 @include mq($max-width: 450px) {
