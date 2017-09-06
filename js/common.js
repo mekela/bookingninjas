@@ -59,6 +59,9 @@ $(document).ready(function() {
 	$( ".truth__btn" ).click(function() {
 	  $(this).closest('.myth-truth__block').addClass( "active");
 	});
+	$( ".myth__btn" ).click(function() {
+	  $(this).closest('.myth-truth__block').removeClass( "active");
+	});
 
 	//tabs
 	$('.integration_tabs li a').click(function(event){
