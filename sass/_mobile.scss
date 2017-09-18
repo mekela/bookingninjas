@@ -430,6 +430,20 @@
 	.feedback_button .button{
 		width: 100%;
 	}
+
+	.empty_page{
+		flex-direction: column;
+		  justify-content: center;
+		  align-items: center;
+	}
+	.empty_page-left{
+		width: 100%;
+	}
+	.empty_page-right{
+		order: -1;
+		width: 100%;
+		padding-bottom: 30px;
+	}
 }
 
 @include mq($max-width: 550px) {

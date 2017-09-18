@@ -2404,3 +2404,47 @@
 		}
 /*----------end-myth-truth------------*/
 
+/*----------404------------*/
+.empty_page{
+	display: flex;
+	padding: 50px 70px;
+	box-sizing: border-box;
+	justify-content: center;
+  	align-items: center;
+  	h3{
+  		color: #373737;
+  		font-size: 72px;
+  		padding-bottom: 20px;
+  	}
+  	h4{
+		font-size: 28px;
+  		color: #5b5b5b;
+  	}
+  	h5{
+  		color: #666666;
+  		font-size: 18px;
+  		padding: 15px 0;
+  	}
+  	p{
+  		color: #525252;
+  		font-size: 16px;
+  	}
+  	ul{
+  		padding: 15px 0 0 0;
+  		line-height: 33px;
+  		li{
+  			a{
+  				color: #06a1e1;
+  				font-size: 16px;
+  				text-decoration: none;
+  				&:hover{
+  					text-decoration: underline;
+  				}
+  			}
+  		}
+  	}
+}
+	.empty_page-left, .empty_page-right{
+		width: 50%;
+	}
+/*----------end-404------------*/
