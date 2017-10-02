@@ -5901,6 +5901,10 @@ textarea {
   top: 50px;
 }
 
+.process__main-title {
+  position: relative;
+}
+
 .process__main-title section {
   height: 160px;
   border-left: 2px solid #007dbf;
@@ -6032,6 +6036,55 @@ textarea {
 
 .process__speed p {
   padding-bottom: 12px;
+}
+
+.process__icn {
+  position: relative;
+}
+
+.process__icn:hover .process__popup {
+  display: block;
+}
+
+.process__popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 935px;
+  border-radius: 2px;
+  border: 1px solid #d56e00;
+  box-shadow: 0 2px 3px #c7c7c7;
+  font-size: 15px;
+  color: #303030;
+  line-height: 24px;
+  padding: 15px;
+  background: #fff6bd;
+  z-index: 10;
+}
+
+.process__popup:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+  border-color: transparent transparent #d56e00 transparent;
+}
+
+.process__popup:after {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+  border-color: transparent transparent #fff6bd transparent;
 }
 
 /*---------end-process----------*/
