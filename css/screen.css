@@ -5891,7 +5891,7 @@ textarea {
 
 .process__row.phase7 .process__main-title img {
   position: absolute;
-  bottom: 100px;
+  bottom: 43px;
   left: 0;
 }
 
@@ -5927,6 +5927,16 @@ textarea {
   padding-right: 9px;
   margin-right: 134px;
   border-right: 2px solid #007dbf;
+}
+
+.process__main-title.text_right .process__popup {
+  right: 0;
+  left: auto;
+}
+
+.process__main-title.text_right .process__popup:before, .process__main-title.text_right .process__popup:after {
+  left: auto;
+  right: 10px;
 }
 
 .process__main-title.text_left img {
