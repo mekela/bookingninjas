@@ -10,6 +10,7 @@
 	height: 100px;
 	position: fixed;
 	top: 0;
+	 top:0;
 	left: 0;
 	width: 100%;
 	z-index: 100;
@@ -2495,3 +2496,116 @@
 		width: 50%;
 	}
 /*----------end-404------------*/
+
+/*--------------tour--------------*/
+.tour{
+	position: relative;
+}
+	.tour__nav{
+		border-top: 2px solid #22acca;
+		padding: 14px 0;
+		background:#e2e2e2;
+		text-transform: uppercase;
+		.container{
+			display: flex;
+ 			justify-content: space-between;
+ 			width: auto;
+ 			padding-left: 5%; 
+ 			padding-right: 5%; 
+		}
+		strong{
+			font-size: 18px;
+			color: #454545;
+			text-transform: uppercase;
+			font-weight: normal;
+		}
+		li{
+			display: inline-block;
+			a{
+				width: 28px;
+				height: 28px;
+				text-align: center;
+				line-height: 28px;
+				border-radius: 50%;
+				color: #718a8f;
+				font-size: 18px;
+				display: inline-block; 
+				text-decoration: none;
+			
+			&.active, &:hover{
+				
+					background:#12a7c7;
+					color: #fff;
+				}
+			}
+			&.tour_pager_arr{
+				top: 3px;
+				position: relative; 
+				width: 28px;
+				height: 28px;
+				cursor: pointer;
+				text-align: center;
+				line-height: 28px;
+				a{
+					background: none;
+				}
+				&:last-child{
+					img{
+						@include mirror_flip;
+					}
+				}
+			}
+		}
+	}
+	.tour__block{
+		background:#96b7be;
+		text-align: center;
+		padding: 50px  0 0 0; 
+	}
+		.tour__item{
+			display: none;
+			//display: inline-block;
+			position: relative;
+			top: 3px;
+			img{
+				max-width: 95%;
+				margin: 0 auto;
+				display: block;
+			}
+			&.active{
+				display: inline-block;
+			}
+		}
+		.tour__popup{
+			position: absolute;
+			right: 14px;
+			top: 15%;
+			border-radius: 3px;
+			background:#d4dfe1;
+			padding: 20px;
+			text-align: left;
+			color: #535353;
+			font-size: 18px;
+			z-index: 99;
+			p{
+				padding: 0 0 20px 0;
+			}
+			.button{
+				text-transform: uppercase;
+				min-width: 70px;
+				@include button_gradient_hover('');
+				&:hover{
+					color: #009ddc;
+					background: none;
+				}
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				left: -14px;
+				top: 50%;
+				margin-top: -10px;
+				@include arr(15,20, #d4dfe1, l);
+			}
+		}
+/*--------------end-tour--------------*/

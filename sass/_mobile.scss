@@ -444,6 +444,28 @@
 		width: 100%;
 		padding-bottom: 30px;
 	}
+
+	.tour__nav{
+		.container{
+			display: block;
+			text-align: center;
+		}
+		strong{
+			display: block;
+			padding-bottom: 10px;
+		}
+	}
+	.tour__popup{
+		padding: 10px;
+		font-size: 12px;
+	}
+	.tour__popup p{
+		padding-bottom: 5px;
+	}
+	.tour__popup .button{
+		min-width: 50px;
+		padding: 4px 10px;
+	}
 }
 
 @include mq($max-width: 550px) {

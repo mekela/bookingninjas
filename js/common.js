@@ -71,6 +71,13 @@ $(document).ready(function() {
         $('.integration_tab').hide();
         $($(this).attr('href')).show();
     });
+     $('.tour__nav a').click(function(event){
+        event.preventDefault();
+        $('.tour__nav a').removeClass('active');
+        $(this).addClass('active');
+        $('.tour__item').removeClass('active');
+        $($(this).attr('href')).addClass('active');
+    });
 
 
 	
