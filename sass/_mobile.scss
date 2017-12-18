@@ -3,6 +3,23 @@
 
 
 //styles for custom device width
+@include mq($min-width: 1400px) {
+	.lg-video{
+		display: block;
+	}
+}
+
+@include mq($min-width: 800px) {
+	.md-video{
+		display: block;
+	}
+}
+@include mq($min-width: 300px) {
+	.sm-video{
+		display: block;
+	}
+}
+
 @include mq($max-width: 1400px) {
 	.about_wrap .float_left{
 		margin-left: 0;

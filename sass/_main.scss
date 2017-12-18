@@ -89,12 +89,20 @@
 		}
 	}
 		.bnr_bg{
-			height: 747px;
+			height: 100%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 100%;
+			transform: translateX(-50%) translateY(-50%);
 			text-align: center;
-			background:url(../img/bnr.jpg) no-repeat center top;
+			//background:url(../img/bnr.jpg) no-repeat center top;
 			img{
 				opacity: 0;
 			}
+		}
+		.bnr_bg-video{
+			display: none; 
 		}
 		.bnr_txt{
 			position: absolute;

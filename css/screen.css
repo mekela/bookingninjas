@@ -3860,13 +3860,23 @@ textarea {
 }
 
 .bnr_bg {
-  height: 747px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
   text-align: center;
-  background: url(../img/bnr.jpg) no-repeat center top;
 }
 
 .bnr_bg img {
   opacity: 0;
+}
+
+.bnr_bg-video {
+  display: none;
 }
 
 .bnr_txt {
@@ -6875,6 +6885,24 @@ textarea {
 }
 
 /*--------------end-tour--------------*/
+@media only screen and (min-width: 1400px) {
+  .lg-video {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .md-video {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  .sm-video {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .about_wrap .float_left {
     margin-left: 0;
