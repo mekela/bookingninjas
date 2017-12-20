@@ -3896,6 +3896,12 @@ textarea {
   text-align: center;
 }
 
+.bnr_txt article {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 25px;
+}
+
 .bnr_txt h6 {
   font-size: 48px;
   font-weight: 300;
@@ -6885,7 +6891,7 @@ textarea {
 }
 
 /*--------------end-tour--------------*/
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1360px) {
   .lg-video {
     display: block;
   }
