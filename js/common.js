@@ -30,6 +30,9 @@ $(document).ready(function() {
 	$('.product_slider_item').bxSlider({
 	  pagerCustom: '.product_slider_nav'
 	});
+	$('.customer-screenshot ul').bxSlider({
+		
+	});
 
 	//wow
 	new WOW().init();
