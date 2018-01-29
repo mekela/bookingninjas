@@ -3763,8 +3763,6 @@ textarea {
 
 /*----------header----------*/
 .header {
-  position: relative;
-  overflow: hidden;
   background: #f3f4f5;
   height: 100px;
   position: fixed;
@@ -3773,6 +3771,10 @@ textarea {
   left: 0;
   width: 100%;
   z-index: 100;
+}
+
+.header .container {
+  overflow: visible;
 }
 
 .logo {
@@ -3811,7 +3813,6 @@ textarea {
 .menu {
   padding-top: 40px;
   position: relative;
-  overflow: hidden;
   text-align: center;
 }
 
@@ -3822,6 +3823,11 @@ textarea {
   font-weight: 300;
   text-transform: uppercase;
   padding: 0 25px;
+  position: relative;
+}
+
+.menu li:hover ol {
+  display: block;
 }
 
 .menu li a {
@@ -3833,6 +3839,25 @@ textarea {
 
 .menu li a:active, .menu li a:hover, .menu li a.active {
   border-bottom: 2px solid #12a7c7;
+}
+
+.menu ol {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  background: #fff;
+  width: 200px;
+  text-align: left;
+  z-index: 100;
+  display: none;
+  border-radius: 9px;
+  padding: 10px 0;
+  box-shadow: 0 2px 3px #f3f4f5;
+}
+
+.menu ol li {
+  display: block;
+  padding-bottom: 5px;
 }
 
 /*----------end-header----------*/
@@ -7676,6 +7701,22 @@ textarea {
   .menu li a {
     font-size: 20px;
     padding: 10px 0;
+  }
+  .menu ol {
+    width: 100%;
+    position: static;
+    background: none;
+    box-shadow: none;
+    text-align: right;
+    display: block;
+    padding-bottom: 0;
+  }
+  .menu ol li {
+    padding-bottom: 0;
+  }
+  .menu ol li a {
+    font-size: 15px;
+    padding: 3px 0;
   }
   .capabilities_block figure figcaption {
     display: block;

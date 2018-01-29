@@ -5,7 +5,7 @@
  /*----------header----------*/
 
  .header{
-	@include povh('');
+	//@include povh('');
 	background:#f3f4f5;
 	height: 100px;
 	position: fixed;
@@ -14,6 +14,9 @@
 	left: 0;
 	width: 100%;
 	z-index: 100;
+	.container{
+		overflow: visible;
+	}
  }
  	.logo{
  		float: left;
@@ -45,7 +48,8 @@
 		}
 	.menu{
 		padding-top: 40px;
-		@include povh('');
+		//@include povh('');
+		position: relative;
 		text-align: center;
 		li{
 			display: inline-block;
@@ -54,6 +58,12 @@
 			font-weight: 300;
 			text-transform: uppercase;
 			padding: 0 25px;
+			position: relative;
+			&:hover{
+				ol{
+					display: block;
+				}
+			}
 			a{
 				text-decoration: none;
 				display: inline-block;
@@ -62,6 +72,23 @@
 				&:active, &:hover, &.active{
 					border-bottom: 2px solid #12a7c7;
 				}
+			}
+		}
+		ol{
+			position: absolute;
+			left: 0;
+			top: 25px;
+			background:#fff;
+			width: 200px;
+			text-align: left;
+			z-index: 100;
+			display: none;
+			border-radius: 9px;
+			padding: 10px 0;
+			box-shadow: 0 2px 3px #f3f4f5;
+			li{
+				display: block;
+				padding-bottom: 5px;
 			}
 		}
 	}
