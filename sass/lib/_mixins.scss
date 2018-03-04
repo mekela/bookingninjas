@@ -27,6 +27,31 @@ overflow: hidden;
   color: #fff;
 }
 
+@mixin button-yellow($button-yellow){
+  @include button-yellow_gradient('');
+  border-radius: 0px;
+  font-family: $ffamily;
+  color: #1d1d1d;
+  font-size: 18px;
+  padding: 17px 20px ;
+  min-width:250px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  display: inline-block;
+  -webkit-appearance: none;
+  margin-bottom:15px;
+  box-shadow: 0 7px 13px rgba(251,205, 4, 0.36);
+  &:hover{
+    @include button-yellow_gradient_hover('');
+  }
+}
+@mixin button-yellow_gradient($button-yellow_gradient){
+  background: #fbcd04;
+}
+@mixin button-yellow_gradient_hover($button-yellow_gradient_hover){
+  background: #e7bc00;
+}
 @mixin input($input){
   width: 300px;
   height: 39px;
@@ -56,7 +81,7 @@ $gradient: linear-gradient(to right, #d22beb 0%, #d22beb 0%, #1a94f2 100%);
 $white: #fff;
 $black: #000;
 $fsize: 14px;
-$ffamily:  'Open Sans';
+$ffamily:  MuseoSansCyrl;
 
 //custom font family
 $fontfamily:  'Clear Sans';
@@ -153,13 +178,12 @@ $breaklarge: 1180px;
 }
 
 //add fast font-family
-@mixin font($alias, $name) {
+@mixin font($alias, $name, $weight, $fstyle) {
   @font-face {
     font-family: $alias;
-    src: url("../fonts/" + $name + ".eot");
-    src: url("../fonts/" + $name + ".eot?#iefix") format("embedded-opentype"), url("../fonts/" + $name + ".woff") format("woff"), url("../fonts/" + $name + ".ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+    src: url("../fonts/" + $name + ".woff2") format("woff2"), url("../fonts/" + $name + ".otf") format("opentype");
+    font-weight: $weight;
+    font-style: $fstyle;
   }
 }
 

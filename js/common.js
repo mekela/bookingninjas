@@ -7,6 +7,10 @@ $(document).ready(function() {
 			}
 		}
 	});
+	//menu
+	$('.nav-trigger').click(function(){
+		$(this).next().slideToggle('fast');
+	});
 	$(".thumb").fancybox({
 		prevEffect	: 'none',
 		nextEffect	: 'none',

@@ -106,6 +106,10 @@ video::-webkit-media-controls {
     @include button_gradient_hover('');
   }
 }
+.button-secondary{
+  @include button-yellow(''); 
+}
+
 input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea{
    @include input('');
    &:focus{
@@ -161,8 +165,8 @@ textarea{
 @include povh('');
 }
 
-.container{
-width:1100px;
-margin:0 auto;
-@include povh('');
-}
+// .container{
+// width:1100px;
+// margin:0 auto;
+// @include povh('');
+// }

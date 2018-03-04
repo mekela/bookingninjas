@@ -670,3 +670,187 @@
 		}
 	}
 }
+
+
+// Normally mainpage media styles
+// You can read about usage in https://github.com/paranoida/sass-mediaqueries 
+
+
+//styles for custom device width
+@include mq($max-width: 1600px) {
+  .strategic{
+    background: url(../img/benefit-bg.jpg) repeat-x top, url(../img/strategic-bg.png) no-repeat right center;
+  }
+}
+
+@include mq($max-width: 1200px) {
+  .implement{
+    height: auto;
+    padding-bottom:40px;
+  }
+  .title h6{
+    font-size:40px;
+  }
+  .tag-circle__block{
+    background: none;
+    height: auto;
+  }
+  .tag-circle__block h5{
+    position: static;
+    width:100%;
+    margin-left:0;
+    br{
+      display: none;
+    }
+  }
+  .tag-circle__item{
+    width:100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+  .tag-circle__img{
+    order: -1;
+    margin:0 auto;
+  }
+  .tag-circle__item span b{
+    border: none;
+  }
+  .tag-circle__item span b:before{
+    opacity:0;
+  }
+  .tag-circle__item span{
+    display: block;
+    text-align: center;
+    padding-bottom:30px;
+    padding-top:15px;
+  }
+  .tag-circle__item.five span b{
+    border-top: none;
+    margin-top:0;
+    padding-top:0;
+  }
+  .strategic__block figure{
+    margin-bottom:20px;
+  }
+  .strategic {
+    background: url(../img/benefit-bg.jpg) repeat-x top;
+  }
+  .navigation li{
+    padding-left:10px;
+  }
+  .foot_left{
+    padding-right:30px;
+  }
+}
+
+@include mq($max-width: 992px) {
+  img{
+    max-width:100%;
+  }
+  .bnr-text h1{
+    font-size:32px;
+    br{
+      display: none;
+    }
+  }
+  .foot_left{
+    float: none;
+    width:100%;
+    padding-right:0;
+    text-align: center;
+  }
+  .implement{
+    margin-top:21px;
+    padding-top:50px;
+  }
+  .title h6{
+    display: none;
+  }
+  .title h2{
+    font-size:25px;
+  }
+  .title h5{
+    font-size:18px;
+  }
+  .nav-trigger{
+    text-align: right;
+    display: block;
+    font-size:24px;
+    color: #fff;
+    padding-top:10px;
+  }
+  .navigation li{
+    display: block;
+    position: relative;
+    padding-bottom:10px;
+  }
+  .navigation li a.active, .navigation li a:hover{
+    border-bottom: none;
+  }
+  .navigation{
+  	display: none;
+  }
+}
+@include mq($max-width: 767px) {
+  .bnr-video__item{
+    &:before,&:after{
+      display: none;
+    }
+  }
+  .implement__item{
+    margin-top:15px;
+  }
+  .implement__item figcaption{
+    font-size:18px;
+  }
+  .bnr-contact section{
+    font-size:18px;
+  }
+  .foot_center{
+    width:100%;
+    float: none;
+    text-align: center;
+  }
+  .foot_right{
+    margin:0 auto;
+    float: none;
+    margin-top:20px;
+  }
+  .foot_bottom{
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@include mq($max-width: 550px) {
+  .implement, .benefit{
+    background: #fff;
+  }
+  .implement__item span{
+    float: none;
+    margin:0 auto;
+    display: block;
+    border: none;
+    padding:0;
+  }
+  .implement__item figcaption{
+    line-height:1.5;
+    text-align: center;
+    padding:0;
+  }
+  .foot_right input, .foot_right textarea{
+    max-width:97%; 
+  }
+  .nav-trigger{
+    padding-top:0px;
+  }
+  .navigation {
+    width:200px;
+    float: right;
+  }
+}
