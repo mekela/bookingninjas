@@ -3023,11 +3023,15 @@
  /*----------header----------*/
 .index{
   background: url(../img/top-bg.jpg) no-repeat center top;
+  .header{
+  	background: none;
+  }
 }
  .header{
 	@include povh('');
    padding-top:15px;
    padding-bottom:15px;
+   background:#003c4c;
  }
  .nav-trigger{
    display: none;

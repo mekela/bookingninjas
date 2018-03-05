@@ -7294,11 +7294,16 @@ textarea {
   background: url(../img/top-bg.jpg) no-repeat center top;
 }
 
+.index .header {
+  background: none;
+}
+
 .header {
   position: relative;
   overflow: hidden;
   padding-top: 15px;
   padding-bottom: 15px;
+  background: #003c4c;
 }
 
 .nav-trigger {
