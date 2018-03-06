@@ -366,6 +366,24 @@
 			}
 		}
 	}
+	.navigation li{
+		ol{ 
+			width: 100%;
+			position: static;
+			background: none;
+			box-shadow: none;
+			text-align: right;
+			display: block;
+			padding-bottom: 0;
+			li{
+				padding-bottom: 0; 
+				a{
+					font-size: 15px; 
+					padding: 3px 0
+				}
+			}
+		}
+	}
 	.capabilities_block figure figcaption{
 		display: block;
 		text-align: center;

@@ -7299,8 +7299,6 @@ textarea {
 }
 
 .header {
-  position: relative;
-  overflow: hidden;
   padding-top: 15px;
   padding-bottom: 15px;
   background: #003c4c;
@@ -7320,7 +7318,12 @@ textarea {
 
 .navigation li {
   display: inline-block;
+  position: relative;
   padding: 0 0 0 35px;
+}
+
+.navigation li:hover ol {
+  display: block;
 }
 
 .navigation li a {
@@ -7332,6 +7335,31 @@ textarea {
 
 .navigation li a.active, .navigation li a:hover {
   border-bottom: 2px solid #11e7f7;
+}
+
+.navigation li ol {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 200px;
+  text-align: left;
+  z-index: 100;
+  display: none;
+  border-radius: 0px;
+  padding: 10px 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.navigation li ol li {
+  display: block;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.navigation li ol li:last-child {
+  margin-bottom: 5px;
 }
 
 /*----------end-header----------*/
@@ -7375,6 +7403,8 @@ textarea {
   z-index: 5;
   margin: 0 auto;
   max-width: 100%;
+  height: 472px;
+  width: 752px;
 }
 
 .bnr-video__item:before, .bnr-video__item:after {
@@ -8347,6 +8377,22 @@ textarea {
     padding-bottom: 0;
   }
   .menu ol li a {
+    font-size: 15px;
+    padding: 3px 0;
+  }
+  .navigation li ol {
+    width: 100%;
+    position: static;
+    background: none;
+    box-shadow: none;
+    text-align: right;
+    display: block;
+    padding-bottom: 0;
+  }
+  .navigation li ol li {
+    padding-bottom: 0;
+  }
+  .navigation li ol li a {
     font-size: 15px;
     padding: 3px 0;
   }
