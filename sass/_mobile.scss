@@ -145,10 +145,50 @@
 }
 //end - process
 
-.timeline-range{
-	padding-left: 20px;
-	padding-right: 20px;
-}
+	.timeline-range{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	//implementation
+	.implementation-road{
+		min-height: 1px;
+		background: none;
+	}
+	.implementation-road__row{
+		display: block;
+		min-height: 1px;
+		margin-bottom: 30px;
+		&:nth-child(2n){
+
+			.implementation-road__col{
+				border-left: 3px solid #0d90d5;
+				border-right: none;
+				padding-right: 13px; 
+				margin-right: 0px;
+			}
+		}
+	}
+	.implementation-road__row:nth-child(3) .implementation-road__col{
+		margin-left: 0;
+	} 
+	.implementation-road__col{
+		width: auto;
+		text-align: left;
+	}
+	.implementation-road__row.implementation-road-bottom{
+		margin-top: 0;
+		margin-left: 0;
+	}
+	.implementation-road-img{
+		display: block;
+	}
+	.implementation-road__row:nth-child(4) .implementation-road__col{
+		width: auto;
+	}
+	.implementation-road__row.implementation-road-bottom .implementation-road__col-bottom{
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
 }
 @include mq($max-width: 1000px) {
 	.solution_logo{
