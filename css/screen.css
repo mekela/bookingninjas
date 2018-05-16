@@ -4644,6 +4644,8 @@ textarea {
   margin-bottom: 70px;
   background: url(../img/solution_bg-new.png) no-repeat center;
   overflow: visible;
+  position: relative;
+  width: 1074px;
 }
 
 .solutions_wrap figure {
@@ -4693,12 +4695,12 @@ textarea {
 
 .solutions_wrap figure.solution5 {
   top: 481px;
-  left: 266px;
+  left: 286px;
 }
 
 .solutions_wrap figure.solution6 {
   top: 499px;
-  left: 435px;
+  left: 455px;
   width: 250px;
 }
 
@@ -4708,13 +4710,18 @@ textarea {
 }
 
 .solutions_wrap figure.solution8 {
-  top: 422px;
-  left: 882px;
+  top: 416px;
+  left: 900px;
 }
 
 .solutions_wrap figure.solution10 {
   top: 434px;
-  left: 68px;
+  left: 88px;
+}
+
+.solutions_wrap figure.solution11 {
+  top: 366px;
+  left: -48px;
 }
 
 .solutions_wrap figure:hover .solution_popup {
@@ -4807,7 +4814,7 @@ textarea {
 
 .solution_logo {
   position: absolute;
-  top: 270px;
+  top: 290px;
   width: 100%;
   left: 0;
 }
@@ -5060,6 +5067,7 @@ textarea {
   text-transform: uppercase;
   float: left;
   padding-bottom: 0;
+  background: none;
 }
 
 .contact_top .title:after {
@@ -5158,6 +5166,11 @@ textarea {
 
 .advantage_wrap {
   padding: 44px 0;
+}
+
+.advantage_wrap .title {
+  background: none;
+  margin-bottom: 0;
 }
 
 .advantage_block {

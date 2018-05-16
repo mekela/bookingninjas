@@ -823,11 +823,13 @@
 
 /*----------solutions----------*/
 .solutions_wrap{
-	height: 667px;
-	text-align: center;
-	margin-bottom: 70px;
-	background:url(../img/solution_bg-new.png) no-repeat center;
-	overflow: visible;
+    height: 667px;
+    text-align: center;
+    margin-bottom: 70px;
+    background: url(../img/solution_bg-new.png) no-repeat center;
+    overflow: visible;
+    position: relative;
+    width: 1074px;
 	figure{
 		position: absolute;
 		left: 0;
@@ -866,11 +868,11 @@
 		}	
 		&.solution5{
 			top: 481px;
-    		left: 266px;
+    		left: 286px;
 		}	
 		&.solution6{
 			top: 499px;
-    		left: 435px;
+    		left: 455px;
 			width: 250px;
 		}	
 		&.solution7{
@@ -878,12 +880,16 @@
     		left: 684px;
 		}	
 		&.solution8{
-			top: 422px;
-    		left: 882px;
+			top: 416px;
+    		left: 900px;
 		}	
 		&.solution10{
 			top: 434px;
-    		left: 68px;
+    		left: 88px;
+		}
+		&.solution11{
+			 top: 366px;
+    		left: -48px;
 		}
 		&:hover{
 			.solution_popup{
@@ -969,7 +975,7 @@
 	}
 	.solution_logo{
 		position: absolute;
-		top: 270px;
+		top: 290px;
 		width: 100%;
 		left: 0;
 	}
@@ -1168,6 +1174,7 @@
 				&:after{
 					margin: 15px 0 0  0;
 				}
+				background: none; 
 			}
 			.contact_txt{
 				float: right;
@@ -1251,6 +1258,10 @@
 
 .advantage_wrap{
 	padding: 44px 0;
+	.title{
+		background: none;
+		margin-bottom: 0;
+	}
 }
 	.advantage_block{
 		padding: 0 0 10px 0;
