@@ -286,6 +286,28 @@
 			}
 		}
 	}
+	.industrial_revolution__top{
+		background: none;
+		height: auto;
+	}
+	.industrial_revolution__tags{
+		height: auto;
+		display: block;
+	}
+	.industrial_revolution__tags-date{
+		margin-bottom: 40px;
+		margin-top: 15px;
+	}
+	.industrial_revolution__tags-item{
+		max-width: 100%;
+		min-width: 100%;
+	}
+	.industrial_revolution__top-text{
+		width: 100%;
+	}
+	.industrial_revolution__center-item > b{
+		min-width: 90px;
+	}
 }
 @include mq($max-width: 910px) {
 	.benefits_block {
