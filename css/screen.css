@@ -8503,6 +8503,13 @@ textarea {
   text-transform: uppercase;
 }
 
+.badge {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 49;
+}
+
 @media only screen and (min-width: 1360px) {
   .lg-video {
     display: block;
@@ -8528,6 +8535,12 @@ textarea {
   }
   .about_wrap .float_left img {
     max-width: 100%;
+  }
+  .badge {
+    max-width: 100px;
+  }
+  .badge img {
+    width: 100%;
   }
 }
 
@@ -9127,6 +9140,9 @@ textarea {
   }
   .gdpr-bottom__block {
     padding-top: 0;
+  }
+  .badge {
+    max-width: 55px;
   }
 }
 

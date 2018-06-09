@@ -28,6 +28,12 @@
 			max-width: 100%;
 		}
 	}
+	.badge{
+		max-width: 100px;
+		img{
+			width: 100%;
+		}
+	}
 }
 
 @include mq($max-width: 1200px) {
@@ -641,6 +647,9 @@
 	}
 	.gdpr-bottom__block{
 		padding-top: 0;
+	}
+	.badge{
+		max-width: 55px;
 	}
 }
 
