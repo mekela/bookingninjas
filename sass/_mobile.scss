@@ -46,6 +46,12 @@
 			padding: 0 10px;
 		}
 	}
+	.einstein-quote img{
+		left: -27px; 
+	}
+	.einstein-quote .container:after{
+		display: none;
+	}
 }
 
 @include mq($max-width: 1100px) {
@@ -313,6 +319,11 @@
 	}
 	.industrial_revolution__center-item > b{
 		min-width: 90px;
+	}
+	.einstein-quote img{
+		position: static;
+		display: block;
+		margin: 0 auto;
 	}
 }
 @include mq($max-width: 910px) {
@@ -650,6 +661,10 @@
 	}
 	.badge{
 		max-width: 55px;
+	}
+	.einstein-quote blockquote{
+		padding: 75px 20px 0 20px; 
+		font-size: 20px;
 	}
 }
 
