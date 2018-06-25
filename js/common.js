@@ -85,6 +85,13 @@ $(document).ready(function() {
         $('.tour__item').removeClass('active');
         $($(this).attr('href')).addClass('active');
     });
+     $('.customer__nav a').click(function(e){
+        event.preventDefault(); 
+        $('.customer__nav li').removeClass('active');
+        $(this).parent().addClass('active');
+        $('.customer-top__text').removeClass('active');
+        $($(this).attr('href')).addClass('active');
+    });
 
 
 	

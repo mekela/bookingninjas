@@ -512,7 +512,10 @@
 		font-size: 12px;
 	}
 	.customer-top__text{
-		display: block;
+		display: none;
+		&.active{
+			display: block;
+		}
 	}
 	.customer-top__left, .customer-top__right{
 		width: 100%;
