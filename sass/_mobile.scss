@@ -326,6 +326,16 @@
 		margin: 0 auto;
 	}
 }
+@include mq($max-width: 992px) {
+	.data-top{
+		background:#01a4e4;
+	}
+	.data-situation__img:before{
+		margin-left: 0;
+		left: 0 !important;
+		width: 100%;
+	}
+}
 @include mq($max-width: 910px) {
 	.benefits_block {
 		& > div{
@@ -668,6 +678,27 @@
 	.einstein-quote blockquote{
 		padding: 75px 20px 0 20px; 
 		font-size: 20px;
+	}
+	.data-top h2{
+		font-size: 28px;
+		text-align: center;
+	}
+	.data-top blockquote{
+		margin-left: 0 ;
+		font-size: 20px;
+	}
+	.data-top h6{
+		font-size: 24px;
+		text-align: center;
+	}
+	.data-situation__img{
+		margin-bottom: 20px;
+	}
+	.data-situation h5{
+		font-size: 24px; 
+	}
+	.data-situation__img h6{
+		font-size: 22px;
 	}
 }
 

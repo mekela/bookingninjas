@@ -4194,3 +4194,104 @@
 		margin-top: -63px;
 	}
 }
+//data
+.data-top{
+	padding: 90px 0;
+	margin-bottom: 60px;
+	color: #fff;
+	font-size: 18px;
+	background:#01a4e4 url('../img/data-is-the-new-currency.jpg') center top no-repeat;
+	h2{
+		font-size: 48px;
+		text-transform: uppercase;
+		padding-bottom: 30px;
+	}
+	blockquote{
+		font-size: 30px;
+		padding: 50px 0 40px 100px;
+		margin-left: 30px;
+		background:url(../img/icons/qoute.png) no-repeat top left;
+		font-weight: 300;
+		strong{
+			display: block;
+			text-align: right; 
+			font-weight: 500;
+			padding: 10px 0 0 0;
+		}
+	}
+	h6{
+		font-size: 30px;
+		padding-bottom: 40px;
+	}
+}
+.data-situation{
+	font-size: 18px;
+	color: #393939;
+	p{
+		padding-bottom: 20px;
+	}
+	.row{
+		margin-bottom: 70px;
+		&:nth-child(even){
+			.data-situation__img{
+				h6{
+					order:1;
+					text-align: right;
+					display: flex;
+					justify-content: flex-end;
+					flex-direction: column; 
+					&:after{
+						align-self: flex-end;
+					}
+				}
+			}
+			.data-situation__img:before {
+			    margin-left: auto;
+			    left: 110px;
+			}
+		}
+	}
+	h5{
+		color: #11b0fc;
+		font-size: 36px;
+		text-transform: uppercase;
+		text-align: center; 
+	}
+}
+.data-situation__img{
+	//text-align: right;
+	position: relative;
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+	img, h6{
+		position: relative;
+		z-index: 2;
+	}
+	h6{
+		font-size: 34px;
+		color: #393939;
+		order: -1;
+		text-transform: uppercase;
+		&:after{
+			display: block;
+			width: 80px;
+			height: 5px;
+			background:#11b0fc;
+			content: '';
+			margin-top: 12px;
+		}
+	}
+	&:before{
+		content: '';
+		background:url(../img/benefit-bg.jpg) repeat-x top left;
+		position: absolute;
+		width: 745px;
+		top: 50%;
+		margin-top: -80px;
+		margin-left: -470px;
+		left: 0;
+		height: 160px;
+	}
+}
