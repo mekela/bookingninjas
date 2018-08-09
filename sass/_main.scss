@@ -4295,3 +4295,192 @@
 		height: 160px;
 	}
 }
+
+//form
+
+.einstein-form-title{
+    font-weight: 600;
+    color: #393939;
+    font-size: 26px;
+    text-align: center;
+    padding: 30px 0;
+}
+.einstein-form-title:after{
+    content: url(../img/dots.png); 
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.einstein-form-content{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.enstein{
+    position: relative;
+    color: #313131;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+    .enstein:before{
+        content: url(../img/enstain.png);
+        position: absolute;
+        right: 0;
+    }
+    .enstein h6{
+        padding: 20px;
+        background: #2c4f7e;
+        width: 335px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+.einstein-form-form{
+    padding-bottom: 10px;
+}    
+.form__item{
+    margin-bottom: 10px;
+    background: #f2f2f2;
+    padding: 14px;
+}
+    .form__item ul{
+        list-style: none;
+        text-align: left;
+    }
+    .form__item li{
+        padding:  0 9px;
+        display: inline-block;
+        font-size: 16px;
+        color: #4a4949;
+        position: relative;
+    }
+    .form__item label{
+        position: relative;
+    }
+    .form__item span:before{
+        content: '';
+        border-radius: 50%;
+        border: 1px solid #d0d0d0;
+        width: 21px;
+        height: 21px;
+        display: block;
+        position: absolute;
+        background: #fff;
+        left: 0;
+        top: 0;
+    }
+    .form__item span{
+        padding-left: 29px;
+    }
+    .form__item input[type=radio]{
+        opacity: 0;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .form__item input:checked + span:after{
+        content: '';
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        display: block;
+        position: absolute;
+        background: #039fe8;
+        left: 5px;
+        top: 5px;
+        z-index: 1;
+    }
+    .form__title{
+        font-size: 18px;
+        color: #4a4949;
+        padding:  0 0 0 60px;
+        min-height: 60px;
+        font-weight: 700;
+        background: url(../img/question.png) no-repeat left top;
+    }
+    input.input-text{
+        border: none;
+        background: none;
+        width: 195px;
+        max-width: 100%; 
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 5px;
+        outline: none;
+        border-bottom: 1px solid #3d3d3d;
+    }
+    input.input-text.white{
+        width: 100%;
+        background: #ffffff;
+        height: 35px;
+    }
+.einstein-form-subtitle{
+    font-size: 30px;
+    text-align: center;
+    color: #336699;
+    padding-bottom: 25px;
+}
+
+.form-bottom{
+    border-radius: 2px;
+    border: 2px solid #039fe8;
+    padding: 15px;
+}
+    .form-bottom__item {
+        padding-bottom: 18px;
+    }
+    .form-bottom__item:last-child{
+        padding-bottom: 0;
+    }
+        .form-bottom__item label{
+            display: block;
+            color: #474747;
+            font-size: 14px;
+            padding-bottom: 9px;
+        }
+        .form-bottom__item input{
+            width: 100%;
+            border-radius: 2px;
+            border: 1px solid #e0e0e0;
+            height: 44px;
+            padding: 0 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+h6.bottom-title{
+    color: #336699;
+    font-size: 20px;
+    padding: 25px 0
+}
+.button-group{
+    text-align: center;
+    padding-bottom: 45px;
+}
+.einstein-form__container{
+	max-width: 700px
+}
+
+/*Media Queries*/
+@media screen and (max-width: 780px) {
+  
+  .enstein h6{
+    width: 100%;
+  }
+  .enstein br{
+    display: none;
+  }
+  .form__item li{
+    display: block;
+    margin-top: 10px;
+  }
+  .enstein:before{
+  	display: none;
+  }
+}

@@ -700,6 +700,22 @@
 	.data-situation__img h6{
 		font-size: 22px;
 	}
+	.enstein h6{
+    width: 100%;
+  }
+  .enstein br{
+    display: none;
+  }
+  .form__item li{
+    display: block;
+    margin-top: 10px;
+  }
+  .enstein:before{
+  	display: none;
+  }
+  .form__title{
+  	font-size: 15px;
+  }
 }
 
 @include mq($max-width: 550px) {
