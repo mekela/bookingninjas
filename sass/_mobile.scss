@@ -7,6 +7,17 @@
 	.lg-video{
 		display: block;
 	}
+	.why-key-text{
+		h2,h6{
+			font-size: 72px;
+		}
+		h2{
+			margin-top: -58px;
+		}
+		h6{
+			font-size: 100px;
+		}
+	}
 }
 
 @include mq($min-width: 800px) {
@@ -334,6 +345,17 @@
 		margin-left: 0;
 		left: 0 !important;
 		width: 100%;
+	}
+	.why-key, .why-grow{
+		height: auto;
+		padding: 20px 0;
+		background-size: cover;
+		.row{
+			height: auto;
+		}
+	}
+	.why-generation__img{
+		margin-top: 0;
 	}
 }
 @include mq($max-width: 910px) {
@@ -716,6 +738,23 @@
   .form__title{
   	font-size: 15px;
   }
+  .why-key{
+  	font-size: 18px;
+  }
+  .why-guarantee h5{
+  	font-size: 24px;
+  	text-align: center;
+  	padding-top: 20px;
+  }
+  .why-grow p{
+  	font-size: 18px;
+  	background: rgba(91, 192, 232, 0.8);
+  	padding: 20px;
+  }
+  .why-download-button span{
+  	display: block;
+  	font-size: 18px;
+  }
 }
 
 @include mq($max-width: 550px) {
@@ -808,6 +847,9 @@
 	.gdpr-center__img {
 	    min-width: 70px;
 	    padding: 15px;
+	}
+	.button-secondary{
+		padding: 0.5em 1em;
 	}
 }
 
