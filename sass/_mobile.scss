@@ -20,6 +20,12 @@
 	}
 }
 
+@include mq($min-width: 992px) {
+	.lang{
+	    top: 50%;
+	    margin-top: -16px;
+	}
+}
 @include mq($min-width: 800px) {
 	.md-video{
 		display: block;
@@ -224,6 +230,12 @@
 		max-width: 100%;
 		margin-bottom: 30px;
 	}
+	.prospective-think__img:before{
+		display: none;
+	}
+	.prospective-think{
+		padding: 30px 0;
+	}
 }
 @include mq($max-width: 1000px) {
 	.solution_logo{
@@ -356,6 +368,12 @@
 	}
 	.why-generation__img{
 		margin-top: 0;
+	}
+	.prospective-bnr h6{
+		font-size: 28px;
+	}
+	.prospective-bnr p{
+		font-size: 16px;
 	}
 }
 @include mq($max-width: 910px) {
@@ -754,6 +772,22 @@
   .why-download-button span{
   	display: block;
   	font-size: 18px;
+  }
+  .prospective-bnr{
+  	text-align: center;
+  	h6{
+  		padding: 15px 0;
+  		font-size: 24px;
+  	}
+  }
+  .prospective-btn h5{
+  	font-size: 24px;
+  }
+  .prospective-think{
+  	font-size: 16px;
+  }
+  .prospective-form h2{
+  	font-size: 24px;
   }
 }
 

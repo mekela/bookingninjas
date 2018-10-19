@@ -45,6 +45,15 @@ overflow: hidden;
   &:hover{
     @include button-yellow_gradient_hover('');
   }
+  &.btn-orange{
+    border-radius: 28px;
+    color: #fff;
+    box-shadow: 0 2px 0 rgba(171, 119, 0, 0.75);
+    background: #fdb000;
+    &:hover{
+      @include button-yellow_gradient('');
+    }
+  }
 }
 @mixin button-yellow_gradient($button-yellow_gradient){
   background: #fbcd04;
