@@ -236,6 +236,13 @@
 	.prospective-think{
 		padding: 30px 0;
 	}
+	.sales-top__img img{
+		float: none;
+		position: static;
+	}
+	.mission article{
+		width: auto;
+	}
 }
 @include mq($max-width: 1000px) {
 	.solution_logo{
@@ -374,6 +381,24 @@
 	}
 	.prospective-bnr p{
 		font-size: 16px;
+	}
+	.mission{
+		padding-bottom: 399px;
+		background-color: #fff9d9;
+
+	}
+	.mission .vision{
+		padding-left: 0;
+		color: #393939;
+	}
+	.sales-accordion__nav ul li a{
+		font-size: 18px;
+	}
+	.partners-sales{
+		img{
+			margin: 0 auto; 
+			display: block;
+		}
 	}
 }
 @include mq($max-width: 910px) {
@@ -788,6 +813,26 @@
   }
   .prospective-form h2{
   	font-size: 24px;
+  }
+  .sales-accordion__nav ul{
+  	display: block;
+  	li{
+  		width: 100%;
+  		border-left: 1px solid #dedede;
+  		a{
+  			height: auto;
+  			line-height: 1;
+  			padding: 1em;
+  		}
+  	}
+  }
+  .sales-top h2, .title-sales h2, .mission h4, .sales-accordion__content h6{
+  	font-size: 18px;
+  	padding-bottom: 10px;
+  }
+  .sales-top p, .title-sales h3, .mission p{
+  	font-size: 16px;
+  	padding-bottom: 10px;
   }
 }
 

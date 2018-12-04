@@ -92,6 +92,13 @@ $(document).ready(function() {
         $('.customer-top__text').removeClass('active');
         $($(this).attr('href')).addClass('active');
     });
+    $('.tab a').click(function(ev){
+        event.preventDefault();
+        $('.tab li a').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-content').hide();
+        $($(this).attr('href')).show();
+    });
 
 
 	
