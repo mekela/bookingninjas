@@ -69,6 +69,12 @@
 	.einstein-quote .container:after{
 		display: none;
 	}
+	.core-values-top{
+		p{
+			font-size: 20px;
+			line-height: 1.4;
+		}
+	}
 }
 
 @include mq($max-width: 1100px) {
@@ -399,6 +405,34 @@
 			margin: 0 auto; 
 			display: block;
 		}
+	}
+	.core-values-box article h4{
+		display: block;
+		text-align: center;
+		padding: 0;
+		margin: 0 0 20px 0;
+		position: static;
+	}
+	.core-values-box article{
+		&:before{
+			display: none;
+		}
+	}
+	.core-values-box__img{
+		margin: 0 auto;
+		margin-bottom: 20px;
+		width: 290px;
+		overflow: hidden;
+		position: relative;
+		//border: 2px solid #23b4fa;
+		img{
+			display: block;
+			max-width: 295px;
+			margin-left: -2px;
+			margin-bottom: -4px;
+			margin-right: -2px;
+		}
+		
 	}
 }
 @include mq($max-width: 910px) {
@@ -833,6 +867,29 @@
   .sales-top p, .title-sales h3, .mission p{
   	font-size: 16px;
   	padding-bottom: 10px;
+  }
+  .core-values-top{
+  	text-align: center;
+  	background: #23bbfa;
+  	height: auto;
+  	h5{
+  		font-size: 22px;
+  	}
+  	p{
+  		font-size: 16px;
+  	}
+  }
+  .core-values-title{
+  	font-size: 22px;
+  }
+  .core-values-box{
+  	text-align: center;
+  	article{
+  		font-size: 14px;
+  	}
+  }
+  .core-values-subtitle h6{
+  	font-size: 22px;
   }
 }
 
