@@ -827,22 +827,71 @@
 /*----------end modals----------*/
 
 /*----------solutions----------*/
-.solutions_wrap{
-    height: 667px;
+.solution-main{
+	.title{
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 36px;
+		padding-bottom: 40px;
+		&:after{
+			display: none;
+		}
+	}
+}
+.solution-title{
     text-align: center;
-    margin-bottom: 70px;
-    background: url(../img/solution_bg-new.png) no-repeat center;
+    background: url(../img/title-bg.png) repeat;
+    padding: 60px 0 15px 0;
+	//margin-bottom: 30px;
+	.title{
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 36px;
+		padding-bottom: 30px;
+		margin-bottom: 0;
+		position: relative;
+		z-index: 2;
+		&:after{
+			display: none;
+		}
+	}
+	&__hidden{
+		text-align: center;
+		text-shadow: 4px 7px 25px rgba(0, 0, 0, 0.12);
+		color: #ffffff;
+		font-size: 48px;
+		font-weight: 700; 
+		text-transform: uppercase;
+		letter-spacing: 2.4px;
+		position: absolute;
+		top: -40px; 
+		left: 0;
+		width: 100%;
+	}
+	.container{
+		position: relative;
+	}
+}
+.solutions_wrap{
+    //height: 667px;
+    text-align: center;
+    //margin-bottom: 70px;
+    background: url(../img/solutions.jpg) no-repeat center;
     overflow: visible;
     position: relative;
-    width: 1074px;
+	width: 100%;
+	height: 936px;
 	figure{
 		position: absolute;
 		left: 0;
 		top: 0;
-		width: 190px;
-		text-align: center;
-		color: #53545e;
-		font-size: 22px;
+		min-width: 190px;
+		text-align: left;
+		color: #252525;
+		font-size: 18px;
+		max-width: 223px;
+		font-weight: 300;
+		letter-spacing: 0.4px;
 		figcaption{
 			padding: 10px 0;
 			line-height: 1.1;
@@ -852,49 +901,59 @@
 			cursor: pointer;
 		}
 		&.solution1{
-			top: 99px;
-			left: 31px;
+			top: 153px;
+			left: 212px;		
 		}	
 		&.solution2{
-			top: 14px;
-			left: 268px;
+			top: 260px;
+   			 left: 65px;
 		}	
 		&.solution3{
-			top: 9px;
-			left: 465px;
+			top: 384px;
+			left: 7px;
 		}	
 		&.solution4{
-			top: 28px;
-    		left: 685px;
+			top: 512px;
+			left: 11px;
 		}	
 		&.solution9{
-		    top: 89px;
-		    left: 873px;
+			top: 381px;
+			left: 956px;
+			text-align: right;
 		}	
 		&.solution5{
-			top: 481px;
-    		left: 286px;
+			top: 624px;
+			left: 63px;		
 		}	
 		&.solution6{
-			top: 499px;
-    		left: 455px;
+			top: 708px;
+			left: 210px;
 			width: 250px;
 		}	
 		&.solution7{
-			top: 478px;
-    		left: 684px;
+			top: 155px;
+			left: 751px;
+			text-align: right;
 		}	
 		&.solution8{
-			top: 416px;
-    		left: 900px;
+			top: 259px;
+			left: 900px;
+			text-align: right;
 		}	
 		&.solution10{
-			top: 434px;
-    		left: 88px;
+			top: 487px;
+			left: 923px;
+			text-align: right;
 		}
 		&.solution11{
-			 top: 366px;
-    		left: -48px;
+			top: 623px;
+			left: 904px;
+			text-align: right;
+		}
+		&.solution12{
+			top: 727px;
+			left: 757px;
+			text-align: right;		
 		}
 		&:hover{
 			.solution_popup{
@@ -919,6 +978,13 @@
 			}
 		}
 	}
+}
+
+.solutions_block{
+	position: relative;
+	height: 936px;
+	margin: 0 auto;
+	width: 1159px;
 }
 	.solution_popup{
 		position: absolute;
@@ -1075,46 +1141,50 @@
 			}
 
 .bridge_wrap{
-	padding-bottom: 254px;
-	padding-top: 80px;
-	background:url(../img/bridge.jpg) no-repeat bottom center;
+	padding-bottom: 164px;
+	padding-top: 80px; 
+	background:url(../img/solutions-bridge.jpg) no-repeat bottom center;
 }
 	.bridge_block{
 		overflow: hidden;
+		max-width: 1100px;
+		margin: 0 auto;
 		&>div{
-			width: 50%;
+			//width: 50%;
 		}
 		figure{
 			float: left;
-			width: 190px;
+			width: 228px;
 			text-align: center;
 			color: #434343;
 			font-size: 24px;
 			figcaption{
-				padding-bottom: 20px;
+				padding-top: 20px;
 			}
 		}
 		section{
 			float: left;
-			width: 325px;
-			padding: 48px 0 0 0;
+			width: 147px;
+			padding: 1px 25px 0 25px;
+			font-weight: 100;
+			box-sizing: content-box;
 			strong{
 				float: left;
 				color: #20a9df;
 				font-size: 72px;
-				font-weight: normal;
+				font-weight: 100;
 				sup{
-					font-weight: 300;
-					font-size: 50px;
+					font-weight: 100;
+					font-size: 36px;
 				}
 			}
 			small{
 				float: left;
 				color: #575c5e;
 				font-size: 18px;
-				width: 220px;
-				margin-left: -30px;
-				padding-top: 60px;
+				width: 155px;
+				//margin-left: -30px;
+				//padding-top: 60px;
 			}
 		}
 	}
@@ -1124,26 +1194,39 @@
 	.solution_steps_block{
 		display: flex;
 		flex-wrap: nowrap;
-  		 justify-content: space-between;
+  		justify-content: space-between;
 	}
 	figure{
-		width: 315px;
 		text-align: center;
-		color: #484848;
-		font-weight: 300;
-		font-size: 30px;
 		position: relative;
-		&:before{
-			content: url(../img/icons/vs.png);
-			position: absolute;
-			right: -90px;
-			top: 90px;
-		}
+		color: #313131;
+		font-size: 20px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		padding: 5px;
+		margin: 0 20px;
+		box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.19);
+		border: 1px solid rgba(0, 0, 0, 0.08);
 		figcaption{
-			padding-top: 20px 0 0 0;
+			padding: 70px 20px;
+			display: block;
+			background: #f4f8fa;
+		}
+		div{
+			height: 165px;
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
 		}
 	}
 }
+	.solution_steps_button{
+		text-align: center;
+		padding: 50px 0 0 0;
+	}
 /*----------end solutions----------*/
 
 /*----------contacts----------*/
