@@ -260,15 +260,15 @@
 		figure{
 			position: static;
 			font-size: 14px;
-			width: 49%;
+			width: 100%!important;
 			padding-bottom: 20px;
-			border-left: 3px solid #dedede;
+			border-bottom: 3px solid #dedede;
 			box-sizing: border-box;
-			&.solution6 {
-				width: 49%;
-			}
-			&:nth-child(odd){
-				border: none;
+			text-align: left;
+			max-width: 100% !important;
+			padding-top: 20px;
+			figcaption{
+				text-align: center;
 			}
 		}
 	}
@@ -279,6 +279,7 @@
 	  align-items: center;
 	  position: relative;
 	  padding-top: 14px;
+	  display: block;
 	}
 	.smarter_block{
 		figure{
@@ -434,6 +435,38 @@
 		}
 		
 	}
+	.solution-main .title{
+		font-size: 26px;
+	}
+	.product_slider_inner{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		& > a{
+			order: -1;
+		}
+	}
+	.product_slider_inner .product_solution_item_first{
+		left: 0;
+		margin: 0;
+	}
+	.product_slider_txt{
+		padding-left: 0;
+		text-align: center !important;
+	}
+	.product_slider_txt p{
+		padding-top: 20px;
+	}
+	.bridge_wrap{
+		background: none;
+		padding-bottom: 30px;
+	}
+	.solution_steps .solution_steps_block{
+		flex-direction: column;
+		figure{
+			margin-bottom: 20px;
+		}
+	}
 }
 @include mq($max-width: 910px) {
 	.benefits_block {
@@ -494,7 +527,7 @@
 	}
 	.product_slider_inner{
 		img{
-			width: 40%;
+			//width: 40%;
 		}
 	}
 	.product_slider_txt{
@@ -890,6 +923,9 @@
   }
   .core-values-subtitle h6{
   	font-size: 22px;
+  }
+  .product_slider_txt{
+	  min-width: 100px;
   }
 }
 
