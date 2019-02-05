@@ -571,7 +571,8 @@
 @include mq($max-width: 790px) {
 	.header{
 		height: auto;
-		min-height: 100px;
+		
+   		 min-height: 75px;
 	}
 	.menu_trigger{
 		display: block;
@@ -926,6 +927,19 @@
   }
   .product_slider_txt{
 	  min-width: 100px;
+  }
+  .home-bnr{
+  	height: auto;
+  	padding: 30px 0 100px 0;
+  	background-size: contain;
+  	h1{
+  		font-size: 24px;
+  		padding: 10px;
+  		background: rgba(40,188,239, 0.6);
+  	}
+  }
+  .home-txt{
+  	font-size: 20px;
   }
 }
 

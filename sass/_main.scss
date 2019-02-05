@@ -5018,6 +5018,51 @@ h6.bottom-title{
 	}
 }
 
+.home-bnr{
+	background: #28bcef url(../img/home-bg.png) repeat-x center bottom;
+	height: 1020px;
+	box-sizing: border-box;
+	padding-top: 60px;
+	h1{
+		text-align: center;
+		color: #ffffff;
+		font-size: 36px;
+		font-weight: 500;
+		text-align: center;
+		strong{
+			font-weight: 900;
+			letter-spacing: 1.8px;
+			text-transform: uppercase;
+		}
+	}
+} 
+
+.home-txt{
+	text-align: center;
+	color: #0c0c0c;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	padding: 50px 0 80px 0;
+}
+
+.home{
+	.header{
+		background: #1c98c3;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
