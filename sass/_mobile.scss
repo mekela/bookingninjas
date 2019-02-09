@@ -75,6 +75,12 @@
 			line-height: 1.4;
 		}
 	}
+	.services__top .container{
+		background-size: contain;
+	}
+	.services__list-item figure{
+		min-width: 210px;
+	}
 }
 
 @include mq($max-width: 1100px) {
@@ -466,6 +472,26 @@
 		figure{
 			margin-bottom: 20px;
 		}
+	}
+	.services__top{
+		text-align: center;
+
+	}
+	.services__top .container{
+		height: auto;
+		background-position: bottom center;
+		padding-bottom: 10px;
+		background: none;
+	}
+	.services__list{
+		background: none;
+	}
+	.services__list-item{
+		padding-bottom: 30px;
+	}
+	.services__list-item-right{
+		padding-top: 0;
+		padding-left: 0;
 	}
 }
 @include mq($max-width: 910px) {
@@ -1036,6 +1062,25 @@
 	}
 	.button-secondary{
 		padding: 0.5em 1em;
+	}
+	.services__list-item{
+		display: block;
+		text-align: center;
+		section{
+			padding-top: 20px;
+		}
+	}
+	.services__top{
+		font-size: 16px;
+	}
+	.services__top h2{
+		font-size: 26px;
+	}
+	.services__list h6{
+		font-size: 20px;
+	}
+	.services__list{
+		font-size: 16px;
 	}
 }
 
