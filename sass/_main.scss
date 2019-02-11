@@ -4777,6 +4777,28 @@ h6.bottom-title{
 		z-index: 2;
 		position: relative;
 	}
+	q{
+		color: #393939;
+		font-size: 48px;
+		font-weight: 100;
+		letter-spacing: 2.4px;
+		padding-left: 85px;
+		display: block;
+		img{
+			display: block;
+			margin: 0 auto;
+			margin-top: 15px;
+		}
+	}
+	h4{
+		color: #393939;
+		font-size: 48px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 3.6px;
+		text-align: right;
+		padding-right: 70px;
+	}
 }
 .prospective-btn{
 	text-align: center;
@@ -4786,6 +4808,13 @@ h6.bottom-title{
 		font-size: 30px;
 		font-weight: 300;
 		padding-bottom: 35px;
+	}
+	h6{
+		color: #01a6e5;
+		font-size: 36px;
+		font-weight: 700;
+		letter-spacing: 2.7px;
+		padding-bottom: 50px;
 	}
 }
 //sales
@@ -5115,6 +5144,178 @@ h6.bottom-title{
 	}
 }
 
+/*----------------------------social---------------------------*/
+.social{
+	&__top{
+		color: #3d434a;
+		font-size: 30px;
+		font-weight: 300;
+		min-height: 559px;
+		padding-top: 30px;
+		box-sizing: border-box;
+		background: #eaf0f1 url(../img/social-bg-top.png) no-repeat center bottom; 
+		section{
+			text-align: center;
+			strong{
+				color: #349ceb;
+				font-size: 36px;
+				letter-spacing: 1.8px;
+			}
+			p{
+				padding-bottom: 40px;
+			}
+		}
+		h2{
+			color: #349ceb;
+			font-size: 36px;
+			letter-spacing: 1.8px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+	&__top-percent{
+		text-align: center;
+		padding-top: 95px;
+		vertical-align: middle;
+	}
+	&__round{
+	display: inline-block;
+		// border-image-slice: 1;
+	 //  border-width: 2px;
+	 //  border-image: linear-gradient(to left, #01a4e4, #10e6f8);
+	 border: 1px solid #01a4e4;
+	  width: 142px;
+	  height: 142px;
+	  vertical-align: middle;
+	  border-radius: 50%;
+		color: #02a9e6;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 1.8px;
+		i{
+			font-style: normal;
+			display: block;
+			border: 1px solid #01a4e4;
+			width: 118px;
+			height: 118px;
+			margin: 12px auto;
+			border-radius: 50%;
+			em{
+				font-style: normal;
+				display: block;
+				margin: 8px auto;
+				border-radius: 50%;
+				width: 101px;
+				height: 101px;
+				line-height: 88px;
+				background: #fff;
+				box-sizing: border-box;
+				border: 6px solid #01a4e4;
+			}
+		}
+	}
+	&__pledge{
+		color: #1f1f1f;
+		font-size: 30px;
+		font-weight: 300;
+		line-height: 1.5;
+		letter-spacing: 1.5px;
+		margin-bottom: 52px;
+		position: relative;
+		.container{
+			position: relative;
+			z-index: 2;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: url(../img/title-bg.png) repeat;
+			height: 154px;
+			width: 100%;
+		}
+		p{
+			&:first-child{
+				font-size: 36px;
+			}
+		}
+		span{
+			display: block;
+			color: #1f1f1f;
+			font-size: 30px;
+			font-weight: 900;
+			b{
+				display: block;
+				color: #01a6e5;
+				font-size: 100px;
+				font-weight: 900;
+				line-height: 1;
+				letter-spacing: 5px;
+			}
+		}
+	}
+	&__text{
+		color: #1f1f1f;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 36px;
+		padding-bottom: 40px;
+		p{
+			padding-bottom: 35px;
+		}
+	}
+}
+
+.social-tags{
+	padding-bottom: 40px;
+	&__item{
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+		margin-bottom: 40px;
+		border: 1px solid rgba(0, 0, 0, 0.08);
+		background: linear-gradient(to right, #f4f8fa 1%,#f4f8fa 81%,#ffffff 81%);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		section{
+			color: #2a2a2a;
+			font-size: 22px;
+			font-weight: 300;
+			letter-spacing: 1.1px;
+			padding: 15px 24px;
+		}
+	}
+	.social__round{
+		width: 228px;
+	  	height: 228px;
+		i{
+			width: 190px;
+			height: 190px;
+			margin-top: 19px;
+			em{
+				width: 162px;
+				height: 162px;
+				margin-top: 13px;
+				line-height: 1.1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				font-weight: 400;
+				strong{
+					font-size: 36px;
+					font-weight: 400;
+				}
+				small{
+					color: #b2b2b2;
+					font-size: 24px;
+					font-weight: 300;
+					letter-spacing: 1.2px;
+				}
+			}
+		}
+	}
+}
 
 
 

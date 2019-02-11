@@ -493,6 +493,21 @@
 		padding-top: 0;
 		padding-left: 0;
 	}
+	.social__pledge{
+		text-align: center;
+	}
+	.prospective-bnr q{
+		padding-left: 0;
+		font-size: 24px;
+	}
+	.prospective-bnr h4{
+		padding-right: 0;
+		letter-spacing: 0;
+		font-size: 25px;
+	}
+	.social__top{
+		font-size: 21px;
+	}
 }
 @include mq($max-width: 910px) {
 	.benefits_block {
@@ -695,6 +710,19 @@
 	}
 	.customer-tags__block{
 		width: 100%;
+	}
+}
+
+@include mq($max-width: 767px) {
+	.prospective-bnr q{
+		padding-top: 80px;
+	}
+	.prospective-bnr h4{
+		text-align: center;
+		padding-top: 15px;
+	}
+	.prospective-btn h6, .social__top h2, .social__top section strong{
+		font-size: 26px;
 	}
 }
 
@@ -1081,6 +1109,28 @@
 	}
 	.services__list{
 		font-size: 16px;
+	}
+	.social-tags__item{
+		background: #f4f8fa;
+		text-align: center;
+		padding: 10px 0;
+		flex-direction: column-reverse;
+	}
+	.social__pledge, .social__pledge span{
+		font-size: 18px;
+	}
+	.social__pledge span b{
+		font-size: 40px;
+	}
+	.social__pledge{
+		margin-top: 30px;
+	}
+	.social__pledge p:first-child{
+		font-size: 1.3em;
+	}
+	.social__round{
+		display: block;
+		margin: 0 auto;
 	}
 }
 
