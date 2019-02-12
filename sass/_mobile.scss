@@ -81,6 +81,9 @@
 	.services__list-item figure{
 		min-width: 210px;
 	}
+	.get-in-touch__info p strong{
+		font-size: 20px;
+	}
 }
 
 @include mq($max-width: 1100px) {
@@ -507,6 +510,18 @@
 	}
 	.social__top{
 		font-size: 21px;
+	}
+	.get-in-touch__section{
+		flex-direction: column-reverse;
+	}
+	.get-in-touch__info{
+		width: 100%;
+	}
+	.get-in-touch__form{
+		width: 100%;
+	}
+	.get-in-touch__text{
+		padding-top: 60px;
 	}
 }
 @include mq($max-width: 910px) {
@@ -994,6 +1009,31 @@
   }
   .home-txt{
   	font-size: 20px;
+  }
+  .get-in-touch__info, .get-in-touch__form{
+  	padding: 15px;
+  }
+  .get-in-touch__info nav a{
+  	padding-right: 10px;
+  }
+  .get-in-touch__info p{
+  	padding-left: 0;
+  	text-align: center;
+  }
+  .get-in-touch__info p img{
+  	position: static;
+  	margin: 0 auto;
+  	display: block;
+  	margin-bottom: 15px;
+  }
+  .get-in-touch{
+  	text-align: center;
+  }
+  .get-in-touch__form input, .get-in-touch__form textarea{
+  	text-align: center;
+  }
+  .get-in-touch__info nav{
+  	padding-top: 20px;
   }
 }
 
