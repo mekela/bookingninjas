@@ -84,6 +84,9 @@
 	.get-in-touch__info p strong{
 		font-size: 20px;
 	}
+	.blog-article__social-line{
+		width: 55px;
+	}
 }
 
 @include mq($max-width: 1100px) {
@@ -523,6 +526,9 @@
 	.get-in-touch__text{
 		padding-top: 60px;
 	}
+	.blog-article__social-section{
+		justify-content: flex-start;
+	}
 }
 @include mq($max-width: 910px) {
 	.benefits_block {
@@ -738,6 +744,16 @@
 	}
 	.prospective-btn h6, .social__top h2, .social__top section strong{
 		font-size: 26px;
+	}
+	.blog-article__form{
+		text-align: center;
+		label{
+			text-align: left;
+		}
+		.text_right{
+			text-align: center !important;
+			margin-top: 15px;
+		}
 	}
 }
 
@@ -1171,6 +1187,26 @@
 	.social__round{
 		display: block;
 		margin: 0 auto;
+	}
+	.blog-article__social-section{
+		display: block;
+	}
+	.blog-article__social-like-small{
+		margin-left: 0;
+		width: 140px;
+		margin-top: 15px;
+	}
+	.blog-article__social-line {
+	    width: auto;
+	    flex: 1;
+	}
+	.blog-article__buttons a{
+		font-size: 0;
+		svg,i{
+			font-size: 15px;
+			padding: 0 !important;
+			margin: 0 !important;
+		}
 	}
 }
 
