@@ -529,6 +529,20 @@
 	.blog-article__social-section{
 		justify-content: flex-start;
 	}
+	.pricing-section__item{
+		display: block;
+	}
+	.pricing-section__left{
+		max-width: 100%;
+		width: 100%;
+		background: #0bbce8;
+		justify-content: center;
+	}
+	.pricing-section__text{
+		font-size: 18px;
+		padding: 15px;
+		min-height: 1px;
+	}
 }
 @include mq($max-width: 910px) {
 	.benefits_block {
@@ -1443,5 +1457,18 @@
   .navigation {
     width:200px;
     float: right;
+  }
+  .pricing-section__ico, .pricing-section__numb{
+  	min-width: 1px;
+  	max-width: 100%;
+  }
+  .pricing-section__numb{
+  	font-size: 30px;
+  }
+  .pricing-section__left{
+  	min-width: 10px;
+  }
+  .pricing-section__numb span{
+  	font-size: 20px;
   }
 }
