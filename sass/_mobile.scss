@@ -87,6 +87,28 @@
 	.blog-article__social-line{
 		width: 55px;
 	}
+	.bnr-text__buttons .button-secondary{
+		min-width: 180px;
+	}
+	.bnr-text__buttons{
+		padding-bottom: 50px;
+	}
+	.bnr-video__img:before{
+		display: none;
+	}
+	.capabilities-new section{
+		width: 100%;
+		height: auto;
+		padding: 15px;
+	}
+	.navigation li a{
+		font-size: 12px;
+	}
+	.bnr-text-index{
+		img{
+			max-width: 100%;
+		}
+	}
 }
 
 @include mq($max-width: 1100px) {
@@ -543,6 +565,72 @@
 		padding: 15px;
 		min-height: 1px;
 	}
+
+	.bnr-text__img{
+		display: none;
+	}
+	.pms-new{
+		padding-top: 80px;
+		img{
+			width: 100%;
+		}
+	}
+	.bnr-video{
+		background: #088ecc;
+		height: auto;
+		padding-bottom: 30px;
+	}
+	.bnr-video__img{
+		img{
+			width: 100%;
+		}
+	}
+	.cloud-new{
+		padding: 50px 0;
+		background: none;
+		text-align: center;
+	}
+	.benefits-new__block{
+		width: auto;
+		height: auto;
+		background: none;
+	}
+	.benefits-new {
+		h3{
+			position: static;
+			text-align: center;
+			width: auto;
+			margin: 0;
+			font-size: 40px;
+		}
+		figure {
+			img{
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 10px;
+			}
+			color: #151515;
+			position: static;
+			width: 100%;
+			text-align: center !important;
+			margin-bottom: 30px;
+		}
+	}
+	.capabilities-new{
+		padding: 30px 0;
+	}
+	.capabilities-new__item{
+		img{
+			width: 100%;
+		}
+	}
+	.capabilities-new section{
+		font-size: 14px;
+	}
+	.capabilities-new p{
+		padding-bottom: 20px;
+		font-size: 20px;
+	}
 }
 @include mq($max-width: 910px) {
 	.benefits_block {
@@ -767,6 +855,70 @@
 		.text_right{
 			text-align: center !important;
 			margin-top: 15px;
+		}
+	}
+	.bnr-text-index.bnr-text h1, .pms-new h3{
+		font-size: 24px;
+		padding-bottom: 20px;
+	}
+	.bnr-text-index.bnr-text p{
+		font-size: 14px;
+	}
+	.bnr-text__buttons .button-secondary{
+		font-size: 14px;
+		min-width: 1px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	.pms-new{
+		font-size: 14px;
+		line-height: 1.4;
+		padding-bottom: 30px;
+		 .button-secondary{
+			 display: block;
+			 margin: 0 auto;
+			 max-width: 300px;
+		 }
+	}
+	.bnr-video blockquote{
+		font-size: 14px;
+		padding-top: 20px;
+		line-height: 1.4;
+	}
+	.bnr-video blockquote img{
+		max-width: 50px;
+		margin-bottom: 10px;
+	}
+	.cloud-new{
+		font-size: 14px;
+	}
+	.cloud-new h5, .benefits-new h3{
+		font-size: 24px;
+		padding-bottom: 20px;
+		transform: none;
+	}
+	.benefits-new{
+		padding: 30px 0;
+	}
+	.benefits-new figure{
+		font-size: 14px;
+	}
+	.capabilities-new p{
+		font-size: 18px;
+	}
+	.capabilities-new section{
+		text-align: center;
+		margin-top: 0;
+		float: none;
+		display: block;
+	}
+	.lang-head{
+		img{
+			width: 18px;
+		}
+		a{
+			padding-right: 0;
+			padding-left: 5px;
 		}
 	}
 }
