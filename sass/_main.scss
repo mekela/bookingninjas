@@ -6157,7 +6157,7 @@ h6.bottom-title{
 		position: relative;
 		@include mq($max-width: 992px) {
 			display: block;
-			margin-bottom: 20px;
+			margin-bottom: 20px; 
 		}
 	}
 	h4{
@@ -6185,6 +6185,65 @@ h6.bottom-title{
 		}
 	}
 }
-
+/*--------------register---------------*/
+.register{
+	position: relative;
+	background: #bce3ff;
+	padding: 80px 0;
+	color: #3f3f3f;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 24px;
+	&__img{
+		float: right;
+		@include mq($max-width: 992px) {
+			margin-bottom: 30px;
+			float: none;
+		}
+	}
+	h4{
+		color: #3e3d3d;
+		font-size: 30px;
+		font-weight: 700;
+		padding-bottom: 20px;
+	}
+	p{
+		padding-bottom: 25px;
+	}
+	form{
+		input, textarea{
+			width: 100%;
+			display: block;
+			margin-bottom: 20px;
+			box-shadow: 0 1px 5px rgba(0, 0, 0, 0.21);
+			background-color: #f1f8ff;
+			color: #373737;
+			font-size: 16px;
+			font-weight: 100;
+			&.error{
+				color: #ff0000;
+				box-shadow: 0 1px 5px rgba(0, 0, 0, 0.21), 0 0 5px rgba(255, 0, 0, 0.75);
+				background-color: #ffffff;
+			}
+			&:focus{
+				background: #fff;
+				&::-webkit-input-placeholder {
+					color: transparent;
+				}
+			}
+		}
+		textarea{
+			height: 120px;
+		}
+	}
+	.button-secondary{
+		color: #fff;
+		i, svg{
+			margin: 0 15px 0 0;
+			font-size: 1.5em;
+			vertical-align: middle;
+		}
+	}
+}
 
 
