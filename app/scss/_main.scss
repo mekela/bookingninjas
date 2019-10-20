@@ -5933,12 +5933,22 @@ h6.bottom-title{
 	padding:135px 0 105px 0;
 	font-size:24px;
 	color: #fff;
+	@include mq($max-width: 992px) {
+		font-size: 18px;
+		padding: 80px 0;
+	}
 	p{
 		padding-bottom:70px;
+		@include mq($max-width: 992px) {
+			padding-bottom: 30px;
+		}
 	}
 	h1{
 		padding-bottom:30px;
 		font-size:48px;
+		@include mq($max-width: 992px) {
+			font-size: 30px;
+		}
 	}
 	.button{
 		background: #f5bf3d;
@@ -5949,6 +5959,10 @@ h6.bottom-title{
 		&:hover{
 			background: #dca522;
 		}
+		@include mq($max-width: 992px) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 	}
 	&__img{
 		position: absolute;
@@ -5956,6 +5970,10 @@ h6.bottom-title{
 		bottom:-105px;
 		img{
 			display: block;
+		}
+		@include mq($max-width: 1200px) {
+			display: none; 
+			opacity: 0;
 		}
 	}
 	.container{
@@ -5967,6 +5985,9 @@ h6.bottom-title{
 	padding:50px 0 130px 0;
 	color: #010101;
 	font-size:18px;
+	@include mq($max-width: 992px) {
+		padding: 50px 0;
+	}
 	&__section{
 		position: relative;
 		height:100%;
@@ -5994,6 +6015,9 @@ h6.bottom-title{
 			color: #fff;
 			font-weight:900;
 			font-size:48px;
+			@include mq($max-width: 992px) {
+				padding-bottom: 15px;
+			}
 		}
 		section{
 			position: relative;
@@ -6011,6 +6035,11 @@ h6.bottom-title{
 				opacity:0.8;
 			}
 		}
+		@include mq($max-width: 992px) {
+			margin-bottom: 30px;
+			height: auto;
+			padding: 40px 10px;
+		}
 	}
 	.button{
 		position: relative;
@@ -6021,6 +6050,11 @@ h6.bottom-title{
 		background: linear-gradient(to right, #25a6e2 0%,  #08caf8 100%); ;
 		&:hover{
 			opacity:0.9;
+		}
+		@include mq($max-width: 992px) {
+			top: 0;
+			margin-top: 0px;
+			margin-bottom: 50px;
 		}
 	}
 }
@@ -6039,6 +6073,9 @@ h6.bottom-title{
 			height:1px;
 			background: #cfcfcf;
 			transform: translateX(-50%);
+			@include mq($max-width: 992px) {
+				bottom: 20px;
+			}
 		}
 		&:after{
 			content:'';
@@ -6049,5 +6086,89 @@ h6.bottom-title{
 			height:1px;
 			background: #2397d1;
 			transform: translateX(-50%);
+			@include mq($max-width: 992px) {
+				bottom: 20px;
+			}
+		}
+		@include mq($max-width: 992px) {
+			font-size: 24px;
+			padding-bottom: 40px;
 		}
 	}
+.customer-quote{
+	background: #f8fbfc;
+	padding: 55px 0;
+	&__item{
+		background: #ffffff;
+		padding: 25px 30px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+		color: #454545;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 18px;
+		@include mq($max-width: 992px) {
+			margin-bottom: 30px;
+		}
+		h5{
+			color: #454545;
+			font-size: 18px;
+			font-weight: 700;
+			padding-bottom: 28px;
+			position: relative;
+			padding-left: 29px;
+			padding-top: 8px;
+			&:before{
+				content: '';
+				width: 45px;
+				height: 30px;
+				position: absolute;
+				left: -25px;
+				top: 0;
+				background: url(../img/customer-qoute.png) no-repeat center;
+			}
+		}
+		p{
+			padding-bottom: 20px;
+		}
+		a{
+			color: #24a7e2;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 18px;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.customer-result{
+	padding: 50px 0;
+	background: url(../img/customer-bg-bottom.png) no-repeat center;
+	background-size: cover;
+	article{
+		color: #313131;
+		font-size: 30px;
+		font-weight: 100;
+		@include mq($max-width: 992px) {
+			font-size: 20px;
+			text-align: center;
+		}
+		p{
+			padding-bottom: 40px;
+			@include mq($max-width: 992px) {
+				padding-bottom: 20px;
+			}
+		}
+	}
+	.button{
+		border-radius: 0;
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 700;
+		text-transform: uppercase;
+		@include mq($max-width: 992px) {
+			font-size: 14px;
+		}
+	}
+}
