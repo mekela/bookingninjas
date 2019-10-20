@@ -5924,3 +5924,130 @@ h6.bottom-title{
 }
 
 
+//customer
+.customer-bnr{
+	background: url(../img/customer-bg-bnr.jpg) no-repeat center top;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	padding:135px 0 105px 0;
+	font-size:24px;
+	color: #fff;
+	p{
+		padding-bottom:70px;
+	}
+	h1{
+		padding-bottom:30px;
+		font-size:48px;
+	}
+	.button{
+		background: #f5bf3d;
+		border-radius:0;
+		font-size:18px;
+		padding-left:50px;
+		padding-right:50px;
+		&:hover{
+			background: #dca522;
+		}
+	}
+	&__img{
+		position: absolute;
+		left: -75px;
+		bottom:-105px;
+		img{
+			display: block;
+		}
+	}
+	.container{
+		position: relative;
+	}
+}
+.customer-learn{
+	position: relative;
+	padding:50px 0 130px 0;
+	color: #010101;
+	font-size:18px;
+	&__section{
+		position: relative;
+		height:100%;
+		background-position: center;
+		padding:65px 25px;
+		background-repeat:no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:before{
+			content:'';
+			position: absolute;
+			width:100%;
+			left:0;
+			top:0;
+			height:100%;
+			opacity:0.9;
+		}
+		h6{
+			text-transform: uppercase;
+			padding-bottom:30px;
+			color: #fff;
+			font-weight:900;
+			font-size:48px;
+		}
+		section{
+			position: relative;
+			z-index:1;
+		}
+		&.yellow{
+			&:before{
+				background: #fdd344;
+
+			}
+		}
+		&.purple{
+			&:before{
+				background: #d65b98;
+				opacity:0.8;
+			}
+		}
+	}
+	.button{
+		position: relative;
+		top:-30px;
+		margin-left:20px;
+		text-transform: none;
+		border-radius:0;
+		background: linear-gradient(to right, #25a6e2 0%,  #08caf8 100%); ;
+		&:hover{
+			opacity:0.9;
+		}
+	}
+}
+	.customer-title{
+		text-align: center;
+		padding-bottom:80px;
+		position: relative;
+		font-size:30px;
+		color: #2b2b2b;
+		&:before{
+			content:'';
+			position: absolute;
+			left:50%;
+			bottom:40px;
+			width:225px;
+			height:1px;
+			background: #cfcfcf;
+			transform: translateX(-50%);
+		}
+		&:after{
+			content:'';
+			position: absolute;
+			left:50%;
+			bottom:40px;
+			width:100px;
+			height:1px;
+			background: #2397d1;
+			transform: translateX(-50%);
+		}
+	}
