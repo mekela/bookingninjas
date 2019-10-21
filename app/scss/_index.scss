@@ -124,11 +124,28 @@ body {
 
 
  /*----------header----------*/
-
+.index-landing{
+	padding-top: 100px;
+}
  .header{
 	@include povh('');
 	padding-top: 7px;
-	padding-bottom: 35px;
+	padding-bottom: 7px;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	background: transparent;
+	@include transition(all 0.5s);
+	top: 0;
+	left: 0;
+	&.fixed{
+		background: #fbcd04; 
+	}
+	.logo{
+		img{
+			display: block;
+		}
+	}
  }
  	.lang{
 		 text-align: right;

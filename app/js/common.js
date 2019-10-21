@@ -30,13 +30,7 @@ $(document).ready(function() {
 	});
 
 	
-	//bxslider
-	$('.product_slider_item').bxSlider({
-	  pagerCustom: '.product_slider_nav'
-	});
-	$('.customer-screenshot ul').bxSlider({
-		
-	});
+	
 
 	//wow
 	new WOW().init();
@@ -101,64 +95,21 @@ $(document).ready(function() {
     });
 
 
+
+	
+
 	
 
 });
 
-//noui
-var slider = document.getElementById('slider');
 
-noUiSlider.create(slider, {
-	start: [0, 15],
-	connect: true,
-	tooltips: true,
-	range: {
-		'min': 0,
-		'max': 20,
-	},
-	format: wNumb({
-		decimals: 0
-	})
+//fixed
+$(window).scroll(function() {    
+	var scroll = $(window).scrollTop();
+
+	if (scroll >= 100) {
+		$(".header-index").addClass("fixed");
+	} else {
+		$(".header-index").removeClass("fixed");
+	}
 });
-
-
-var softSlider = document.getElementById('soft');
-
-	noUiSlider.create(softSlider, {
-	start: [0, 10],
-	connect: true,
-	range: {
-		'min': 0,
-		'max': 14,
-	}
-	});
-	var softSlider = document.getElementById('soft2');
-
-	noUiSlider.create(softSlider, {
-	start: [0, 10],
-	connect: true,
-	range: {
-		'min': 0,
-		'max': 14,
-	}
-	});
-	var softSlider = document.getElementById('soft3');
-
-	noUiSlider.create(softSlider, {
-	start: [0, 10],
-	connect: true,
-	range: {
-		'min': 0,
-		'max': 14,
-	}
-	});
-	var softSlider = document.getElementById('soft4');
-
-	noUiSlider.create(softSlider, {
-	start: [0, 10],
-	connect: true,
-	range: {
-		'min': 0,
-		'max': 14,
-	}
-	});

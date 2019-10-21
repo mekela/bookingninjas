@@ -8083,11 +8083,6 @@ h6.bottom-title {
   .why-key-text h6 {
     font-size: 100px; } }
 
-@media only screen and (min-width: 992px) {
-  .lang {
-    top: 50%;
-    margin-top: -16px; } }
-
 @media only screen and (min-width: 800px) {
   .md-video {
     display: block; } }
@@ -9275,11 +9270,29 @@ body {
   line-height: 1.2; }
 
 /*----------header----------*/
+.index-landing {
+  padding-top: 100px; }
+
 .header {
   position: relative;
   overflow: hidden;
   padding-top: 7px;
-  padding-bottom: 35px; }
+  padding-bottom: 7px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: transparent;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  top: 0;
+  left: 0; }
+  .header.fixed {
+    background: #fbcd04; }
+  .header .logo img {
+    display: block; }
 
 .lang {
   text-align: right; }

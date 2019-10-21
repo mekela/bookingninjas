@@ -21,10 +21,7 @@
 }
 
 @include mq($min-width: 992px) {
-	.lang{
-	    top: 50%;
-	    margin-top: -16px;
-	}
+	
 }
 @include mq($min-width: 800px) {
 	.md-video{
