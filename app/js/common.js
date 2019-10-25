@@ -36,13 +36,11 @@ $(document).ready(function() {
 	new WOW().init();
 
 	//menu
-	$( ".menu_trigger" ).click(function() {
-	  $( ".mobile-menu" ).toggleClass( "active");
-	  $( ".mobile-menu__block" ).toggleClass( "active");
+	$( ".navigation__button" ).click(function() {
+	  $( ".navigation" ).addClass( "active");
 	});
-	$( ".mobile-menu" ).click(function() {
-	  $( ".mobile-menu" ).toggleClass( "active");
-	  $( ".mobile-menu__block" ).toggleClass( "active");
+	$( ".navigation__close" ).click(function() {
+	  $( ".navigation" ).removeClass( "active");
 	});
 
 	//accordeon

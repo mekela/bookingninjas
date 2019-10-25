@@ -6300,3 +6300,65 @@ h6.bottom-title{
 		color: #0087c9;
 	}
 }
+.navigation{
+	position: relative;
+	color: #000000;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	@include mq($max-width: 992px) {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 300px;
+		background: #fbcd04;
+		z-index: 120;
+		&.active{
+			display: block;
+		}
+	}
+	ul{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		@include mq($max-width: 992px) {
+			display: block;
+			padding: 30px ;
+			padding-left: 10px;
+		}
+		li{
+			padding-left: 20px;
+			a{
+				text-decoration: none;
+				border-bottom: 3px solid transparent;
+				@include transition(all 0.5s);
+				&:hover, &.active{
+					border-bottom-color: #000;
+				}
+			}
+		}
+	}
+	&__button{
+		text-align: right;
+		font-size: 1.2rem;
+		float: right;
+		background: none;
+		border: none;
+		display: none;
+		@include mq($max-width: 992px) {
+			display: block;
+		}
+	}
+	&__close{
+		display: none;
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		font-size: 1.2rem;
+		@include mq($max-width: 992px) {
+			display: block;
+		}
+	}
+}

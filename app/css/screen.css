@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap");
 @keyframes zoomOut {
   from {
     opacity: 1; }
@@ -8188,6 +8189,65 @@ h6.bottom-title {
     margin-bottom: 25px; }
   .customer-single-sidebar a:not(.button) {
     color: #0087c9; }
+
+.navigation {
+  position: relative;
+  color: #000000;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase; }
+  @media only screen and (max-width: 992px) {
+    .navigation {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 300px;
+      background: #fbcd04;
+      z-index: 120; }
+      .navigation.active {
+        display: block; } }
+  .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    @media only screen and (max-width: 992px) {
+      .navigation ul {
+        display: block;
+        padding: 30px;
+        padding-left: 10px; } }
+    .navigation ul li {
+      padding-left: 20px; }
+      .navigation ul li a {
+        text-decoration: none;
+        border-bottom: 3px solid transparent;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s; }
+        .navigation ul li a:hover, .navigation ul li a.active {
+          border-bottom-color: #000; }
+  .navigation__button {
+    text-align: right;
+    font-size: 1.2rem;
+    float: right;
+    background: none;
+    border: none;
+    display: none; }
+    @media only screen and (max-width: 992px) {
+      .navigation__button {
+        display: block; } }
+  .navigation__close {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.2rem; }
+    @media only screen and (max-width: 992px) {
+      .navigation__close {
+        display: block; } }
 
 @media only screen and (min-width: 1360px) {
   .lg-video {
