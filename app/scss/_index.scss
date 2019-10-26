@@ -633,7 +633,7 @@ body {
 		position: relative;
 		overflow: hidden;
 		display: flex;
-		margin-bottom: 40px;
+		margin-bottom: 15px;
 		input{
 			background: none;
 			border: none;
@@ -662,6 +662,7 @@ body {
 		}
 	}
 	&__social{
+		padding-bottom: 20px;
 		a{
 			color: rgba(255,255,255, 0.73);
 			font-size: 34px;
@@ -670,6 +671,10 @@ body {
 				margin: 0 5px;
 			}
 		}
+	}
+	&__form-text{
+		font-size: 14px;
+		color: #ffffff;
 	}
  }
 .payments{
