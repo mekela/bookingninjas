@@ -8218,7 +8218,8 @@ h6.bottom-title {
         padding: 30px;
         padding-left: 10px; } }
     .navigation ul li {
-      padding-left: 20px; }
+      padding-left: 20px;
+      position: relative; }
       .navigation ul li a {
         text-decoration: none;
         border-bottom: 3px solid transparent;
@@ -8229,6 +8230,8 @@ h6.bottom-title {
         transition: all 0.5s; }
         .navigation ul li a:hover, .navigation ul li a.active {
           border-bottom-color: #000; }
+      .navigation ul li:hover .navigation-dropdown {
+        display: block; }
   .navigation__button {
     text-align: right;
     font-size: 1.2rem;
@@ -8248,6 +8251,26 @@ h6.bottom-title {
     @media only screen and (max-width: 992px) {
       .navigation__close {
         display: block; } }
+
+.navigation-dropdown {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  padding-top: 40px;
+  display: none; }
+  .navigation-dropdown ul {
+    width: 200px;
+    background: #fbcd04;
+    border: 1px solid #000;
+    display: block;
+    flex-wrap: wrap;
+    padding: 20px 0; }
+  .navigation-dropdown li {
+    width: 100%;
+    padding: 5px 0; }
+  @media only screen and (max-width: 992px) {
+    .navigation-dropdown {
+      display: none !important; } }
 
 @media only screen and (min-width: 1360px) {
   .lg-video {
@@ -9450,8 +9473,6 @@ body {
   padding-top: 100px; }
 
 .header {
-  position: relative;
-  overflow: hidden;
   padding-top: 7px;
   padding-bottom: 7px;
   position: fixed;

@@ -6330,12 +6330,18 @@ h6.bottom-title{
 		}
 		li{
 			padding-left: 20px;
+			position: relative;
 			a{
 				text-decoration: none;
 				border-bottom: 3px solid transparent;
 				@include transition(all 0.5s);
 				&:hover, &.active{
 					border-bottom-color: #000;
+				}
+			}
+			&:hover{
+				.navigation-dropdown{
+					display: block;
 				}
 			}
 		}
@@ -6360,5 +6366,27 @@ h6.bottom-title{
 		@include mq($max-width: 992px) {
 			display: block;
 		}
+	}
+}
+.navigation-dropdown{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	padding-top: 40px;
+	display: none;
+	ul{
+		width: 200px;
+		background: #fbcd04;
+		border: 1px solid #000;
+		display: block;
+		flex-wrap: wrap;
+		padding: 20px 0;
+	}
+	li{
+		width: 100%;
+		padding: 5px 0;
+	}
+	@include mq($max-width: 992px) {
+		display: none !important;
 	}
 }
