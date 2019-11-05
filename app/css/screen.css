@@ -8272,6 +8272,12 @@ h6.bottom-title {
     .navigation-dropdown {
       display: none !important; } }
 
+.trial {
+  padding: 120px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
 @media only screen and (min-width: 1360px) {
   .lg-video {
     display: block; }
