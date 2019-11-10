@@ -6395,4 +6395,152 @@ h6.bottom-title{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	color: #fff;
+	h4{
+		font-size: 36px;
+		color: #ffffff;
+		padding-bottom: 25px;
+		@include mq($max-width: 992px) {
+			text-align: center;
+			font-size: 24px;
+		}
+	}
+	&__table{
+		background: rgba(#000, 0.66);
+		padding: 20px 0 0 0;
+		margin-bottom: 30px;
+		h6{
+			padding-bottom: 10px;
+			text-align: center;
+			font-size: 24px;
+			color: #ffffff;
+			@include mq($max-width: 992px) {
+				font-size: 18px;
+			}
+		}
+		table{
+			th{
+				background: #000;
+				font-size: 18px;
+				color: #fbcd05;
+				font-weight: 600;
+				border: 1px solid #827d77;
+				padding: 10px 20px;
+				text-align: center;
+				&:first-child{
+					text-align: left;
+					border-left: none;
+				}
+				&:last-child{
+					border-right: none;
+				}
+				@include mq($max-width: 992px) {
+					padding: 5px 10px;
+					font-size: 14px;
+				}
+			}
+			td{
+				border: 1px solid #827d77;
+				padding: 10px 20px;
+				text-align: center;
+				@include mq($max-width: 992px) {
+					padding: 5px 10px;
+					font-size: 14px;
+				}
+				&:first-child{
+					text-align: left;
+					border-left: none;
+				}
+				&:last-child{
+					border-right: none;
+				}
+			}
+			tfoot{
+				td{
+					border-bottom: none;
+					font-size: 14px;
+					color: #9b9999;
+				}
+			}
+		}
+	}
+	&__table-button{
+		color: #303030;
+		text-transform: none;
+		@include mq($max-width: 992px) {
+			margin: 0 auto;
+			max-width: 290px;
+			font-size: 14px;
+			display: block;
+		}
+	}
+	&__form{
+		background: #f6f4e9;
+		border: 1px solid #a09b92;
+		padding: 25px;
+		color: #373737;
+		margin-top: 15px;
+		h3{
+			font-size: 36px;
+			text-align: center;
+			padding-bottom: 15px;
+			small{
+				font-size: 28px;
+				display: block;
+			}
+			@include mq($max-width: 992px) {
+				font-size: 24px;
+				small{
+					font-size: 20px;
+				}
+			}
+		}
+		input{
+			width: 100%;
+			margin-bottom: 8px;
+			box-shadow: 0 1px 5px rgba(#000, 0.21);
+		}
+	}
+	&__form-item{
+		display: block;
+		margin-bottom: 15px;
+		small{
+			color: #898989;
+			display: block;
+			font-size: 12px;
+			@include mq($max-width: 992px) {
+				padding-bottom: 10px;
+			}
+		}
+		figure{
+			text-align: right;
+		}
+	}
+	&__form-btn{
+		text-align: center;
+		.button{
+			width: 235px;
+			max-width: 90%;
+			color: #303030;
+			&:hover{
+				color: #fff;
+			}
+		}
+	}
+	&__form-contact{
+		text-align: center;
+		border-top: 1px solid #a09b92;
+		padding-top: 10px;
+		max-width: 90%;
+		margin: 0 auto;
+		color: #555555;
+		font-size: 14px;
+		a{
+			text-decoration: none;
+			color: #fbcd05;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
 }
