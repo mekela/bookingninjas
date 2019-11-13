@@ -8273,7 +8273,7 @@ h6.bottom-title {
       display: none !important; } }
 
 .trial {
-  padding: 120px 0;
+  padding: 230px 0 130px 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -8286,6 +8286,21 @@ h6.bottom-title {
       .trial h4 {
         text-align: center;
         font-size: 24px; } }
+  .trial h2 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+    padding-bottom: 30px; }
+  .trial ul {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 20px; }
+    .trial ul li {
+      padding-bottom: 20px;
+      padding-left: 35px;
+      background: url(../img/check-mark.png) no-repeat left 2px; }
   .trial__table {
     background: rgba(0, 0, 0, 0.66);
     padding: 20px 0 0 0;
@@ -8359,10 +8374,24 @@ h6.bottom-title {
           font-size: 24px; }
           .trial__form h3 small {
             font-size: 20px; } }
-    .trial__form input {
+    .trial__form input:not(.trial__form-checkbox) {
       width: 100%;
       margin-bottom: 8px;
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.21); }
+  .trial__form-item-check label {
+    padding-left: 20px;
+    position: relative;
+    display: block;
+    font-size: 14px; }
+  .trial__form-item-check .trial__form-checkbox {
+    position: absolute;
+    left: 0;
+    top: 2px; }
+  .trial__form-item-check a {
+    color: #5692ce;
+    text-decoration: none; }
+    .trial__form-item-check a:hover {
+      text-decoration: underline; }
   .trial__form-item {
     display: block;
     margin-bottom: 15px; }
@@ -8374,13 +8403,15 @@ h6.bottom-title {
         .trial__form-item small {
           padding-bottom: 10px; } }
     .trial__form-item figure {
-      text-align: right; }
+      text-align: right;
+      padding-bottom: 10px; }
   .trial__form-btn {
     text-align: center; }
     .trial__form-btn .button {
       width: 235px;
       max-width: 90%;
-      color: #303030; }
+      color: #303030;
+      text-transform: none; }
       .trial__form-btn .button:hover {
         color: #fff; }
   .trial__form-contact {

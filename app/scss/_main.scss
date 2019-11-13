@@ -6391,7 +6391,7 @@ h6.bottom-title{
 	}
 }
 .trial{
-	padding: 120px 0;
+	padding: 230px 0 130px 0;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -6403,6 +6403,24 @@ h6.bottom-title{
 		@include mq($max-width: 992px) {
 			text-align: center;
 			font-size: 24px;
+		}
+	}
+	h2{
+		color: #ffffff;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 45px;
+		padding-bottom: 30px;
+	}
+	ul{
+		color: #ffffff;
+		font-size: 16px;
+		font-weight: 400;
+		padding-bottom: 20px;
+		li{
+			padding-bottom: 20px;
+			padding-left: 35px;
+			background: url(../img/check-mark.png) no-repeat left 2px;
 		}
 	}
 	&__table{
@@ -6495,10 +6513,30 @@ h6.bottom-title{
 				}
 			}
 		}
-		input{
+		input:not(.trial__form-checkbox){
 			width: 100%;
 			margin-bottom: 8px;
 			box-shadow: 0 1px 5px rgba(#000, 0.21);
+		}
+	}
+	&__form-item-check{
+		label{
+			padding-left: 20px;
+			position: relative;
+			display: block;
+			font-size: 14px;
+		}
+		.trial__form-checkbox{
+			position: absolute;
+			left: 0;
+			top: 2px;
+		}
+		a{
+			color: #5692ce;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
 		}
 	}
 	&__form-item{
@@ -6514,6 +6552,7 @@ h6.bottom-title{
 		}
 		figure{
 			text-align: right;
+			padding-bottom: 10px;
 		}
 	}
 	&__form-btn{
@@ -6522,6 +6561,7 @@ h6.bottom-title{
 			width: 235px;
 			max-width: 90%;
 			color: #303030;
+			text-transform: none;
 			&:hover{
 				color: #fff;
 			}
