@@ -92,8 +92,13 @@ $(document).ready(function() {
         $($(this).attr('href')).show();
     });
 
-
-
+	//show modal
+	$("body").one('mouseleave', function() {
+		jQuery('.trial__not-leave-black').addClass('active');
+	});
+	$( ".trial__not-leave-close" ).click(function() {
+	  $('.trial__not-leave').removeClass( "active");
+	});
 	
 
 	
