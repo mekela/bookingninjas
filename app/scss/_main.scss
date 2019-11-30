@@ -6780,6 +6780,18 @@ h6.bottom-title{
 			padding-bottom: 15px;
 		}
 	}
+	h5{
+		color: #2e3949;
+		font-size: 30px;
+		font-weight: 700;
+		padding-bottom: 25px;
+		@include mq($max-width: 992px) {
+			font-size: 18px;
+		}
+	}
+	p{
+		padding-bottom: 15px;
+	}
 }
 .about-page-content{
 	background: url(../img/about-bg-big.png) no-repeat bottom 350px left -500px, url(../img/bg-about.png) repeat;

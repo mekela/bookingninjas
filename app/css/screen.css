@@ -8602,6 +8602,16 @@ h6.bottom-title {
       .about-page-top h1 {
         font-size: 24px;
         padding-bottom: 15px; } }
+  .about-page-top h5 {
+    color: #2e3949;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 25px; }
+    @media only screen and (max-width: 992px) {
+      .about-page-top h5 {
+        font-size: 18px; } }
+  .about-page-top p {
+    padding-bottom: 15px; }
 
 .about-page-content {
   background: url(../img/about-bg-big.png) no-repeat bottom 350px left -500px, url(../img/bg-about.png) repeat;
@@ -11173,3 +11183,143 @@ body {
     padding: 0 3px; }
 
 /*----------end footer----------*/
+.career-page-content {
+  background: url(../img/about-bg-big.png) no-repeat bottom -750px left -500px, url(../img/bg-about.png) repeat; }
+
+.career-page-timeline {
+  padding: 90px 0 80px 0;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  position: relative; }
+  .career-page-timeline:before {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 9px;
+    height: 50%;
+    background: #fbcd04;
+    top: 0;
+    content: ''; }
+  .career-page-timeline a {
+    text-decoration: none; }
+  .career-page-timeline .container {
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    border-top: 9px solid #fbcd04;
+    position: relative;
+    z-index: 3; }
+  .career-page-timeline section {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px 20px;
+    border-left: 1px solid #f7f7f7;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s; }
+    .career-page-timeline section:hover {
+      background: #f7f7f7; }
+    .career-page-timeline section h5, .career-page-timeline section h6 {
+      color: #000000;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding-bottom: 35px;
+      text-align: center; }
+    @media only screen and (max-width: 992px) {
+      .career-page-timeline section {
+        border: none; } }
+  .career-page-timeline .col-lg-3:first-child section {
+    border-left: none; }
+
+.career-page-perks {
+  padding-bottom: 60px; }
+  .career-page-perks__item {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.17);
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 25px;
+    color: #272727;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.1;
+    height: 100%; }
+    .career-page-perks__item figure {
+      min-width: 75px;
+      padding-top: 8px; }
+    .career-page-perks__item h6 {
+      padding-bottom: 10px;
+      margin-bottom: 0;
+      color: #272727;
+      font-size: 20px;
+      font-weight: 500; }
+
+.career-page-interest {
+  padding-bottom: 120px; }
+  .career-page-interest__item {
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 25px; }
+  .career-page-interest article {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    position: relative;
+    padding: 25px 20px 25px 50px;
+    color: #272727;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 300; }
+    .career-page-interest article h6 {
+      padding-bottom: 22px;
+      color: #272727;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 1px; }
+      .career-page-interest article h6 a {
+        text-decoration: none; }
+  .career-page-interest figure {
+    border-radius: 50%;
+    background: #facc04;
+    width: 92px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 5; }
+    .career-page-interest figure img {
+      display: block; }
+    @media only screen and (max-width: 992px) {
+      .career-page-interest figure {
+        top: 20px; } }
+
+.career-page-contact {
+  color: #0f0f0f;
+  font-size: 24px;
+  font-weight: 300; }
+  .career-page-contact figure img {
+    width: 100%; }
+  .career-page-contact p {
+    padding-bottom: 40px; }
+  .career-page-contact .about-page-content__title {
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 40px; }
+    @media only screen and (max-width: 992px) {
+      .career-page-contact .about-page-content__title {
+        text-align: center;
+        padding-top: 30px; } }
+  .career-page-contact .button {
+    color: #242424;
+    min-width: 240px; }
+  @media only screen and (max-width: 992px) {
+    .career-page-contact {
+      text-align: center;
+      padding-bottom: 50px; } }

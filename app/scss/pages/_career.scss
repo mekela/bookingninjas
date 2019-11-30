@@ -1,0 +1,163 @@
+.career-page-content{
+  background: url(../img/about-bg-big.png) no-repeat bottom -750px left -500px, url(../img/bg-about.png) repeat;
+}
+.career-page-timeline{
+  padding: 90px 0 80px 0;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  position: relative;
+  &:before{
+		position: absolute;
+		transform: translateX(-50%);
+		left: 50%;
+		width: 9px;
+		height: 50%;
+		background: #fbcd04;
+		top: 0;
+		content: '';
+	}
+  a{
+    text-decoration: none;
+  }
+  .container{
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    border-top: 9px solid #fbcd04;
+    position: relative;
+    z-index: 3;
+  }
+  section{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px 20px;
+    border-left: 1px solid #f7f7f7;
+    @include transition(all 0.5s);
+    &:hover{
+      background: #f7f7f7;
+    }
+    h5, h6{
+      color: #000000;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding-bottom: 35px;
+      text-align: center;
+    }
+    @include mq($max-width: 992px) {
+      border: none;
+    }
+  }
+  .col-lg-3{
+    &:first-child{
+      section{
+        border-left: none;
+      }
+    }
+  }
+}
+.career-page-perks{
+  padding-bottom: 60px;
+  &__item{
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.17);
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      padding: 45px 25px;
+      color: #272727;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.1;
+      height: 100%;
+      figure{
+        min-width: 75px;
+        padding-top: 8px;
+      }
+      h6{
+        padding-bottom: 10px;
+        margin-bottom: 0;
+        color: #272727;
+        font-size: 20px;
+        font-weight: 500;
+      }
+  }
+}
+.career-page-interest{
+  padding-bottom: 120px;
+  &__item{
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 25px;
+  }
+  article{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+    position: relative;
+    padding: 25px 20px 25px 50px;
+    color: #272727;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 300;
+    h6{
+      padding-bottom: 22px;
+      color: #272727;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+  figure{
+    border-radius: 50%;
+    background: #facc04;
+    width: 92px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 5;
+    img{
+      display: block;
+    }
+    @include mq($max-width: 992px) {
+      top: 20px;
+    }
+  }
+}
+.career-page-contact{
+  color: #0f0f0f;
+  font-size: 24px;
+  font-weight: 300;
+  figure{
+    img{
+      width: 100%;
+    }
+  }
+  p{
+    padding-bottom: 40px;
+  }
+  .about-page-content__title{
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 40px;
+    @include mq($max-width: 992px) {
+      text-align: center;
+      padding-top: 30px;
+    }
+  }
+  .button{
+    color: #242424;
+    min-width: 240px;
+  }
+  @include mq($max-width: 992px) {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
