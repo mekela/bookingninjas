@@ -1,0 +1,70 @@
+.about-page-top__img{
+  position: relative;
+  z-index: 1;
+}
+.einstein-page-analytics{
+  padding: 75px 0 20px 0;
+  &__box{
+    padding: 0 0 0px 80px;
+  }
+  &__section{
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+    &:before{
+      content: '';
+      background: url(../img/einstein-arrow.png) no-repeat;
+      position: absolute;
+      left: 30px;
+      top: 140px;
+      width: 47px;
+      height: 95px;
+    }
+  }
+  &__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 135px;
+    background: #fff;
+    height: 135px;
+    border-radius: 50%;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    img{
+      display: block;
+    }
+    figcaption{
+      width: 25px;
+      overflow: hidden;
+      height: 88px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      &:before{
+        content: '';
+        width: 135px;
+        border: 3px solid #fbd015;
+        height: 135px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 50%;
+      }
+    }
+  }
+  &__text{
+    padding: 25px;
+    padding-left: 54px;
+    margin-left: -25px;
+    background: #fff;
+    position: relative;
+    margin-top: 45px;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.1);
+    color: #202020;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+  }
+}
