@@ -6342,6 +6342,9 @@ h6.bottom-title{
 			&:hover{
 				.navigation-dropdown{
 					display: block;
+					@include mq($max-width: 992px) {
+						display: none;
+					}
 				}
 			}
 		}
@@ -6387,7 +6390,44 @@ h6.bottom-title{
 		padding: 5px 0;
 	}
 	@include mq($max-width: 992px) {
-		display: none !important;
+		position: static;
+		padding-top: 10px;
+		display: none;
+		ul{
+			width: auto;
+			padding: 10px;
+			li{
+				padding: 2px 0;
+			}
+		}
+		&.active{
+			display: block !important;
+		}
+	}
+	&__trigger{
+		display: inline-block;
+		cursor: pointer;
+		&:before{
+			font-weight: 900;
+			font-family: "Font Awesome 5 Free";
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			content: "\f078";
+			@include mq($max-width: 992px) {
+				display: none;
+			}
+		}
+		i{
+			display: none;
+			@include mq($max-width: 992px) {
+				display: inline-block;
+			}
+		}
 	}
 }
 .trial{
