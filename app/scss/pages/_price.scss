@@ -1,0 +1,234 @@
+.price-page-top{
+  h1{
+    &:after{
+      display: none;
+    }
+  }
+  &:before{
+    display: none;
+  }
+}
+.pricing-section{
+	padding-top: 45px;
+	padding-bottom: 50px;
+  font-weight: 300;
+  background: url(../img/bg-about.png) repeat;
+	&__title{
+		text-align: center;
+		color: #fff;
+		padding-bottom: 90px;
+		p{
+			font-size: 24px;
+		}
+		.title{
+			color: #fff;
+			filter: brightness(500%);
+			padding-bottom: 20px;
+			margin-bottom: 15px;
+		}
+	}
+	&__item{
+		background: #f9f9f9;
+    border: 1px solid rgba(0, 0, 0, 0.16);  
+		display: flex;
+		margin-bottom: 20px;
+	}
+	&__left{
+		background: url(../img/pricing-bg-ico.png) no-repeat left center;
+		background-size: 100% 100%;
+		min-width: 467px;
+		max-width: 467px;
+		display: flex;
+	}
+	&__numb{
+		min-width: 282px;
+		max-width: 282px;
+		display: flex;
+		justify-content: center;
+    align-items: center;
+    flex-direction: column;
+		color: #000;
+		font-size: 60px;
+		box-sizing: border-box;
+		padding: 10px 15px;
+		text-align: center;
+		small{
+      font-size: 18px;
+      display: block;
+		}
+		& > div{
+			line-height: 1;
+		}
+		span{
+			font-size: 36px;
+		}
+	}
+	&__ico{
+		min-width: 185px;
+		max-width: 185px;
+		display: flex;
+		justify-content: center; 
+		align-items: center;
+		padding: 15px 0;
+	}
+	&__text{
+		font-size: 22px;
+		padding: 20px 40px;
+		color: #242424;
+		min-height: 130px;
+		display: flex;
+		align-items: center;
+	}
+}
+@include mq($max-width: 992px) {
+  .pricing-section__item{
+		display: block;
+	}
+	.pricing-section__left{
+		max-width: 100%;
+		width: 100%;
+		background: #ffd51c;
+		justify-content: center;
+	}
+	.pricing-section__text{
+		font-size: 18px;
+		padding: 15px;
+		min-height: 1px;
+	}
+}
+@include mq($max-width: 575px) {
+  .pricing-section__ico, .pricing-section__numb{
+  	min-width: 1px;
+  	max-width: 100%;
+  }
+  .pricing-section__numb{
+  	font-size: 30px;
+  }
+  .pricing-section__left{
+  	min-width: 10px;
+  }
+  .pricing-section__numb span{
+  	font-size: 20px;
+  }
+}
+.pricing-filter{
+  padding-bottom: 50px;
+  h6{
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  &__currency{
+    display: flex;
+    justify-content: flex-end;
+    color: #151515;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    @include mq($max-width: 767px) {
+      justify-content: flex-start;
+      padding-top: 20px;
+    }
+    figcaption{
+      padding-bottom: 9px;
+    }
+    figure{
+      width: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0 0 0 25px;
+      cursor: pointer;
+      @include mq($max-width: 767px) {
+        margin: 0 7px;
+      }
+      &.active, &:hover{
+        b{
+          border: 1px solid rgba(0, 0, 0, 0.08);
+          background-color: #fbcd04;
+        }
+      }
+      b{
+        display: block;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        background-color: #f9f9f9;
+      }
+    }
+  }
+  &__discount{
+    padding: 0 0 0 5px;
+    span{
+      background: #00b415;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 400;
+      display: inline-block;
+      padding: 2px 5px;
+      border-radius: 2px;
+    }
+  }
+  &__monthly{
+    display: flex;
+    align-items: center;
+    @include mq($max-width: 992px) {
+      display: block;
+    }
+  }
+  &__item{
+    color: #525252;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    @include mq($max-width: 992px) {
+      padding-bottom: 15px;
+    }
+    label{
+      display: inline-block;
+      position: relative;
+      span{
+        width: 64px;
+        height: 32px;
+        vertical-align: middle;
+       position: relative;
+       display: inline-block;
+       border-radius: 28px;
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.28);
+        background-color: #fbcd04;
+        transition: all 0.5s ease;
+        &:before{
+          content: '';
+          position: absolute;
+          width: 27px;
+          height: 27px;
+          background-color: #2e3949;
+          top: 2px;
+          right: 2px;
+          border-radius: 50%;
+          transition: all 0.5s ease;
+        }
+      }
+      input{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+        &:checked + span{
+          background: #fff;
+        }
+        &:checked + span:before{
+          right: calc(100% - 29px);
+        }
+      }
+    }
+  }
+}
