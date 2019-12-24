@@ -32,6 +32,11 @@ $(document).ready(function() {
 		
 	});
 
+	//slider
+	$('.landing__slider').slick({
+		dots: true
+	});
+
 	
 	
 

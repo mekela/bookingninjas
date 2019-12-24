@@ -1,9 +1,12 @@
 .landing{
   background: url(../img/landing-top-bg.jpg) no-repeat top -185px center;
+  background-position: top -185px center;
+  background-repeat: no-repeat;
   font-family: MuseoSansCyrl;
   .wrapper{
     background: url(../img/landing-center-bg.jpg) no-repeat bottom 100px center;
-    
+    background-position: bottom 100px center;
+    background-repeat: no-repeat;
   }
   .main{
     padding-bottom: 200px;
@@ -96,7 +99,7 @@
     padding: 70px 0;
     color: #212020;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     @include mq($max-width: 992px) {
       padding: 35px 0;
       font-size: 14px;
@@ -117,6 +120,7 @@
       margin-bottom: 35px;
       padding-left: 82px;
       position: relative;
+      font-weight: 300;
       &:before, &:after{
         content: '';
         position: absolute;
@@ -166,6 +170,15 @@
       &.violet{
         color: #6665dd;
       }
+      &.blue{
+        color: #43bccd;
+      }
+      &.light-blue{
+        color: #3cb0fd;
+      }
+      &.green{
+        color: #1a7573;
+      }
     }
   }
   &__workspace-icon{
@@ -183,6 +196,15 @@
     }
     &.violet{
       background: #6665dd;
+    }
+    &.blue{
+      background: #43bccd;
+    }
+    &.light-blue{
+      background: #3cb0fd;
+    }
+    &.green{
+      background: #1a7573;
     }
   }
   &__story-box{
@@ -255,6 +277,85 @@
       text-align: center;
       .text_center{
         margin-bottom: 20px;
+      }
+    }
+  }
+  &__slider{
+    box-shadow: 0 20px 50px rgba(1, 1, 1, 0.05);
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    position: relative;
+    .slick-arrow{
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      cursor: pointer;
+      left: -100px;
+      width: 32px;
+      height: 22px;
+      margin-top: -11px;
+      @include hide-text;
+      background: url(../img/landing-arrow.png) no-repeat center;
+      &.slick-next{
+        left: auto;
+        right: -100px;
+        @include mirror_flip;
+      }
+      @include mq($max-width: 1100px) {
+        opacity: 0;
+      }
+    }
+    .slick-dots{
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      li{
+        display: inline-block;
+        padding: 0 7px;
+        @include hide-text;
+        &.slick-active{
+          button{
+            background: #fbcd04;
+          }
+        }
+      }
+      button{
+        width: 15px;
+        border-radius: 50%;
+        height: 15px;
+        @include hide-text;
+        background-color: #212020;  
+      }
+    }
+    &-item{
+      padding:  100px;
+      padding-top: 40px;
+      @include mq($max-width: 767px) {
+        padding: 15px;
+      }
+    }
+    h5{
+      color: #383838;
+      font-size: 22px;
+      font-weight: 400;
+    }
+    figure{
+      padding-bottom: 30px;
+      img{
+        border-radius: 50%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    section{
+      padding-bottom: 20px;
+      background: url(../img/landing-quote.png) no-repeat left top;
+      @include mq($max-width: 767px) {
+        background: none;
       }
     }
   }
