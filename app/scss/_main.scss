@@ -6727,6 +6727,11 @@ h6.bottom-title{
 			height: 10%;
 		}
 	}
+	&.about-page-top-noline{
+		&:before{
+			display: none;
+		}
+	}
 	article{
 		position: relative;
 		z-index: 2;
@@ -6760,6 +6765,10 @@ h6.bottom-title{
 	p{
 		padding-bottom: 15px;
 	}
+}
+.dotted-bg{
+	background: url(../img/bg-about.png) repeat;
+	padding: 70px 0;
 }
 .about-page-content{
 	background: url(../img/about-bg-big.png) no-repeat bottom 350px left -500px, url(../img/bg-about.png) repeat;
