@@ -11305,6 +11305,43 @@ body {
       text-align: center;
       padding-bottom: 50px; } }
 
+.career-modal {
+  width: 570px; }
+  @media only screen and (max-width: 992px) {
+    .career-modal {
+      padding: 20px; } }
+  .career-modal h3 {
+    text-align: center;
+    color: #343434;
+    padding-bottom: 30px;
+    font-size: 24px; }
+  .career-modal__form-item {
+    padding-bottom: 20px; }
+    .career-modal__form-item label {
+      display: block;
+      font-size: 14px;
+      padding-bottom: 10px;
+      color: #323232; }
+    .career-modal__form-item sup {
+      color: red; }
+    .career-modal__form-item small {
+      font-size: 0.8em;
+      color: #545454; }
+      .career-modal__form-item small i {
+        color: #d6d6d6;
+        padding: 0 5px 0 0; }
+    .career-modal__form-item input:not(.button), .career-modal__form-item select {
+      background: #f1f8ff;
+      border-radius: 2px;
+      border: none;
+      width: 100%;
+      height: 45px;
+      box-shadow: 0 0 5px #e9eaec; }
+    .career-modal__form-item .button {
+      border-radius: 0;
+      width: 320px;
+      max-width: 80%; }
+
 .solution-page-top {
   height: auto;
   background: #f6f6f6;
