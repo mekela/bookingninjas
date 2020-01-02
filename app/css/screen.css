@@ -13655,3 +13655,116 @@ body {
     @media only screen and (max-width: 992px) {
       .matrix-software section {
         padding-top: 15px; } }
+
+.feature-spotlight {
+  position: relative;
+  padding: 100px 0 200px 0; }
+  @media only screen and (max-width: 767px) {
+    .feature-spotlight {
+      padding: 70px 0 100px 0; } }
+  .feature-spotlight__slider-text {
+    padding: 30px 0 0 0;
+    color: #212020;
+    font-size: 18px;
+    font-weight: 300; }
+    .feature-spotlight__slider-text h1 {
+      color: #212020;
+      font-size: 36px;
+      font-weight: 700;
+      padding-bottom: 30px; }
+      @media only screen and (max-width: 767px) {
+        .feature-spotlight__slider-text h1 {
+          font-size: 24px; } }
+    .feature-spotlight__slider-text p {
+      padding-bottom: 30px; }
+    .feature-spotlight__slider-text hr {
+      border: 1px solid #cfcfcf;
+      margin: 0 0 30px 0; }
+    .feature-spotlight__slider-text ul {
+      padding-bottom: 30px; }
+      .feature-spotlight__slider-text ul li {
+        padding: 0 0 15px 50px;
+        position: relative; }
+        @media only screen and (max-width: 767px) {
+          .feature-spotlight__slider-text ul li {
+            padding-left: 30px; } }
+        .feature-spotlight__slider-text ul li:before {
+          width: 24px;
+          height: 24px;
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-radius: 50%;
+          background: #fbcd04; }
+          @media only screen and (max-width: 767px) {
+            .feature-spotlight__slider-text ul li:before {
+              width: 14px;
+              height: 14px;
+              top: 5px; } }
+    .feature-spotlight__slider-text .button {
+      color: #000;
+      min-width: 200px; }
+  .feature-spotlight__slider img {
+    width: 100%; }
+  .feature-spotlight__slider-big {
+    box-shadow: 0 10px 24px rgba(1, 2, 2, 0.08);
+    margin-bottom: 20px; }
+  .feature-spotlight__slider-small {
+    position: relative; }
+    .feature-spotlight__slider-small .slick-slide > div {
+      box-sizing: border-box;
+      padding: 15px;
+      box-shadow: 0 10px 14px rgba(1, 2, 2, 0.08);
+      background-color: #ffffff;
+      margin-bottom: 25px; }
+      @media only screen and (max-width: 767px) {
+        .feature-spotlight__slider-small .slick-slide > div {
+          padding: 5px; } }
+    .feature-spotlight__slider-small img {
+      display: block; }
+    .feature-spotlight__slider-small .slick-slide {
+      margin: 0 15px;
+      outline: none !important; }
+      @media only screen and (max-width: 767px) {
+        .feature-spotlight__slider-small .slick-slide {
+          margin: 0 5px; } }
+    .feature-spotlight__slider-small .slick-list {
+      margin: 0 -15px; }
+      @media only screen and (max-width: 767px) {
+        .feature-spotlight__slider-small .slick-list {
+          margin: 0 -5px; } }
+    .feature-spotlight__slider-small .slick-current > div {
+      border: 1px solid #cfcfcf; }
+    .feature-spotlight__slider-small .slick-list {
+      outline: none !important; }
+    .feature-spotlight__slider-small .slick-arrow {
+      position: absolute;
+      top: 0;
+      right: -15px;
+      height: 100%;
+      width: 170px;
+      z-index: 2;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
+      font: 0 / 0 a;
+      text-shadow: none;
+      color: transparent; }
+      .feature-spotlight__slider-small .slick-arrow:before {
+        content: '';
+        background: url(../img/arrow_Left.png) no-repeat;
+        width: 32px;
+        height: 22px;
+        position: absolute;
+        top: calc(50% - 12px);
+        right: 30px;
+        transform: translateY(-50%); }
+      .feature-spotlight__slider-small .slick-arrow.slick-prev {
+        right: auto;
+        left: -15px;
+        background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%); }
+        .feature-spotlight__slider-small .slick-arrow.slick-prev:before {
+          right: auto;
+          left: 30px;
+          transform: translateY(-50%) scale(-1, 1); }
+      .feature-spotlight__slider-small .slick-arrow.slick-disabled {
+        visibility: hidden; }

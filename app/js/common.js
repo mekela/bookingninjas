@@ -37,6 +37,23 @@ $(document).ready(function() {
 		dots: true
 	});
 
+	$('.feature-spotlight__slider-big').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.feature-spotlight__slider-small'
+	});
+	$('.feature-spotlight__slider-small').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.feature-spotlight__slider-big',
+		dots: false,
+		centerMode: false,
+		focusOnSelect: true,
+		infinite: false
+	});
+
 	
 	
 

@@ -1,0 +1,138 @@
+.feature-spotlight{
+  position: relative;
+  padding: 100px 0 200px 0;
+  @include mq($max-width: 767px) {
+    padding: 70px 0 100px 0;
+  }
+  &__slider-text{
+    padding: 30px 0 0 0;
+    color: #212020;
+    font-size: 18px;
+    font-weight: 300;
+    h1{
+      color: #212020;
+      font-size: 36px;
+      font-weight: 700;
+      padding-bottom: 30px;
+      @include mq($max-width: 767px) {
+        font-size: 24px;
+      }
+    }
+    p{
+      padding-bottom: 30px;
+    }
+    hr{
+       border: 1px solid #cfcfcf;
+       margin: 0 0 30px 0;
+    }
+    ul{
+      padding-bottom: 30px;
+      li{
+        padding: 0 0 15px 50px;
+        position: relative;
+        @include mq($max-width: 767px) {
+          padding-left: 30px;
+        }
+        &:before{
+          width: 24px;
+          height: 24px;
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          border-radius: 50%;
+          background: #fbcd04;
+          @include mq($max-width: 767px) {
+            width: 14px;
+            height: 14px;
+            top: 5px;
+          }
+        }
+      }
+    }
+    .button{
+      color: #000;
+      min-width: 200px;
+    }
+  }
+  &__slider{
+    img{
+      width: 100%;
+    }
+  }
+  &__slider-big{
+    box-shadow: 0 10px 24px rgba(1, 2, 2, 0.08);
+    margin-bottom: 20px;
+  }
+  &__slider-small{
+    position: relative;
+    .slick-slide > div{
+      box-sizing: border-box;
+      padding: 15px;
+      box-shadow: 0 10px 14px rgba(1, 2, 2, 0.08);
+      background-color: #ffffff;
+      margin-bottom: 25px;
+     // margin: 0 15px;
+     @include mq($max-width: 767px) {
+       padding: 5px;
+     }
+    }
+    img{
+      display: block;
+    }
+    .slick-slide {
+      margin: 0 15px;
+      outline: none !important;
+      @include mq($max-width: 767px) {
+        margin: 0 5px;
+      }
+    }
+    .slick-list {
+      margin: 0 -15px;
+      @include mq($max-width: 767px) {
+        margin: 0 -5px;
+      }
+    }
+    .slick-current{
+      & > div{
+        border: 1px solid #cfcfcf;
+      }
+    }
+    .slick-list {
+        outline: none !important;
+    }
+    .slick-arrow{
+      position: absolute;
+      top: 0;
+      right: -15px;
+      height: 100%;
+      width: 170px;
+      z-index: 2;
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+      @include hide-text;
+      &:before{
+        content: '';
+        background: url(../img/arrow_Left.png) no-repeat;
+        width: 32px;
+        height: 22px;
+        position: absolute;
+        top: calc(50% - 12px);
+        right: 30px;
+        transform: translateY(-50%);
+      }
+      &.slick-prev{
+        right: auto;
+        left: -15px;
+        background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+        &:before{
+          right: auto;
+          left: 30px;
+          transform: translateY(-50%) scale(-1, 1);
+        }
+      }
+      &.slick-disabled{
+        visibility: hidden;
+      }
+    }
+  }
+}
