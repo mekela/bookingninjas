@@ -1,6 +1,20 @@
 .feature-spotlight{
   position: relative;
   padding: 100px 0 200px 0;
+  color: #212020;
+  font-size: 18px;
+  font-weight: 300;
+  .title{
+    padding-bottom: 35px;
+    &.blue-border{
+      border-bottom: 5px solid #3cb0fd;
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+      @include mq($max-width: 767px) {
+        border-bottom-width: 2px;
+      }
+    }
+  }
   @include mq($max-width: 767px) {
     padding: 70px 0 100px 0;
   }
@@ -133,6 +147,114 @@
       &.slick-disabled{
         visibility: hidden;
       }
+    }
+  }
+  &__grid{
+    padding-bottom: 150px;
+    .container-fluid{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include mq($max-width: 767px) {
+      padding-bottom: 50px;
+    }
+  }
+  &__grid-item{
+    background-color: #f2f2f2;
+    display: flex;
+    width: 100%;
+    min-height: 25.26vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    @include mq($max-width: 1200px) {
+      padding: 15px 0;
+    }
+    @include mq($max-width: 767px) {
+      height: auto;
+      min-height: 0px;
+    }
+    &:hover{
+      .feature-spotlight__grid-button{
+        opacity: 1;
+      }
+    }
+    img{
+      width: 80%;
+    }
+    figcaption{
+      color: #ffffff;
+      font-size: 1.875VW;
+      font-weight: 700;
+      padding-bottom: 2.34375VW;
+      @include mq($max-width: 767px) {
+        font-size: 16px;
+        padding-bottom: 1em;
+      }
+    }
+    &.light{
+      figcaption{
+        color: #212020;
+      }
+    }
+  }
+  &__grid-button{
+    opacity: 0;
+    @include transition(all 0.5s);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 4.6875VW;
+    background-image: linear-gradient(to top, rgba(51, 51, 46, 0.5) 0%, rgba(51, 51, 46, 0) 100%);
+    .button{
+      @include mq($min-width: 768px) {
+      font-size: 0.9375VW;
+      text-transform: none;
+      color: #212020;
+      padding:  1.145vw  2.08vw;
+      }
+    }
+  }
+  &__text{
+    padding-bottom: 60px;
+    p{
+      padding-bottom: 35px;
+    }
+    &.pb{
+      padding-bottom: 150px;
+      @include mq($max-width: 767px) {
+        padding-bottom: 50px;
+      }
+    }
+  }
+  &__tag{
+    padding-bottom: 40px;
+    &:last-child{
+      padding-bottom: 0;
+    }
+    @include mq($max-width: 767px) {
+      text-align: center;
+    }
+  }
+  &__tag-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbcd04;
+    @include mq($max-width: 767px) {
+      display: inline-flex;
+      margin-bottom: 15px;
     }
   }
 }

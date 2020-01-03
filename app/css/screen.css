@@ -13658,7 +13658,19 @@ body {
 
 .feature-spotlight {
   position: relative;
-  padding: 100px 0 200px 0; }
+  padding: 100px 0 200px 0;
+  color: #212020;
+  font-size: 18px;
+  font-weight: 300; }
+  .feature-spotlight .title, .feature-spotlight .einstein-top .subtitle, .einstein-top .feature-spotlight .subtitle {
+    padding-bottom: 35px; }
+    .feature-spotlight .title.blue-border, .feature-spotlight .einstein-top .blue-border.subtitle, .einstein-top .feature-spotlight .blue-border.subtitle {
+      border-bottom: 5px solid #3cb0fd;
+      padding-bottom: 25px;
+      margin-bottom: 25px; }
+      @media only screen and (max-width: 767px) {
+        .feature-spotlight .title.blue-border, .feature-spotlight .einstein-top .blue-border.subtitle, .einstein-top .feature-spotlight .blue-border.subtitle {
+          border-bottom-width: 2px; } }
   @media only screen and (max-width: 767px) {
     .feature-spotlight {
       padding: 70px 0 100px 0; } }
@@ -13768,3 +13780,95 @@ body {
           transform: translateY(-50%) scale(-1, 1); }
       .feature-spotlight__slider-small .slick-arrow.slick-disabled {
         visibility: hidden; }
+  .feature-spotlight__grid {
+    padding-bottom: 150px; }
+    .feature-spotlight__grid .container-fluid {
+      padding-left: 0;
+      padding-right: 0; }
+    @media only screen and (max-width: 767px) {
+      .feature-spotlight__grid {
+        padding-bottom: 50px; } }
+  .feature-spotlight__grid-item {
+    background-color: #f2f2f2;
+    display: flex;
+    width: 100%;
+    min-height: 25.26vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center; }
+    @media only screen and (max-width: 1200px) {
+      .feature-spotlight__grid-item {
+        padding: 15px 0; } }
+    @media only screen and (max-width: 767px) {
+      .feature-spotlight__grid-item {
+        height: auto;
+        min-height: 0px; } }
+    .feature-spotlight__grid-item:hover .feature-spotlight__grid-button {
+      opacity: 1; }
+    .feature-spotlight__grid-item img {
+      width: 80%; }
+    .feature-spotlight__grid-item figcaption {
+      color: #ffffff;
+      font-size: 1.875VW;
+      font-weight: 700;
+      padding-bottom: 2.34375VW; }
+      @media only screen and (max-width: 767px) {
+        .feature-spotlight__grid-item figcaption {
+          font-size: 16px;
+          padding-bottom: 1em; } }
+    .feature-spotlight__grid-item.light figcaption {
+      color: #212020; }
+  .feature-spotlight__grid-button {
+    opacity: 0;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 4.6875VW;
+    background-image: linear-gradient(to top, rgba(51, 51, 46, 0.5) 0%, rgba(51, 51, 46, 0) 100%); }
+    @media only screen and (min-width: 768px) {
+      .feature-spotlight__grid-button .button {
+        font-size: 0.9375VW;
+        text-transform: none;
+        color: #212020;
+        padding: 1.145vw  2.08vw; } }
+  .feature-spotlight__text {
+    padding-bottom: 60px; }
+    .feature-spotlight__text p {
+      padding-bottom: 35px; }
+    .feature-spotlight__text.pb {
+      padding-bottom: 150px; }
+      @media only screen and (max-width: 767px) {
+        .feature-spotlight__text.pb {
+          padding-bottom: 50px; } }
+  .feature-spotlight__tag {
+    padding-bottom: 40px; }
+    .feature-spotlight__tag:last-child {
+      padding-bottom: 0; }
+    @media only screen and (max-width: 767px) {
+      .feature-spotlight__tag {
+        text-align: center; } }
+  .feature-spotlight__tag-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbcd04; }
+    @media only screen and (max-width: 767px) {
+      .feature-spotlight__tag-img {
+        display: inline-flex;
+        margin-bottom: 15px; } }
