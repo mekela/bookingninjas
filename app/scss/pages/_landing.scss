@@ -95,6 +95,23 @@
       padding: 35px 0;
     }
   }
+  &__clients-row {
+    a{
+      img{
+        opacity: 0.8;
+        -webkit-filter: grayscale(100%) brightness(1.3);
+        filter: grayscale(100%) brightness(1.3);
+        transition: 1s;
+      }
+      &:hover{
+        img{
+          opacity: 1;
+          -webkit-filter: grayscale(0%) brightness(1);
+        filter: grayscale(0%) brightness(1);
+        }
+      }
+    }
+  }
   &__box{
     padding: 70px 0;
     color: #212020;
@@ -173,6 +190,9 @@
       &.blue{
         color: #43bccd;
       }
+      &.dark-blue{
+        color: #3952b5;
+      }
       &.light-blue{
         color: #3cb0fd;
       }
@@ -202,6 +222,9 @@
     }
     &.light-blue{
       background: #3cb0fd;
+    }
+    &.dark-blue{
+      background: #3952b5;
     }
     &.green{
       background: #1a7573;

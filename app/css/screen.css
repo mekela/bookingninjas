@@ -12777,6 +12777,15 @@ body {
       .landing__clients {
         background: #fff;
         padding: 35px 0; } }
+  .landing__clients-row a img {
+    opacity: 0.8;
+    -webkit-filter: grayscale(100%) brightness(1.3);
+    filter: grayscale(100%) brightness(1.3);
+    transition: 1s; }
+  .landing__clients-row a:hover img {
+    opacity: 1;
+    -webkit-filter: grayscale(0%) brightness(1);
+    filter: grayscale(0%) brightness(1); }
   .landing__box {
     padding: 70px 0;
     color: #212020;
@@ -12846,6 +12855,8 @@ body {
         color: #6665dd; }
       .landing__workspace-item h6.blue {
         color: #43bccd; }
+      .landing__workspace-item h6.dark-blue {
+        color: #3952b5; }
       .landing__workspace-item h6.light-blue {
         color: #3cb0fd; }
       .landing__workspace-item h6.green {
@@ -12868,6 +12879,8 @@ body {
       background: #43bccd; }
     .landing__workspace-icon.light-blue {
       background: #3cb0fd; }
+    .landing__workspace-icon.dark-blue {
+      background: #3952b5; }
     .landing__workspace-icon.green {
       background: #1a7573; }
   .landing__story-box {
