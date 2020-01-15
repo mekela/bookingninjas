@@ -11262,6 +11262,8 @@ body {
     position: relative;
     padding-left: 50px;
     padding-bottom: 25px; }
+    .career-page-interest__item:hover article {
+      background: #f7f7f7; }
   .career-page-interest article {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
     background-color: #ffffff;
@@ -11270,7 +11272,12 @@ body {
     color: #272727;
     font-size: 16px;
     line-height: 1.2;
-    font-weight: 300; }
+    font-weight: 300;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s; }
     .career-page-interest article h6 {
       padding-bottom: 22px;
       color: #272727;
@@ -12743,7 +12750,12 @@ body {
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s; }
     .landing__hero-form input {
       background: none;
       flex: 1;
@@ -12769,6 +12781,19 @@ body {
           height: 40px;
           width: 100%;
           text-align: center; } }
+  .landing__hero-form-success {
+    background: rgba(60, 176, 253, 0.8); }
+    .landing__hero-form-success input {
+      display: none; }
+    .landing__hero-form-success .landing__hero-form-success-text {
+      display: block; }
+  .landing__hero-form-success-text {
+    color: #fff;
+    padding: 0 30px;
+    flex: 1;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    display: none; }
   .landing__clients {
     display: block;
     text-align: center;

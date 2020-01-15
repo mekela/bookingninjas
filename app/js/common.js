@@ -32,6 +32,11 @@ $(document).ready(function() {
 		
 	});
 
+	//form
+	$('.landing__hero-form .button').click(function(){
+		$(this).parent('.landing__hero-form').addClass('landing__hero-form-success');
+	});
+
 	//slider
 	$('.landing__slider').slick({
 		dots: true
