@@ -150,6 +150,7 @@
     }
     p{
       padding-bottom: 25px;
+      line-height: 1.8;
     }
     dl{
       margin-bottom: 35px;
@@ -211,11 +212,17 @@
       &.dark-blue{
         color: #3952b5;
       }
+      &.cyan{
+        color: #007ea7;
+      }
       &.light-blue{
         color: #3cb0fd;
       }
       &.green{
         color: #1a7573;
+      }
+      &.yellow{
+        color: #fabd05;
       }
     }
   }
@@ -238,6 +245,9 @@
     &.blue{
       background: #43bccd;
     }
+    &.cyan{
+      background: #007ea7;
+    }
     &.light-blue{
       background: #3cb0fd;
     }
@@ -246,6 +256,9 @@
     }
     &.green{
       background: #1a7573;
+    }
+    &.yellow{
+      background: #fabd05;
     }
   }
   &__story-box{
