@@ -224,6 +224,12 @@
       &.yellow{
         color: #fabd05;
       }
+      &.red{
+        color: #cc434a;
+      }
+      &.dark-violet{
+        color: #4c2b8f;
+      }
     }
   }
   &__workspace-icon{
@@ -242,6 +248,9 @@
     &.violet{
       background: #6665dd;
     }
+    &.dark-violet{
+      background: #4c2b8f;
+    }
     &.blue{
       background: #43bccd;
     }
@@ -259,6 +268,9 @@
     }
     &.yellow{
       background: #fabd05;
+    }
+    &.red{
+      background: #cc434a;
     }
   }
   &__story-box{
