@@ -6243,8 +6243,16 @@ h6.bottom-title{
 		width: 300px;
 		background: #fbcd04;
 		z-index: 120;
+		display: block !important;
+		overflow: hidden;
+		height: 0px;
+		opacity: 0;
+		@include transition(all 0.3s);
 		&.active{
 			display: block;
+			height: 100vh;
+			opacity: 1;
+
 		}
 	}
 	ul{
@@ -6298,6 +6306,17 @@ h6.bottom-title{
 			display: block;
 		}
 	}
+	&__overlay{
+		background: #fff;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 99;
+		opacity: 0.7;
+		display: none;
+	}
 }
 .navigation-dropdown{
 	position: absolute;
@@ -6320,16 +6339,22 @@ h6.bottom-title{
 	@include mq($max-width: 992px) {
 		position: static;
 		padding-top: 10px;
-		display: none;
+		display: block !important;
+		overflow: hidden;
+		max-height: 0px;
+		opacity: 0;
+		@include transition(all 0.3s);
+		&.active{
+			display: block;
+			max-height: 500px;
+			opacity: 1;
+		}
 		ul{
 			width: auto;
 			padding: 10px;
 			li{
 				padding: 2px 0;
 			}
-		}
-		&.active{
-			display: block !important;
 		}
 	}
 	&__trigger{

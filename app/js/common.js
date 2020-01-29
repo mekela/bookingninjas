@@ -68,9 +68,15 @@ $(document).ready(function() {
 	//menu
 	$( ".navigation__button" ).click(function() {
 	  $( ".navigation" ).addClass( "active");
+	  $( ".navigation__overlay" ).show( );
 	});
 	$( ".navigation__close" ).click(function() {
 	  $( ".navigation" ).removeClass( "active");
+	  $( ".navigation__overlay" ).hide( );
+	});
+	$( ".navigation__overlay" ).click(function() {
+		$( ".navigation" ).removeClass( "active");
+		$( ".navigation__overlay" ).hide( );
 	});
 
 	//accordeon

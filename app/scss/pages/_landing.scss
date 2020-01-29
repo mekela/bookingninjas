@@ -57,7 +57,7 @@
     align-items: center;
     margin-bottom: 50px;
     @include transition(all 0.5s);
-    input{
+    input:not(.button){
       background: none;
       flex: 1;
       color: #545353;
@@ -69,10 +69,21 @@
       &:focus{
         box-shadow: none !important;
       }
+      @include mq($max-width: 575px) {
+          background: #fff;
+          height: 50px;
+          width: 100%;
+          box-shadow: 0 20px 40px rgba(95, 104, 113, 0.1);
+          border-radius: 15px;
+          text-align: center;
+          margin-bottom: 10px;
+       
+      }
     }
     .button{
       border-radius: 38px;
       margin: 5px;
+      cursor: pointer;
     }
     @include mq($max-width: 992px) {
       margin: 0 auto;
@@ -80,11 +91,8 @@
     @include mq($max-width: 575px) {
       display: block;
       text-align: center;
-      input{
-        height: 40px;
-        width: 100%;
-        text-align: center;
-      }
+      background: none;
+      box-shadow: none;
     }
   }
   &__hero-form-success{
@@ -98,11 +106,15 @@
   }
   &__hero-form-success-text{
     color: #fff;
-    padding: 0 30px;
+    padding: 15px 30px;
     flex: 1;
     font-size: 1.2em;
     text-transform: uppercase;
+    text-align: center;
     display: none;
+    @include mq($max-width: 992px) {
+      padding: 15px ;
+    }
   }
   &__clients{
     display: block;
