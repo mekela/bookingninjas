@@ -8151,11 +8151,13 @@ h6.bottom-title {
       overflow: hidden;
       height: 0px;
       opacity: 0;
+      overflow-y: auto;
       -moz-transition: all 0.3s;
       -o-transition: all 0.3s;
       -webkit-transition: all 0.3s;
       -ms-transition: all 0.3s;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      font-size: 18px; }
       .navigation.active {
         display: block;
         height: 100vh;
@@ -8172,6 +8174,9 @@ h6.bottom-title {
     .navigation ul li {
       padding-left: 20px;
       position: relative; }
+      @media only screen and (max-width: 992px) {
+        .navigation ul li {
+          padding-left: 10px; } }
       .navigation ul li a {
         text-decoration: none;
         border-bottom: 3px solid transparent;
@@ -8182,6 +8187,9 @@ h6.bottom-title {
         transition: all 0.5s; }
         .navigation ul li a:hover, .navigation ul li a.active {
           border-bottom-color: #000; }
+        @media only screen and (max-width: 992px) {
+          .navigation ul li a {
+            font-size: 15px; } }
       .navigation ul li:hover .navigation-dropdown {
         display: block; }
         @media only screen and (max-width: 992px) {
@@ -8189,7 +8197,7 @@ h6.bottom-title {
             display: none; } }
   .navigation__button {
     text-align: right;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     float: right;
     background: none;
     border: none;
@@ -8200,9 +8208,9 @@ h6.bottom-title {
   .navigation__close {
     display: none;
     position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 1.2rem; }
+    top: 10px;
+    right: 10px;
+    font-size: 1.7rem; }
     @media only screen and (max-width: 992px) {
       .navigation__close {
         display: block; } }
