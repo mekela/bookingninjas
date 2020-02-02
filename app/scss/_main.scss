@@ -6237,10 +6237,10 @@ h6.bottom-title{
 	text-transform: uppercase;
 	@include mq($max-width: 992px) {
 		position: fixed;
-		top: 0;
+		top: 73px;
 		right: 0;
 		height: 100%;
-		width: 300px;
+		width: 100%;
 		background: #fbcd04;
 		z-index: 120;
 		display: block !important;
