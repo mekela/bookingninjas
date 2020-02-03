@@ -6237,11 +6237,11 @@ h6.bottom-title{
 	text-transform: uppercase;
 	@include mq($max-width: 992px) {
 		position: fixed;
-		top: 73px;
+		top: 93px;
 		right: 0;
 		height: 100%;
-		width: 100%;
-		background: #fbcd04;
+		width: 100% !important;
+		background: #fff;
 		z-index: 120;
 		display: block !important;
 		overflow: hidden;
@@ -6252,9 +6252,15 @@ h6.bottom-title{
 		font-size: 18px;
 		&.active{
 			display: block;
-			height: 100vh;
+			height: calc(100vh - 93px);
 			opacity: 1;
 
+		}
+	}
+	@include mq($max-width: 767px) {
+		top: 90px;
+		&.active{
+			height: calc(100vh - 90px);
 		}
 	}
 	ul{
@@ -6263,14 +6269,17 @@ h6.bottom-title{
 		align-items: center;
 		@include mq($max-width: 992px) {
 			display: block;
-			padding: 30px ;
-			padding-left: 10px;
+			padding: 15px ;
 		}
 		li{
 			padding-left: 20px;
 			position: relative;
 			@include mq($max-width: 992px) {
 				padding-left: 10px;
+				position: relative;
+				padding-left: 0;
+				padding-bottom: 0;
+				border-bottom: 1px solid rgba(0,0,0,0.3);
 			}
 			a{
 				text-decoration: none;
@@ -6281,6 +6290,8 @@ h6.bottom-title{
 				}
 				@include mq($max-width: 992px) {
 					font-size: 15px;
+					display: block;
+					padding: 1.2em 1em 1em 1em;
 				}
 			}
 			&:hover{
@@ -6322,7 +6333,7 @@ h6.bottom-title{
 		width: 100%;
 		height: 100%;
 		z-index: 99;
-		opacity: 0.7;
+		opacity: 1;
 		display: none;
 	}
 }
@@ -6346,12 +6357,13 @@ h6.bottom-title{
 	}
 	@include mq($max-width: 992px) {
 		position: static;
-		padding-top: 10px;
+		padding-top: 0px;
 		display: block !important;
 		overflow: hidden;
 		max-height: 0px;
 		opacity: 0;
 		@include transition(all 0.3s);
+		
 		&.active{
 			display: block;
 			max-height: 500px;
@@ -6360,8 +6372,18 @@ h6.bottom-title{
 		ul{
 			width: auto;
 			padding: 10px;
+			background: none;
+			border-color: rgba(0,0,0,0.3);
+			border-bottom: none;
 			li{
-				padding: 2px 0;
+				padding:  0;
+				&:last-child{
+					border-bottom: none;
+				}
+				a{
+					padding: 0.5em;
+					padding-top: 0.7em;
+				}
 			}
 		}
 	}
@@ -6388,6 +6410,11 @@ h6.bottom-title{
 			@include mq($max-width: 992px) {
 				display: inline-block;
 			}
+		}
+		@include mq($max-width: 992px) {
+			position: absolute;
+			top: 1em;
+			right: 0.5em;
 		}
 	}
 }
