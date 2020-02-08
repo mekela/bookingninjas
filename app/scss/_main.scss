@@ -7848,3 +7848,21 @@ h6.bottom-title{
 		font-weight: 700;
 	}
 }
+
+//modal
+.modal{
+	display: none;
+	&__success{
+	  text-align: center; 
+	  max-width: 450px;
+	  &-icon{
+		  font-size: 3em;
+		  color: #4bb543;
+		  padding-bottom: 0.5rem;
+	  } 
+	  h2{
+		  padding-bottom: 1rem;
+		  font-size: 2.2rem;
+	  }
+	}
+}
