@@ -6249,7 +6249,7 @@ h6.bottom-title{
 		opacity: 0;
 		overflow-y: auto;
 		@include transition(all 0.3s);
-		font-size: 18px;
+		font-size: 20px;
 		&.active{
 			display: block;
 			height: calc(100vh - 93px);
@@ -6287,11 +6287,16 @@ h6.bottom-title{
 				@include transition(all 0.5s);
 				&:hover, &.active{
 					border-bottom-color: #000;
+					@include mq($max-width: 992px) {
+						border-bottom: none; 
+					}
 				}
 				@include mq($max-width: 992px) {
-					font-size: 15px;
+					font-size: 18px;
 					display: block;
 					padding: 1.2em 1em 1em 1em;
+					border-bottom-width: 0px;
+					border-bottom:  none;
 				}
 			}
 			&:hover{

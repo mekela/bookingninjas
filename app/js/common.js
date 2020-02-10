@@ -11,8 +11,8 @@ $(document).ready(function() {
 	$('.nav-trigger').click(function(){
 		$(this).next().slideToggle('fast');
 	});
-	$('.navigation-dropdown__trigger i').click(function(){
-		$(this).parent().next().toggleClass('active');
+	$('.navigation-dropdown__click').click(function(){
+		$(this).parent().find('.navigation-dropdown').toggleClass('active');
 	});
 	$(".thumb").fancybox({
 		prevEffect	: 'none',
