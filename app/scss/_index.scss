@@ -637,7 +637,7 @@ body {
 		overflow: hidden;
 		display: flex;
 		margin-bottom: 15px;
-		input{
+		input:not(.button){
 			background: none;
 			border: none;
 			box-shadow: none !important;

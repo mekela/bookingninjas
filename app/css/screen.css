@@ -11216,7 +11216,7 @@ body {
     overflow: hidden;
     display: flex;
     margin-bottom: 15px; }
-    .footer__form input {
+    .footer__form input:not(.button) {
       background: none;
       border: none;
       box-shadow: none !important;
