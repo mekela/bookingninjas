@@ -11505,7 +11505,7 @@ body {
     padding: 20px 25px; }
   .career-lead-form__item {
     padding-bottom: 22px; }
-    .career-lead-form__item input, .career-lead-form__item select {
+    .career-lead-form__item input:not(.button), .career-lead-form__item select {
       height: 55px;
       width: 100%;
       border-radius: 2px;
@@ -12587,6 +12587,24 @@ body {
       .consulting-contact__map iframe {
         width: 100%;
         margin-bottom: 50px; } }
+
+.consulting-time, .consulting-date {
+  padding: 0 15px; }
+  @media only screen and (max-width: 575px) {
+    .consulting-time, .consulting-date {
+      margin-bottom: 15px; } }
+
+.consulting-time {
+  background: #fff url(../img/clock-ico.png) no-repeat right 15px center !important; }
+
+.consulting-date {
+  background: #fff url(../img/calend-ico.png) no-repeat right 15px center !important; }
+
+.consulting-popup {
+  padding: 0;
+  background: none; }
+  .consulting-popup .fancybox-close-small {
+    display: none; }
 
 .price-page-top h1:after {
   display: none; }

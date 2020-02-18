@@ -204,3 +204,23 @@
     }
   }
 }
+
+.consulting-time, .consulting-date{
+  padding: 0 15px;
+  @include mq($max-width: 575px) {
+    margin-bottom: 15px;
+  }
+}
+.consulting-time{
+  background: #fff url(../img/clock-ico.png) no-repeat right 15px center !important;
+}
+.consulting-date{
+  background: #fff url(../img/calend-ico.png) no-repeat right 15px center !important;
+}
+.consulting-popup{
+  padding: 0;
+  background: none;
+  .fancybox-close-small{
+    display: none;
+  }
+}

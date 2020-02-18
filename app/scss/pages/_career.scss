@@ -283,7 +283,7 @@
   }
   &__item{
     padding-bottom: 22px;
-    input, select{
+    input:not(.button), select{
       height: 55px;
       width: 100%;
       border-radius: 2px;
