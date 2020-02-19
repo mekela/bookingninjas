@@ -36,6 +36,9 @@ $(document).ready(function() {
 	$('.landing__hero-form .button').click(function(){
 		$(this).parent('.landing__hero-form').addClass('landing__hero-form-success');
 	});
+	$(".footer-btn-submit").click(function() {
+		$.fancybox.open({ src : '#modal-thanks', type : 'inline', });
+	});
 
 	//slider
 	$('.landing__slider').slick({
