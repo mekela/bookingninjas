@@ -130,7 +130,14 @@ $(document).ready(function() {
         $(this).addClass('active');
         $('.tab-content').hide();
         $($(this).attr('href')).show();
-    });
+	});
+	$('.resource-center__tabs-links a').click(function(event){
+		event.preventDefault();
+		$('.resource-center__tabs-box .col-lg-4').removeClass('active');
+		$('.resource-center__tabs-links a').removeClass('active');
+		$(this).addClass('active');
+		$(".resource-center__tabs-box .col-lg-4").filter($(this).attr('data-href')).addClass('active'); 
+	});
 
 	//show modal
 	$("body").one('mouseleave', function() {
