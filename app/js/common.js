@@ -88,6 +88,10 @@ $(document).ready(function() {
 	  $(this).next('.faq_answer').slideToggle( "slow");
 	  $(this).toggleClass( "active");
 	});
+	$( ".landing__accordion-trigger" ).click(function() {
+		$(this).next().slideToggle( "slow");
+		$(this).toggleClass( "active");
+	  });
 
 	//floating form
 	$( ".floating_form_title" ).click(function() {

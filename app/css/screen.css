@@ -13006,6 +13006,11 @@ body {
         color: #cc434a; }
       .landing__workspace-item h6.dark-violet {
         color: #4c2b8f; }
+    .landing__workspace-item.landing__workspace-item-no_bg {
+      background: none;
+      box-shadow: none; }
+      .landing__workspace-item.landing__workspace-item-no_bg .landing__workspace-icon {
+        background: #f7f7f7; }
   .landing__workspace-icon {
     border-radius: 50%;
     width: 140px;
@@ -13173,6 +13178,91 @@ body {
       @media only screen and (max-width: 767px) {
         .landing__slider section {
           background: none; } }
+
+.landing__box-yellow {
+  background: #fbcd04;
+  padding-bottom: 220px; }
+  @media only screen and (max-width: 992px) {
+    .landing__box-yellow {
+      padding-bottom: 70px; } }
+
+.landing__accordion {
+  position: relative;
+  margin-top: -210px; }
+  @media only screen and (max-width: 992px) {
+    .landing__accordion {
+      margin-top: 0; } }
+  .landing__accordion h3 {
+    color: #212020;
+    font-size: 36px;
+    font-weight: 400;
+    padding-bottom: 20px; }
+    @media only screen and (max-width: 992px) {
+      .landing__accordion h3 {
+        font-size: 24px; } }
+
+.landing__accordion-section {
+  box-shadow: 0 10px 20px rgba(1, 1, 1, 0.05);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 60px 70px;
+  margin-bottom: 70px; }
+  @media only screen and (max-width: 992px) {
+    .landing__accordion-section {
+      padding: 20px;
+      margin-bottom: 40px;
+      margin-top: 50px; } }
+
+.landing__accordion-trigger {
+  color: #212020;
+  font-size: 22px;
+  font-weight: 700;
+  padding-left: 60px;
+  position: relative;
+  cursor: pointer;
+  padding: 25px 0 25px 60px; }
+  @media only screen and (max-width: 992px) {
+    .landing__accordion-trigger {
+      padding: 10px 0 10px 60px;
+      font-size: 18px; } }
+  .landing__accordion-trigger.active .landing__accordion-ico i:before {
+    content: "\f077"; }
+
+.landing__accordion-ico {
+  position: absolute;
+  left: 0;
+  top: 19px;
+  background: #fbcd04;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px; }
+  @media only screen and (max-width: 992px) {
+    .landing__accordion-ico {
+      top: 4px; } }
+
+.landing__accordion-content {
+  padding-bottom: 20px;
+  padding-left: 60px;
+  display: none; }
+
+.landing-illustration-list {
+  counter-reset: list1; }
+  .landing-illustration-list dl:after {
+    counter-increment: list1;
+    content: counter(list1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbcd05;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 44px;
+    text-transform: uppercase;
+    background: none; }
 
 .glance__title {
   color: #212020;
