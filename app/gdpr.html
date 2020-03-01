@@ -9,210 +9,232 @@
         <!--Favicon-->
             <link rel="icon" type="image/png" href="favicon.ico">
         <!--End Favicon-->
-        <!-- CSS -->
-            <link rel="stylesheet" href="css/bootstrap-grid.css" media="screen" > 
-            <link rel="stylesheet" href="css/fa-svg-with-js.css" media="screen" >
-            <link rel="stylesheet" href="css/jquery.fancybox.css" media="screen" >
-            <link href="css/screen.css" rel="stylesheet" media="screen">
-            <link href="css/style.css" rel="stylesheet" media="screen">
-        <!-- END OF CSS -->
-        <!--SCRIPT -->
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-            <script src="js/jquery.fancybox.pack.js"></script>
-            <script src="js/modernizr.custom.js"></script>
-            <script src="js/jquery.bxslider.min.js"></script>
-            <script src="js/fontawesome-all.js"></script>
-            <script src="js/wow.js"></script>
-            <script src="js/common.js"></script>
-            <!--[if IE]>  
-                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
-            <![endif]--> 
-        <!-- END OF SCRIPT -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+       <!--build:css css/styles.min.css-->
+        <link rel="stylesheet" href="css/fontawesome.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link href="css/screen.css" rel="stylesheet" media="screen"> 
+        <!--endbuild-->
     </head>
-<body >
+<body class="index-landing no-bg"> 
+
 <div class="wrapper">
-<!--header-->
-<header class="header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-8">
-          <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+    <!--header-->
+    <header class="header fixed">
+        <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 col-7">
+            <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="col-md-8 col-5">
+                <button class="navigation__button"><i class="fas fa-bars"></i></button>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#">Getting Started</a>
+                        </li>	          
+                        <li><a href="#" class="active">How It Works</a>
+                        </li>	        
+                        <li><a href="#">Tours</a>
+                            <span class="navigation-dropdown__trigger"><i class="fas fa-chevron-down"></i></span>
+                            <div  class="navigation-dropdown" >
+                                <ul>
+                                    <li><a href="#">Tours</a></li>	        
+                                    <li><a href="#">Case Study</a></li>	       
+                                    <li><a href="#">Core Values</a></li>	        
+                                    <li><a href="#">Demo</a></li>
+                                </ul>
+                            </div></li>	        
+                        <li><a href="#">Case Study</a></li>	       
+                        <li><a href="#">Core Values</a></li>	        
+                        <li><a href="#">Demo</a></li>
+                    </ul>
+                    <div class="navigation__close"><i class="fas fa-times"></i></div>
+                </nav>
+               
+            </div>
         </div>
-        <div class="col-md-8 col-4">
-          <div class="nav-trigger"><i class="fas fa-bars"></i></div>
-          <ul class="navigation">
-            <li><a href="#" class="active">GETTING STARTED</a></li>
-            <li><a href="#">HOW IT WORKS</a>
-                <ol>
-                    <li><a href="#">MYTHS</a></li>
-                    <li><a href="#">MYTHS2</a></li>
-                    <li><a href="#">MYTHS3</a></li>
-                    <li><a href="#">MYTHS4</a></li>
-                </ol>
-            </li>
-            <li><a href="#">MYTHS</a></li>
-            <li><a href="#">TOURS</a></li>
-            <li><a href="#">CUSTOMERS</a></li>
-          </ul>
         </div>
-      </div>
-    </div>
-</header>
-<!--end-header-->
-<!--main-->
-<div class="main">
+    </header>
+    <div class="navigation__overlay"></div>
+    <!--end-header-->
+    <!--main-->
+    <div class="main">
+    
+        <!-- top -->
+        <div class="about-page-top gdpr-page-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-page-top__img"><img src="img/gdpr-top.png" alt=""></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <article>
+                            <h1>Why Booking Ninjas Supports GDPR Data Compliance </h1>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /top -->
+        <!-- content -->
+        <div class="about-page-content ">
+            <div class="container">
+                <div class="gdpr__content">
+                    <p>As we mentioned in our <a href="#">Data Page,</a> data analysis is more important now than ever before. As it becomes more valuable, Fortune 500 companies will be increasingly looking to monetize data, through offering DaaS (Data-as-a-Service) - essentially charging you a subscription fee for access to advanced data and analytics. Data and analytics is what we do best. Our Booking Ninjas PMS has the backing of the industry leading CRM and solution finder, Salesforce. Our property management technology includes <a href="#">Einstein AI</a> which gives you real-time data and analytics as well as smart suggestions for your hospitality business. But truthfully, because General Data Protection Regulation (GDPR) laws are still relatively new, many of these money-hungry conglomerates don’t follow the guidelines to keep you and your company's data safe. And the exposure of your company’s private data could lead to the downfall of your business. This is why it is best to trust us with your sensitive data, a GDPR compliant company.                 </p>
+                </div>
+                <div class="gdpr__content">
+                    <h2>Our hotel PMS is GDPR data compliant</h2>
+                    <div class="row">
+                        <div class="col-lg-6 order-lg-1">
+                            <img src="img/gdpr-data-img.png" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <p>There are seven guiding principles the GDPR works by; lawfulness, purpose limitation, data minimisation, accuracy, storage limitation, confidentiality, and accountability. GDPR requires data controllers (companies that handle your sensitive data) not only abide by these regulations, but also demonstrate how they do. These regulations originated in the EU, which coincidentally is where a lot of our clientele is based. So we’ve been aware and abidant by GDPR policies since the regulation passed in May of 2018. Our hard-working team of <a href="#">software developers</a> made sure that our PMS has built-in GDPR compliance, maintaining that our company can never abuse our power when handling your private data. And it’s not just protection for you, it’s protection for your clients. If your data is breached, so is there's. Trust is the <a href="#">leading component</a> of running a successful hospitality business. Once you alleviate trust, you can expect to see your business suffer greatly.                             </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gdpr__content ">
+                    <h2>Why GDPR is important</h2>
+                    <div class="row career-page-interest">
+                        <div class="col-lg-12">
+                            <div class="career-page-interest__item">
+                                <figure><a href="#"><img src="img/gdpr-insurance.png" alt=""></a></figure>
+                                <article>
+                                    <p>Several security experts have predicted that GDPR policies, or something similar to them, will soon spread to USA, Brazil, South Korea, Japan, Thailand, and Australia as quickly as by the end of 2020. The U.S. has already seen data mayhem recently with Facebook’s exposure of data, causing unrest in much of the population. </p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="career-page-interest__item">
+                                <figure><a href="#"><img src="img/gdpr-secure-data.png" alt=""></a></figure>
+                                <article>
+                                    <p>The U.S. has already started to take data compliance more seriously with the enactment of the California Consumer Privacy Act (CCPA). The CCPA acts similarly in California to the way GDPR does to the EU. Experts predict at least 10 more states will soon follow suit in adopting their own data privacy laws. </p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="career-page-interest__item">
+                                <figure><a href="#"><img src="img/gdpr-customers.png" alt=""></a></figure>
+                                <article>
+                                    <p>An increasing number of EU based customers in America and vice versa makes it a priority for companies to get familiarised with the new policy and act accordingly. If you are a company that deals with European clientele often, it is imperative that you make the switch to GDPR compliance immediately. </p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="career-page-interest__item">
+                                <figure><a href="#"><img src="img/gdpr-house.png" alt=""></a></figure>
+                                <article>
+                                    <p>The best method of complying with GDPR regulations is to keep all your sensitive data in one  secure location - 
+                                        A <a href="#">property management</a> system. Salesforce is one of the most trusted companies when it comes to this, because their platform is built specifically to help companies and boost their revenue. Booking Ninjas shares this use case and we have a genuine, vested interest in the success of our customers, and safety is paramount to that success. 
+                                         </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gdpr__content">
+                    <h2>Our commitment</h2>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <img src="img/gdpr-bottom.png" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <p>With more states and countries getting close to signing updated privacy laws, compliance from data companies has immeasurable value. Booking Ninjas’ cloud-based PMS has the experience with GDPR to ensure you and your customer’s safety as well as the advanced technology of Salesforce to give your hospitality business an edge over the competition.     </p>
 
-<!-- gdpr -->
-<div class="gdpr-top">
-  <div class="container">
-    <dl>
-      <dt>Steps for GDPR <br>  readiness:</dt>
-      <dd>Without a doubt, a large number of information is being collected of customers on a daily basis. Therefore the companies/institutions collecting these information should bear the responsibility of protecting this information too as it is a data protection right that customers have. The new GDPR act which is to be initiated in the EU makes sure this right and protection is provided.</dd>
-    </dl>
-    <dl>
-      <dt>What is GDPR  <br>about?</dt>
-      <dd>A new comprehensive data protection in the EU with effect from May 25, 2018. In a nutshell, GDPR works towards protecting personal data which are in liaise with rapid technological advancement, increased rates of globalization and complexed international flows of personal data. It reduces duplication and replaces current data protection laws with a uniformed set of rules for all EU member states.
-      If you are processing personal data in the context of an organization established in the EU, the GDPR will apply to you, regardless of whether you are processing personal data in the EU or not.
-      </dd>
-    </dl>
-  </div>
+                            <p> Learn more about our cloud-based PMS <a href="#">here.</a>     </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /content -->
+    </div>
+    <!--end-main-->
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer__top">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-5">
+                <a href="/" class="logo"><img src="img/logo-footer.png" alt=""></a>
+                <address>
+                <p>
+                    1815 Purdy Avenue  <br>
+                    Miami Beach, FL 33139
+                </p>
+                <p><small> sales@bookingninjas.com</small></p>
+                    <a href="tel:866212"> (866) 217 3210</a>
+                </address>
+            </div>
+            <div class="col-lg-7">
+                <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__title">Company:</div>
+                    <nav class="footer__list">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">SiteMap</a></li>
+                    </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-12 order-lg-1">
+                    <div class="footer__title">BOOKINGNINJAS</div>
+                    <p>Enhance the quality of guest services, increasing staff productivity and streamlining operations. Make your business a lot simpler and a lot more effective with Booking Ninjas.</p>
+                </div>
+                <div class="col-lg-9">
+                     <nav class="footer__social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-salesforce"></i></a>
+                    </nav>
+                    <form class="footer__form">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="button" type="submit">subscribe</button>
+                    </form>
+                    <p class="footer__form-text">We send a monthly email with announcements, tips, news, feature updates, and important info. We'll only e-mail you if it's important.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer__bottom">
+        <div class="container">
+            <div class="row align-items-center">
+            <div class="col-md-6">All rights reserved © 2019 - Booking Ninjas</div>
+            <div class="col-md-6">
+                <nav class="payments">
+                <a href="#"><img src="img/visa.png" alt=""></a>
+                <a href="#"><img src="img/mc.png" alt=""></a>
+                <a href="#"><img src="img/ae.png" alt=""></a>
+                <a href="#"><img src="img/paypal.png" alt=""></a>
+                </nav>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!--end-footer-->
 </div>
-<div class="gdpr-center">
-  <div class="container">
-    <div class="title">Why GDPR is important?</div>
-    <ul class="gdpr-center__list">
-      <li>
-        <div class="gdpr-center__img"><i><img src="img/gdpr1.png" alt=""></i></div>
-        <section>
-          The daily increased flow of private and personal information is being shared on a daily basis has made numerous security and data phishing attacks easier and possible. Sensitive information such as credit/debit card numbers, names etc should be protected and not be made vulnerable to such attacks
-        </section>
-      </li>
-      <li>
-        <div class="gdpr-center__img"><i><img src="img/gdpr2.png" alt=""></i></div>
-        <section>
-          As a result of GDPR being placed, it requires the companies which collect information to be responsible of it. Therefore, customers would get an assurance and a sense of security due to the new regulation act. Customers who would have not trusted online exchange of information would also start believing in it.
+        
 
-        </section>
-      </li>
-      <li>
-        <div class="gdpr-center__img"><i><img src="img/gdpr3.png" alt=""></i></div>
-        <section>
-          Increasing number of EU based customers in America and vice versa makes it a priority for companies to get familiarised with the new policy and act accordingly.
-        </section>
-      </li>
-      <li>
-        <div class="gdpr-center__img"><i><img src="img/gdpr4.png" alt=""></i></div>
-        <section>
-          Due to the competition restricting to only implementing GDPR, it creates an opportunity for sales force as they help customers and companies set up the GDPR process to gain a substantial competitive edge.
 
-        </section>
-      </li>
-    </ul>
-  </div>
-</div>
-<div class="gdpr-bottom">
-  <div class="container">
-    <div class="title">Our commitment</div>
-    <div class="gdpr-bottom__block">
-      <figure>
-        <i><img src="img/commitment1.png" alt=""></i>
-        <figcaption>
-          <span>Compliance and </span><br><span>security in liaise with</span><br><span> GDPR policies</span>
-        </figcaption>
-      </figure>
-      <figure>
-        <i><img src="img/commitment2.png" alt=""></i>
-        <figcaption>
-          <span>A stronger</span><br><span> relationship with</span><br><span> customers due to </span><br><span>assurance and </span><br><span>sense of security</span>
-        </figcaption>
-      </figure>
-      <figure>
-        <i><img src="img/commitment3.png" alt=""></i>
-        <figcaption>
-          <span>Training and</span><br><span> guidance as to</span><br><span> how to be GDPR</span><br><span> ready</span>
-        </figcaption>
-      </figure>
-      <figure>
-        <i><img src="img/commitment4.png" alt=""></i>
-        <figcaption>
-          <span>New ideas</span><br> <span>and innovation of</span><br><span> products</span>
-        </figcaption>
-      </figure>
-      <figure>
-        <i><img src="img/commitment5.png" alt=""></i>
-        <figcaption>
-          <span>Collaboration </span><br><span>with EU </span><br><span>authorities and </span><br><span>influentials</span>
-        </figcaption>
-      </figure>
-    </div>
-    <p>For further information and elaboration on each of the above points, please refer our web video</p>
-  </div>
-</div>
-<!-- end-gdpr -->
-
-</div>
-<!--end-main-->
-<!--footer-->
-<footer class="footer">
-  <div class="foot_top container">
-    <div class="foot_left">
-      <a href="#" class="logo_foot"><img src="img/logo_foot.png" alt=""></a>
-      <p>720 Collins Avenue <br>Miami Beach, FL 33139</p>
-      <p>sales@bookingninjas.com</p>
-      <p><strong>(866) 217 3210</strong></p>
-      <p><a href="#"><img src="img/partner.png" alt=""></a></p>
-    </div>
-    <div class="foot_center">
-      <div class="foot_list">
-        <h6>Company:</h6>
-        <ul>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Demo</a></li>
-        </ul>
-      </div>
-      <div class="foot_list">
-        <h6>Connect with us:</h6>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">YouTube</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Appexchange</a></li>
-        </ul>
-      </div>
-      <div class="clear"></div>
-      <h6>Bookingninjas</h6>
-      <p>Enhance the quality of guest services, increasing staff productivity and streamlining operations. Make your business a lot simpler and a lot more effective with Booking Ninjas.</p>
-    </div>
-    <div class="foot_right">
-      <h6>Contact us</h6>
-      <form>
-        <div><input type="text" placeholder="First Name"></div>
-        <div><input type="text" placeholder="Last Name"></div>
-        <div><input type="text" placeholder="Email"></div>
-        <div><textarea placeholder="Message"></textarea></div>
-        <div><input type="submit" class="button" value="Send Message"></div>
-      </form>
-    </div>
-  </div>
-  <div class="foot_bottom">
-    <div class="container">
-      <address class="float_left">
-        All rights reserved © 2016 - Booking Ninjas
-      </address>
-      <nav class="float_right">
-        <a href="#"><img src="img/visa.png" alt=""></a>
-        <a href="#"><img src="img/maestro.png" alt=""></a>
-        <a href="#"><img src="img/ae.png" alt=""></a>
-        <a href="#"><img src="img/paypal.png" alt=""></a>
-      </nav>
-    </div>
-  </div>
-</footer>
-<!--end-footer-->
-</div>
+<!--SCRIPT -->
+<script src="js/jquery.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+<!--build:js js/main.min.js -->
+<script src="js/slick.js"></script>
+<script src="js/wow.js"></script>
+<!-- endbuild -->
+<script src="js/common.js"></script>
+<!-- END OF SCRIPT -->
 
 </body>
 </html>
