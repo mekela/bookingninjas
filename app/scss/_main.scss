@@ -7851,6 +7851,7 @@ h6.bottom-title{
 		color: #2e3949;
 		font-size: 30px;
 		font-weight: 700;
+		padding-bottom: 50px;
 	}
 }
 
@@ -7869,5 +7870,25 @@ h6.bottom-title{
 		  padding-bottom: 1rem;
 		  font-size: 2.2rem;
 	  }
+	}
+}
+.about__content{
+	padding: 35px 0;
+    color: #111111;
+    font-size: 20px;
+	font-weight: 300;
+	@include mq($max-width: 767px) {
+		font-size: 16px;
+	}
+	p{
+		padding-bottom: 20px;
+	}
+	h4,h5,h6{
+		font-weight: 700;
+		font-size: 30px;
+		letter-spacing: 1.5px;
+		@include mq($max-width: 767px) {
+			font-size: 20px;
+		}
 	}
 }

@@ -9560,7 +9560,8 @@ h6.bottom-title {
   .thank h2 {
     color: #2e3949;
     font-size: 30px;
-    font-weight: 700; }
+    font-weight: 700;
+    padding-bottom: 50px; }
 
 .modal {
   display: none; }
@@ -9574,6 +9575,24 @@ h6.bottom-title {
     .modal__success h2 {
       padding-bottom: 1rem;
       font-size: 2.2rem; }
+
+.about__content {
+  padding: 35px 0;
+  color: #111111;
+  font-size: 20px;
+  font-weight: 300; }
+  @media only screen and (max-width: 767px) {
+    .about__content {
+      font-size: 16px; } }
+  .about__content p {
+    padding-bottom: 20px; }
+  .about__content h4, .about__content h5, .about__content h6 {
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 1.5px; }
+    @media only screen and (max-width: 767px) {
+      .about__content h4, .about__content h5, .about__content h6 {
+        font-size: 20px; } }
 
 @media only screen and (min-width: 1360px) {
   .lg-video {
@@ -11505,7 +11524,7 @@ body {
     padding: 20px 25px; }
   .career-lead-form__item {
     padding-bottom: 22px; }
-    .career-lead-form__item input:not(.button), .career-lead-form__item select {
+    .career-lead-form__item input:not(.button), .career-lead-form__item select, .career-lead-form__item textarea {
       height: 55px;
       width: 100%;
       border-radius: 2px;
@@ -11515,6 +11534,8 @@ body {
       font-weight: 500;
       background: #fff;
       box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.38), 0 0 5px rgba(157, 206, 255, 0.75); }
+    .career-lead-form__item textarea {
+      height: 110px; }
     .career-lead-form__item label {
       display: block;
       color: #373737;
@@ -14764,3 +14785,29 @@ body {
     margin-bottom: 18px; }
   .gdpr__content .career-page-interest {
     padding-bottom: 0; }
+
+.expression-page-top {
+  height: auto;
+  padding-bottom: 20px;
+  background: #f6f6f6; }
+  .expression-page-top:before {
+    display: none; }
+  .expression-page-top h1:after {
+    display: none; }
+
+.expression-page-form {
+  background: #f9f9f9;
+  padding: 57px 0; }
+  .expression-page-form .title, .expression-page-form .einstein-top .subtitle, .einstein-top .expression-page-form .subtitle {
+    font-size: 30px; }
+    @media only screen and (max-width: 767px) {
+      .expression-page-form .title, .expression-page-form .einstein-top .subtitle, .einstein-top .expression-page-form .subtitle {
+        font-size: 20px; } }
+  .expression-page-form .career-lead-form__section {
+    margin: 0 auto;
+    max-width: 555px; }
+  .expression-page-form .career-lead-form__title {
+    font-size: 24px; }
+    @media only screen and (max-width: 767px) {
+      .expression-page-form .career-lead-form__title {
+        font-size: 16px; } }
