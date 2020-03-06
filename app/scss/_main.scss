@@ -6546,9 +6546,16 @@ h6.bottom-title{
 				}
 			}
 		}
-		input:not(.trial__form-checkbox){
+		input:not(.trial__form-checkbox), select{
 			width: 100%;
 			margin-bottom: 8px;
+			background: #fff;
+			height: 55px;
+			border: none;
+			border-radius: 0;
+			color: #858585;
+			font-size: 12px;
+			font-family: MuseoSansCyrl, Arial;
 			box-shadow: 0 1px 5px rgba(#000, 0.21);
 		}
 	}
