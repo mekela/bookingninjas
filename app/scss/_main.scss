@@ -6851,6 +6851,14 @@ h6.bottom-title{
 	@include mq($max-width: 767px) {
 		font-size: 14px;
 	}
+	.video__img{
+		width: 100%;
+		display: block;
+		margin: 20px 0;
+		img{
+			max-width: 100%;
+		}
+	}
 	&__title{
 		text-align: center;
 		color: #212020;

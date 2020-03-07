@@ -8678,6 +8678,12 @@ h6.bottom-title {
   @media only screen and (max-width: 767px) {
     .about-page-content {
       font-size: 14px; } }
+  .about-page-content .video__img {
+    width: 100%;
+    display: block;
+    margin: 20px 0; }
+    .about-page-content .video__img img {
+      max-width: 100%; }
   .about-page-content__title {
     text-align: center;
     color: #212020;
