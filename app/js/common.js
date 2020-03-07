@@ -92,6 +92,10 @@ $(document).ready(function() {
 		$(this).next().slideToggle( "slow");
 		$(this).toggleClass( "active");
 	  });
+	  $( ".faq__trigger" ).click(function() {
+		$(this).next().slideToggle( "fast");
+		$(this).toggleClass( "active");
+	  });
 
 	//floating form
 	$( ".floating_form_title" ).click(function() {
