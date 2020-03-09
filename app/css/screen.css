@@ -9565,6 +9565,14 @@ h6.bottom-title {
     @media only screen and (max-width: 767px) {
       .about__content h4, .about__content h5, .about__content h6 {
         font-size: 20px; } }
+  .about__content h3 {
+    font-size: 24px;
+    font-weight: 700; }
+    @media only screen and (max-width: 767px) {
+      .about__content h3 {
+        font-size: 20px; } }
+  .about__content a:not(.button) {
+    color: #e9be01; }
 
 @media only screen and (min-width: 1360px) {
   .lg-video {
@@ -11490,7 +11498,7 @@ body {
     padding: 25px; }
     @media only screen and (max-width: 767px) {
       .career-lead-form__title {
-        font-size: 24px;
+        font-size: 16px;
         padding: 15px; } }
   .career-lead-form__box {
     padding: 20px 25px; }
@@ -11895,6 +11903,9 @@ body {
 
 .core-page-content {
   background: url(../img/bg-about.png) repeat; }
+
+.core-page-video {
+  padding-bottom: 80px; }
 
 .about-page-top__img {
   position: relative;
@@ -15092,3 +15103,15 @@ body {
 
 .faq-content {
   padding: 50px 0  70px 0; }
+
+.activation-form-page-top {
+  padding: 20px 0; }
+  @media only screen and (min-width: 993px) {
+    .activation-form-page-top h1 {
+      font-size: 48px; } }
+
+.activation-form {
+  margin: 100px 0 60px 0; }
+  @media only screen and (min-width: 993px) {
+    .activation-form h2.career-lead-form__title {
+      font-size: 24px; } }
