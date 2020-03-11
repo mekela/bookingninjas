@@ -97,6 +97,11 @@ $(document).ready(function() {
 		$(this).toggleClass( "active");
 	  });
 
+	//gallery
+	$( ".gallery-content__switch input" ).click(function() {
+		$('.gallery-content__tab').toggleClass( "active");
+	});
+
 	//floating form
 	$( ".floating_form_title" ).click(function() {
 	  $('.floating_form').toggleClass( "active");
@@ -155,6 +160,11 @@ $(document).ready(function() {
 	  $('.trial__not-leave').removeClass( "active");
 	});
 	
+	 //scroll anchor
+	 $('.integration__nav li a, .totop').on('click',function(){
+		$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top-105},800);
+		return false;
+	});
 
 	
 
