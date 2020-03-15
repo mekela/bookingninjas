@@ -488,3 +488,64 @@
     }
   }
 }
+.pms-top{
+  height: auto;
+  &:before, &:after{
+    display: none;
+  }
+  .about-page-top__img{
+    float: right;
+  }
+  background: #f6f6f6;
+  h1{
+    &:after{
+      display: none;
+    }
+  }
+  @include mq($max-width: 992px) {
+    padding-bottom: 30px;
+  }
+}
+.pms-saleforce-content{
+  color: #111111;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 45px 0;
+  text-align: center;
+  p{
+    padding-bottom: 20px;
+  }
+  &__img{
+    display: block;
+    padding: 50px 0 20px 0;
+  }
+  blockquote{
+    padding: 18px;
+    color: #3a3a3a;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    background: #f6f6f6;
+    margin-top: 40px;
+  }
+  .solution-page-integration{
+    background: none;
+    text-align: left;
+    color: #3a3a3a;
+    h2{
+      font-size: 36px;
+      text-transform: none;
+      font-weight: 700;
+      padding-bottom: 50px;
+      letter-spacing: 0.4px;
+    }
+  }
+  .solution-page-integration__section .col-lg-6:first-child .solution-page-integration__item{
+    text-align: left;
+  }
+  .solution-page-integration__item h6{
+    color: #3a3a3a;
+    font-size: 20px;
+  }
+}

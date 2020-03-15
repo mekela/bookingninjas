@@ -12473,6 +12473,55 @@ body {
           width: 205px;
           height: 205px; } }
 
+.pms-top {
+  height: auto;
+  background: #f6f6f6; }
+  .pms-top:before, .pms-top:after {
+    display: none; }
+  .pms-top .about-page-top__img {
+    float: right; }
+  .pms-top h1:after {
+    display: none; }
+  @media only screen and (max-width: 992px) {
+    .pms-top {
+      padding-bottom: 30px; } }
+
+.pms-saleforce-content {
+  color: #111111;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 45px 0;
+  text-align: center; }
+  .pms-saleforce-content p {
+    padding-bottom: 20px; }
+  .pms-saleforce-content__img {
+    display: block;
+    padding: 50px 0 20px 0; }
+  .pms-saleforce-content blockquote {
+    padding: 18px;
+    color: #3a3a3a;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: left;
+    background: #f6f6f6;
+    margin-top: 40px; }
+  .pms-saleforce-content .solution-page-integration {
+    background: none;
+    text-align: left;
+    color: #3a3a3a; }
+    .pms-saleforce-content .solution-page-integration h2 {
+      font-size: 36px;
+      text-transform: none;
+      font-weight: 700;
+      padding-bottom: 50px;
+      letter-spacing: 0.4px; }
+  .pms-saleforce-content .solution-page-integration__section .col-lg-6:first-child .solution-page-integration__item {
+    text-align: left; }
+  .pms-saleforce-content .solution-page-integration__item h6 {
+    color: #3a3a3a;
+    font-size: 20px; }
+
 .consulting-landing {
   position: relative; }
   .consulting-landing .header.fixed {
