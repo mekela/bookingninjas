@@ -44,6 +44,10 @@ $(document).ready(function() {
 	$('.landing__slider').slick({
 		dots: true
 	});
+	$('.js-slider').slick({
+		dots: true,
+		arrows: true
+	});
 
 	$('.feature-spotlight__slider-big').slick({
 		slidesToShow: 1,
