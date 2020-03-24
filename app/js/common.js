@@ -48,6 +48,23 @@ $(document).ready(function() {
 		dots: true,
 		arrows: true
 	});
+	$('.costumer-page__carousel').slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		dots: false,
+		centerMode: false,
+		focusOnSelect: true,
+		infinite: true,
+		responsive: [
+			{
+			  breakpoint: 1024,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			  }
+			}
+		  ]
+	});
 
 	$('.feature-spotlight__slider-big').slick({
 		slidesToShow: 1,
@@ -63,7 +80,8 @@ $(document).ready(function() {
 		dots: false,
 		centerMode: false,
 		focusOnSelect: true,
-		infinite: false
+		infinite: false,
+		
 	});
 
 	
