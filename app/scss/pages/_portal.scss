@@ -113,11 +113,47 @@
           }
         }
       }
+      table{
+        td{
+          color: #595959;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 48px;
+          color: #3e3e3e;
+          font-family: "Museo Sans Cyrl -700";
+          letter-spacing: 0.9px;
+        }
+      }
+    }
+    &__main-table{
+      table{
+        td{
+          color: #595959;
+          font-size: 18px;
+          font-weight: 700;
+          color: #3e3e3e;
+          letter-spacing: 0.9px;
+          padding: 15px 23px;
+          background: #efefef;
+          &:first-child{
+            font-weight: 300;
+          }
+        }
+        tr{
+          &:nth-child(2n){
+            td{
+              background: #fff;
+            }
+          }
+        }
+      }
     }
     &__main-form{
+      select, 
       input:not(.button){
         box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.44);
         background-color: #ffffff;
+        border: none;
         height: 49px;
         width: 100%;
         border-radius: 22px;
@@ -149,5 +185,30 @@
     }
     &__main-form-item{
       margin-bottom: 14px;
+    }
+    &__main-history{
+      color: #383838;
+      font-size: 16px;
+      font-weight: 400;
+      padding-top: 20px;
+      background: #fff;
+      padding-bottom: 40px;
+      th{
+        text-align: left;
+        font-weight: 400;
+        padding: 16px 20px;
+        border-bottom: 5px solid rgba(0,0,0, 0.1);
+      }
+      td{
+        padding: 16px 20px;
+        border-bottom: 1px solid rgba(0,0,0, 0.1);
+      }
+      strong{
+        display: block;
+      }
+      @include mq($max-width: 992px) {
+        max-width: 767px;
+        overflow-x: auto;
+      }
     }
 }
