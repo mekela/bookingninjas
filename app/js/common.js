@@ -129,6 +129,15 @@ $(document).ready(function() {
 	  $('.floating_form').toggleClass( "active");
 	});
 
+	//covid
+	$( ".covid-more button" ).click(function() {
+		$('.covid-hidden').slideDown( );
+		$(this).hide( );
+	});
+	$( ".covid-info__close" ).click(function() {
+		$('.covid-info ').fadeOut('fast');
+	});
+
 	//myth
 	$( ".truth__btn" ).click(function() {
 	  $(this).closest('.myth-truth__block').addClass( "active");

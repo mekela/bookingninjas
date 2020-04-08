@@ -15452,6 +15452,14 @@ body {
   .integration-wrap .integration:nth-child(2n) .col-lg-4 {
     order: 2; } }
 
+.integration-wrap h6 {
+  color: #fdbc33;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  letter-spacing: 0.9px; }
+
 .integration {
   padding-bottom: 50px;
   color: #000000;
@@ -16738,3 +16746,53 @@ body {
           opacity: 0.8; }
   .channel-list .col-lg-6 {
     padding-bottom: 20px; }
+
+.covid-info {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: #fff3be;
+  text-align: center;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400; }
+  .covid-info a:hover {
+    text-decoration: none; }
+  .covid-info__close {
+    display: inline-block;
+    background: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px; }
+
+.covid-page-top {
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 40px; }
+  .covid-page-top:before {
+    display: none; }
+  .covid-page-top h1:after {
+    display: none; }
+
+.covid-wrap {
+  padding-bottom: 79px; }
+  .covid-wrap .integration .row {
+    align-items: flex-start; }
+  .covid-wrap .integration:nth-child(2n) .integration__img img {
+    float: none; }
+  @media only screen and (min-width: 993px) {
+    .covid-wrap .integration:nth-child(2n) .col-lg-4 {
+      order: initial; } }
+
+.covid-more {
+  text-align: center; }
+  .covid-more .button {
+    border-radius: 6px;
+    font-size: 24px;
+    text-transform: none;
+    width: 250px; }
+
+.covid-hidden {
+  display: none; }
