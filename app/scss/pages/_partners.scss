@@ -244,4 +244,208 @@
       }
     }
  }
+ &__tags{
+   padding: 120px 0;
+   @include mq($max-width: 767px) {
+     padding: 60px 0;
+   }
+   article{
+     text-align: center;
+      color: #383838;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 32px;
+      @include mq($max-width: 767px) {
+        font-size: 18px;
+      }
+      small{
+        font-size: 18px;
+        @include mq($max-width: 767px) {
+          font-size: 16px;
+        }
+      }
+      p{
+        padding-bottom: 35px;
+      }
+   }
+ }
+ &__tags-item{
+   text-align: center;
+   padding-top: 30px;
+   figure{
+     span{
+       display: flex;
+       justify-content: center;
+       align-items: center  ;
+       width: 130px;
+       height: 130px;
+       margin: 0 auto;
+       border-radius: 50%;
+       background: #fbcd04;
+     }
+     figcaption{
+       padding-top: 40px;
+       color: #2b2b2b;
+        font-size: 22px;
+        font-weight: 700;
+        padding-bottom: 30px;
+     }
+   }
+   p{
+    color: #2b2b2b;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+   }
+ }
+ &__case{
+   padding-bottom: 150px;
+   @include mq($max-width: 767px) {
+     padding-bottom: 50px;
+   }
+    h2{
+      color: #212020;
+      font-size: 36px;
+      font-weight: 700;
+      padding-bottom: 40px;
+      @include mq($max-width: 767px) {
+        font-size: 24px;
+        padding-bottom: 15px;
+      }
+    } 
+    section{
+      color: #2b2b2b;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: 0.18px;
+      line-height: 1.6;
+      @include mq($max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+    p{
+      @include mq($max-width: 767px) {
+        padding-bottom: 20px;
+      }
+    }
+    .costumer-page__business{
+      margin-bottom: 0;
+    }
+  }
+  &__case-container{
+    padding: 100px;
+    background: #f8fbfc;
+    @include mq($max-width: 767px) {
+      padding: 20px;
+    }
+  }
+  .costumer-page__content{
+    h2{
+      padding-bottom: 35px;
+      font-size: 36px;
+      line-height: 1.3;
+    }
+  }
+  &__other{
+    padding-bottom: 150px;
+    text-align: center;
+    h3{
+      color: #383838;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1;
+      padding-bottom: 30px;
+    }
+    p{
+      color: #383838;
+      font-size: 18px;
+      font-weight: 300;
+      padding-bottom: 55px;
+    }
+  }
+  &__other-item{
+    text-align: center;
+    h6{
+      color: #2b2b2b;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 45px;
+      a{
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .partners-page__companies-img{
+      min-width: 130px;
+      width: 130px;
+      height: 130px;
+      margin: 50px auto 0 auto; 
+      img{
+        max-width: 70%;
+      }
+    }
+    .partners-page__companies-img:after, .partners-page__companies-img:before{
+      width: 130px;
+      height: 130px;
+      border-radius: 16px;
+    }
+    .partners-page__companies-img:after{
+      top: -50px;
+      left: calc(50% - 21px);
+    }
+    .partners-page__companies-img:hover:before {
+      top: -50px;
+      left: calc(50% - 21px);
+    }
+  }
+}
+.customer-top{
+  .partners-page__companies-img{
+    min-width: 486px;
+    width: 486px;
+    height: 486px;
+    @include mq($max-width: 992px) {
+      margin: 0 auto 50px auto;
+    }
+    @include mq($max-width: 767px) {
+      min-width: 243px;
+      width: 243px;
+      height: 243px;
+      img{
+        max-width: 60%;
+      }
+    }
+  }
+  .partners-page__companies-img:after, .partners-page__companies-img:before{
+    width: 400px;
+    height: 400px;
+    @include mq($max-width: 767px) {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  .partners-page__companies-img:after{
+    top: -85px;
+    left: calc(50% - 64px);
+    @include mq($max-width: 767px) {
+      top: -42px;
+      left: calc(50% - 32px);
+    }
+  }
+  .partners-page__companies-img:hover:before {
+    top: -85px;
+    left: calc(50% - 64px);
+    @include mq($max-width: 767px) {
+      top: -42px;
+      left: calc(50% - 32px);
+    }
+  }
+}
+.mobile-center{
+  @include mq($max-width: 992px) {
+    text-align: center;
+  }
 }
