@@ -13196,6 +13196,10 @@ body {
         font-weight: 600; }
     .landing__box.landing__senior .landing__workspace-icon {
       background: #03cea4; }
+    .landing__box.landing__vacation .landing__workspace-icon {
+      background: #f15946; }
+    .landing__box.landing__vacation .landing__workspace-item {
+      box-shadow: none; }
   .landing__workspace-item {
     text-align: center;
     box-shadow: 0 10px 20px rgba(1, 1, 1, 0.05);

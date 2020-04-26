@@ -200,6 +200,14 @@
         background: #03cea4;
       }
     }
+    &.landing__vacation{
+      .landing__workspace-icon{
+        background: #f15946;
+      }
+      .landing__workspace-item{
+        box-shadow: none;
+      }
+    }
   }
   &__workspace-item{
     text-align: center;
