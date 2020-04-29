@@ -28,7 +28,7 @@
             <a href="/" class="logo"><img src="img/logo-white.png" alt=""></a>
             </div>
             <div class="col-md-8 text_right col-5">
-                <a href="#" class="button"><img src="img/portal-login.png" alt="">Login</a>
+                <a href="#portal-login-modal" data-fancybox="" class="button"><img src="img/portal-login.png" alt="">Login</a>
             </div>
         </div>
         </div>
@@ -103,6 +103,38 @@
            </div>
         </div>
         <!-- /content -->
+        <!-- modal -->
+        <div class="modal portal-login-modal" id="portal-login-modal">
+            <h3>Log In</h3>
+            <div class="portal-login-modal__form">
+                <div class="portal-login-modal__form-item">
+                    <label>Name or Email <sup>*</sup></label>
+                    <input type="text" >
+                </div>
+                <div class="portal-login-modal__form-item">
+                    <label>Password <sup>*</sup></label>
+                    <input type="password" >
+                </div>
+                <div class="portal-login-modal__form-checkbox">
+                    <label><input type="checkbox"> Remember Me</label>
+                </div>
+                <div class="portal-login-modal__form-button">
+                    <input type="submit"  class="button" value="Login">
+                    <p>Forgot your password? <a href="#">Get help</a></p>
+                </div>
+            </div>
+            <div class="portal-login-modal__bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <a href="#">Not a member?  </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="#" class="button">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /modal -->
     </div>
     <!--end-main-->
     <!--footer-->
