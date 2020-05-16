@@ -31,14 +31,47 @@
 		background: #f9f9f9;
     border: 1px solid rgba(0, 0, 0, 0.16);  
 		display: flex;
-		margin-bottom: 20px;
+    margin-bottom: 20px;
+    .pricing-section__text{
+      padding-right: 15px;
+      p{
+        font-size: 16px;
+        font-weight: 400;
+        color: #565656;
+        letter-spacing: 0.8px;
+      }
+      h3{
+        color: #000000;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 16px;
+        letter-spacing: 1.1px;
+      }
+    }
+    .pricing-section__buy{
+      padding: 0;
+      @include mq($max-width: 992px) {
+        padding-top: 15px;
+      }
+      .row{
+        padding-bottom: 20px;
+        &:last-child{
+          padding-bottom: 0;
+        }
+      }
+    }
 	}
 	&__left{
 		background: url(../img/pricing-bg-ico.png) no-repeat left center;
 		background-size: 100% 100%;
-		min-width: 467px;
-		max-width: 467px;
-		display: flex;
+		min-width: 355px;
+		max-width: 355px;
+    display: flex;
+    .pricing-section__numb{
+      min-width: 2px;
+      max-width: 100%;
+    }
 	}
 	&__numb{
 		min-width: 282px;
@@ -78,7 +111,52 @@
 		min-height: 130px;
 		display: flex;
 		align-items: center;
-	}
+  }
+  &__buy{
+    padding: 0 15px 15px 15px;
+    label{
+        font-size: 16px;
+        font-weight: 400;
+        color: #565656;
+        display: block;
+        letter-spacing: 0.8px;  
+        @include mq($max-width: 992px) {
+          padding-bottom: 10px;
+        }
+    }
+    .button{
+      display: block;
+      width: 100%;
+      border: 2px solid #ffd41b;
+      background-color: #f8eaad;
+      border-radius: 4px;
+      box-shadow: none;
+      color: #2e3949;
+      text-transform: none;
+      font-size: 16px;
+      padding: 13px 15px;
+      &:hover{
+        background: #ffd41b;
+      }
+    }
+  }
+    &__buy-select{
+      height: 100%;
+      text-align: right;
+      select{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border: none;
+        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.56);
+        color: #424242;
+        font-size: 22px;
+        font-weight: 500;
+        padding: 0 15px;
+        letter-spacing: 0.22px;
+      }
+    }
 }
 @include mq($max-width: 992px) {
   .pricing-section__item{
@@ -292,6 +370,9 @@
     }
     img{
       width: 75px;
+      &.auto{
+        width: auto;
+      }
     }
     .text-right{
       text-align: right;

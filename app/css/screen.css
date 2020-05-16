@@ -12730,12 +12730,38 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.16);
     display: flex;
     margin-bottom: 20px; }
+    .pricing-section__item .pricing-section__text {
+      padding-right: 15px; }
+      .pricing-section__item .pricing-section__text p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #565656;
+        letter-spacing: 0.8px; }
+      .pricing-section__item .pricing-section__text h3 {
+        color: #000000;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 16px;
+        letter-spacing: 1.1px; }
+    .pricing-section__item .pricing-section__buy {
+      padding: 0; }
+      @media only screen and (max-width: 992px) {
+        .pricing-section__item .pricing-section__buy {
+          padding-top: 15px; } }
+      .pricing-section__item .pricing-section__buy .row {
+        padding-bottom: 20px; }
+        .pricing-section__item .pricing-section__buy .row:last-child {
+          padding-bottom: 0; }
   .pricing-section__left {
     background: url(../img/pricing-bg-ico.png) no-repeat left center;
     background-size: 100% 100%;
-    min-width: 467px;
-    max-width: 467px;
+    min-width: 355px;
+    max-width: 355px;
     display: flex; }
+    .pricing-section__left .pricing-section__numb {
+      min-width: 2px;
+      max-width: 100%; }
   .pricing-section__numb {
     min-width: 282px;
     max-width: 282px;
@@ -12769,6 +12795,45 @@ body {
     min-height: 130px;
     display: flex;
     align-items: center; }
+  .pricing-section__buy {
+    padding: 0 15px 15px 15px; }
+    .pricing-section__buy label {
+      font-size: 16px;
+      font-weight: 400;
+      color: #565656;
+      display: block;
+      letter-spacing: 0.8px; }
+      @media only screen and (max-width: 992px) {
+        .pricing-section__buy label {
+          padding-bottom: 10px; } }
+    .pricing-section__buy .button {
+      display: block;
+      width: 100%;
+      border: 2px solid #ffd41b;
+      background-color: #f8eaad;
+      border-radius: 4px;
+      box-shadow: none;
+      color: #2e3949;
+      text-transform: none;
+      font-size: 16px;
+      padding: 13px 15px; }
+      .pricing-section__buy .button:hover {
+        background: #ffd41b; }
+  .pricing-section__buy-select {
+    height: 100%;
+    text-align: right; }
+    .pricing-section__buy-select select {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      border: none;
+      box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.56);
+      color: #424242;
+      font-size: 22px;
+      font-weight: 500;
+      padding: 0 15px;
+      letter-spacing: 0.22px; }
 
 @media only screen and (max-width: 992px) {
   .pricing-section__item {
@@ -12950,6 +13015,8 @@ body {
     font-weight: 300; }
   .pricing-section__box-top img {
     width: 75px; }
+    .pricing-section__box-top img.auto {
+      width: auto; }
   .pricing-section__box-top .text-right {
     text-align: right; }
   .pricing-section__box-top .pricing-section__text {
