@@ -182,6 +182,13 @@ $(document).ready(function() {
 		$(this).addClass('active');
 		$(".resource-center__tabs-box .col-lg-4").filter($(this).attr('data-href')).addClass('active'); 
 	});
+	$('.checkout-payment__tab-links li a').click(function(event){
+        event.preventDefault();
+        $('.checkout-payment__tab-links li a').removeClass('active');
+        $(this).addClass('active');
+        $('.checkout-payment__tab').hide();
+        $($(this).attr('href')).show();
+    });
 
 	//show modal
 	$("body").one('mouseleave', function() {
