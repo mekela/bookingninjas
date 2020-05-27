@@ -17834,13 +17834,16 @@ body {
   width: 140px;
   max-width: 100%; }
 
+.login-page {
+  background: url(../img/login-gray.jpg) no-repeat right 10% bottom 3%; }
+
 .header-login {
   position: absolute; }
 
 .login-page-top {
   padding: 130px 0 85px 0;
-  background: url(../img/Bg_element_yellow.png) no-repeat;
-  background-position: right -201px top -300px; }
+  background: url(../img/login-yellow.jpg) no-repeat;
+  background-position: right -680px top -550px; }
   .login-page-top__section {
     box-shadow: 0 0 29px rgba(0, 0, 0, 0.12);
     background-color: #ffffff;
@@ -17973,3 +17976,86 @@ body {
         text-shadow: none; }
       .login-page-top__social nav a.linkedin {
         background: #1060a6; }
+  .login-page-top__section-title h5 {
+    padding-bottom: 60px;
+    color: #303030;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px; }
+    @media only screen and (max-width: 992px) {
+      .login-page-top__section-title h5 {
+        font-size: 25px;
+        padding-bottom: 30px;
+        text-align: center; } }
+  .login-page-top__section-title .button {
+    border: 12px solid #fff;
+    width: 215px;
+    display: block; }
+    .login-page-top__section-title .button i {
+      padding: 0 15px 0 0; }
+    @media only screen and (max-width: 992px) {
+      .login-page-top__section-title .button {
+        margin: 0 auto; } }
+  @media only screen and (max-width: 992px) {
+    .login-page-top__image {
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 30px;
+      width: 300px; } }
+
+.login-page-content {
+  padding-bottom: 50px;
+  color: #353535;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 0.9px; }
+  .login-page-content .video__img {
+    width: 100%;
+    margin-bottom: 30px; }
+    .login-page-content .video__img img {
+      width: 100%;
+      border-radius: 30px; }
+    .login-page-content .video__img:before {
+      display: none; }
+  .login-page-content p {
+    padding-bottom: 25px; }
+  @media only screen and (max-width: 992px) {
+    .login-page-content img {
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 20px; } }
+  .login-page-content h3 {
+    color: #353535;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    padding-bottom: 40px; }
+    @media only screen and (max-width: 992px) {
+      .login-page-content h3 {
+        text-align: center;
+        font-size: 24px;
+        padding-bottom: 20px; } }
+
+.login-page-bottom {
+  text-align: center;
+  padding: 50px 0 70px 0; }
+  .login-page-bottom h5 {
+    display: inline-block;
+    color: #353535;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    padding-right: 50px;
+    vertical-align: middle; }
+    @media only screen and (max-width: 992px) {
+      .login-page-bottom h5 {
+        display: block;
+        padding-right: 0;
+        padding-bottom: 20px;
+        font-size: 24px; } }
+  .login-page-bottom .button {
+    width: 213px;
+    vertical-align: middle; }
+    .login-page-bottom .button i {
+      padding: 0 15px 0 0; }
