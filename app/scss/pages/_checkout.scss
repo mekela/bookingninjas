@@ -143,6 +143,10 @@
   }
   &__tab{
     padding-top: 23px;
+    display: none;
+    &.active{
+      display: block;
+    }
   }
     &__form{
       position: relative;
