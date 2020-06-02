@@ -16632,12 +16632,13 @@ body {
       letter-spacing: 0.9px; }
   .payment-popup__info {
     padding: 20px; }
-    .payment-popup__info input, .payment-popup__info select {
+    .payment-popup__info input:not([type=checkbox]), .payment-popup__info select {
       border-radius: 25px;
       display: block;
       width: 100%;
       height: 45px;
       box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.75);
+      border: 1px solid transparent;
       background-color: #ffffff;
       color: #555555;
       font-size: 16px;
@@ -16654,6 +16655,15 @@ body {
     line-height: 30px;
     letter-spacing: 0.7px;
     display: block; }
+    .payment-popup__info-form label.thin {
+      color: #373737;
+      font-size: 15px;
+      font-weight: 300; }
+      .payment-popup__info-form label.thin a {
+        color: #0082dc; }
+      .payment-popup__info-form label.thin input {
+        margin-right: 5px;
+        display: inline-block; }
   .payment-popup__info-item {
     border-left: 1px solid rgba(0, 0, 0, 0.3);
     padding-left: 30px; }
@@ -16695,8 +16705,8 @@ body {
       background-color: #0074c4;
       background-image: linear-gradient(to top, #0065ab 0%, #0075c5 100%); }
       .payment-popup__button .button.button-cancel {
-        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.75);
-        background: rgba(0, 0, 0, 0.1);
+        box-shadow: none;
+        background: #f2f2f2;
         color: #6b6b6b; }
       .payment-popup__button .button:hover {
         opacity: 0.8; }

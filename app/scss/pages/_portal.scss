@@ -337,12 +337,13 @@
   }
   &__info{
     padding: 20px;
-    input, select{
+    input:not([type=checkbox]), select{
       border-radius: 25px;
       display: block;
       width: 100%;
       height: 45px;
       box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.75);
+      border: 1px solid transparent;
       background-color: #ffffff;
       color: #555555;
       font-size: 16px;
@@ -363,6 +364,18 @@
       line-height: 30px;
       letter-spacing: 0.7px;
       display: block;
+      &.thin{
+        color: #373737;
+        font-size: 15px;
+        font-weight: 300;
+        a{
+          color: #0082dc;
+        }
+        input{
+          margin-right: 5px;
+          display: inline-block;
+        }
+      }
     }
   }
   &__info-item{
@@ -411,8 +424,8 @@
       background-color: #0074c4;
       background-image: linear-gradient(to top, #0065ab 0%, #0075c5 100%);  
       &.button-cancel{
-        box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.75);
-        background: rgba($color: #000000, $alpha: .1);
+        box-shadow: none;
+        background: #f2f2f2;
         color: #6b6b6b;
       }
       &:hover{

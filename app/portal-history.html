@@ -134,7 +134,7 @@
                                         </tr>
                                     </table>
                                     <a href="#payment-popup" data-fancybox="">popup1</a>
-                                    <a href="#payment-popup">popup1</a>
+                                    <a href="#payment-popup2"  data-fancybox="" >popup2</a>
                                 </div>
                             </div>
                         </div>
@@ -202,6 +202,65 @@
             <div class="payment-popup__button">
                 <a href="#" class="button button-cancel">Cancel</a>
                 <a href="#" class="button">Add this checking account</a>
+            </div>
+        </div>
+        <div class="modal payment-popup" id="payment-popup2">
+            <div class="payment-popup__title"><h6>Add a credit or debit card</h6></div>
+            <div class="payment-popup__info">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="payment-popup__info-form">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label>Card number</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>Name on card</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label>Expiration Date</label>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <select>
+                                                <option>07</option>
+                                                <option>08</option>
+                                                <option>09</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <select>
+                                                <option>07</option>
+                                                <option>08</option>
+                                                <option>09</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="thin">
+                                        <input type="checkbox">
+                                        Set as default payment method. <a href="#">What this</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="payment-popup__info-item">
+                            <p>Amazon accepts all major credit and debit
+                                cards:</p>
+                            <img src="img/popup-cards.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-popup__button">
+                <a href="#" class="button button-cancel">Cancel</a>
+                <a href="#" class="button">Add your card</a>
             </div>
         </div>
         <!-- /popup -->
