@@ -13340,6 +13340,9 @@ body {
       background: #fabd05; }
     .landing__workspace-icon.red {
       background: #cc434a; }
+    .landing__workspace-icon.no-bg {
+      background: none;
+      height: auto; }
   .landing__story-box {
     box-shadow: 0 20px 50px rgba(1, 1, 1, 0.05);
     border-radius: 10px;
@@ -13392,10 +13395,19 @@ body {
       @media only screen and (max-width: 767px) {
         .landing__bottom b {
           font-size: 40px; } }
+    .landing__bottom strong {
+      color: #fbcd04;
+      font-size: 36px;
+      font-weight: 400; }
+      @media only screen and (max-width: 767px) {
+        .landing__bottom strong {
+          font-size: 20px; } }
     .landing__bottom p {
       padding-bottom: 40px; }
       .landing__bottom p:last-child {
         padding-bottom: 0; }
+      .landing__bottom p span {
+        padding: 0 30px 0 0; }
     @media only screen and (max-width: 992px) {
       .landing__bottom {
         text-align: center; }
@@ -13562,6 +13574,46 @@ body {
     line-height: 44px;
     text-transform: uppercase;
     background: none; }
+
+.villa-landing__hero {
+  background: url(../img/landing-top-bg13.png) no-repeat center;
+  background-size: auto 100%;
+  margin: 100px 0 115px 0;
+  color: #303030;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  padding: 80px 0; }
+  .villa-landing__hero h1 {
+    color: #303030;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    padding-bottom: 30px; }
+  .villa-landing__hero section {
+    padding: 50px 0 30px 0; }
+    .villa-landing__hero section p {
+      color: #3c3c3c;
+      font-size: 22px;
+      font-weight: 100; }
+      .villa-landing__hero section p span {
+        padding: 0 10px 0 0; }
+      .villa-landing__hero section p strong, .villa-landing__hero section p b {
+        color: #fbcd04;
+        font-weight: 500;
+        font-size: 48px;
+        letter-spacing: 0.48px; }
+      .villa-landing__hero section p b {
+        font-size: 36px; }
+
+.landing__box-villa .landing__workspace-item {
+  padding: 25px; }
+  .landing__box-villa .landing__workspace-item p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: 0.16px; }
 
 .glance__title {
   color: #212020;
